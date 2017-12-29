@@ -3,5 +3,5 @@
 
 I found 2 ways below that seem like they're almost what I'm looking for, except these ways are set up so that you have to pass a function name into a custom method to print the stack trace of all unhandled exceptions within that one specific function. I'm looking for a way to not have to manually pass a function name to a custom method that prints the stack trace of all of the unhandled exceptions. I'd want these custom method to just 'listen' for all unhandled exceptions within the whole application. *
 sss
-sdsd ddddddff
+sdsd ddddddff ddf
 ![Image](https://cdn-images-1.medium.com/max/400/1*y3vKo1m2lU6Y5k_FpxzLQw.gif)
