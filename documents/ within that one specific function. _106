@@ -1,7 +1,0 @@
-#  within that one specific function. 
-*I'm trying to find or figure out a way to display in an alert box all of the unhandled javascript exceptions in an application. I'd want all of this to be done on the client side, without using any server side code. I'm using MVC3 as an environment.I've been researching for the last few days and haven't found exactly what I'm looking for.*
-
-I found 2 ways below that seem like they're almost what I'm looking for, except these ways are set up so that you have to pass a function name into a custom method to print the stack trace of all unhandled exceptions within that one specific function. I'm looking for a way to not have to manually pass a function name to a custom method that prints the stack trace of all of the unhandled exceptions. I'd want these custom method to just 'listen' for all unhandled exceptions within the whole application. *
-sss
-sdsd ddddddff ddf
-![Image](https://cdn-images-1.medium.com/max/400/1*y3vKo1m2lU6Y5k_FpxzLQw.gif)
