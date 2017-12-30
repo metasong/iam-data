@@ -4,6 +4,6 @@
 * add waiting sign when document loading and document list loading
 * test and setup iamdata repository automatically
 * if summary not available use first para
-* autosave every 5min and dirty of doc
+* autosave every 5min and dirty of doc, saving indicator--progress bar
 * undo redo of monaco editor
 * toolbar on bottom when mobile
