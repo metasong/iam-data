@@ -2,7 +2,7 @@
 *todo TODO*
 
 * add waiting sign when document loading and document list loading
-* test and setup iamdata repository
+* test and setup iamdata repository automatically
 * if summary not available use first para
 * autosave every 5min and dirty of doc
 * undo redo of monaco editor
