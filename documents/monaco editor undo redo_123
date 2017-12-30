@@ -1,5 +1,5 @@
 # monaco editor undo redo
-*summery*
+*https://github.com/Microsoft/monaco-editor/issues/451*
 
 I would not recommend calling undo() or redo() directly on the IModel, since that will undo the edits on the text, but will not restore the cursor position correctly.
 
