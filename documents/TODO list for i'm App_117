@@ -6,3 +6,4 @@
 * if summary not available use first para
 * autosave every 5min and dirty of doc
 * undo redo of monaco editor
+* toolbar on bottom when mobile
