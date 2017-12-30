@@ -3,4 +3,4 @@
 
 * add waiting sign when document loading
 * test and setup iamdata repository
-* remove summary and iuse first para
+* if summary not available use first para
