@@ -7,3 +7,4 @@
 * autosave every 5min and dirty of doc, saving indicator--progress bar, when dirty and user navigate away notify the user
 * undo redo of monaco editor
 * toolbar on bottom when mobile
+* update not work when new version available
