@@ -1,7 +1,7 @@
 # TODO list for i'm App
 *todo TODO*
 
-* add waiting sign when document loading and document list loading
+* [x] add waiting sign when document loading and document list loading
 * test and setup iamdata repository automatically
 * if summary not available use first para
 * autosave every 5min and dirty of doc, saving indicator--progress bar, when dirty and user navigate away notify the user
