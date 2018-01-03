@@ -17,3 +17,4 @@
 * know why special char not usable
 * [ ] UI design
   * [ ] home page bottom bar
+* add ngstore, isEditing state to hide bottom bar.
