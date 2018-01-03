@@ -5,7 +5,7 @@
 * [x] add watting sign when monaco editor is loading.
 * [x] doc list sort with last modified date
 * [ ] reading progress indicator
-* [ ] app update not work, when new version is avalible.
+* [x] app update not work, when new version is avalible.
 * [ ] color of start flash screen and description text
 * [ ] auto update monaco editor
 * test and setup iamdata repository automatically
