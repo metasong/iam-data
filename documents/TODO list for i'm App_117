@@ -5,7 +5,7 @@
 * [x] add watting sign when monaco editor is loading.
 * [ ] doc list sort with last modified date
 * [ ] reading progress indicator
-* [ ] app update not work, when new version avalible.
+* [ ] app update not work, when new version is avalible.
 * test and setup iamdata repository automatically
 * if summary not available use first para
 * autosave every 5min and dirty of doc, saving indicator--progress bar, when dirty and user navigate away notify the user
