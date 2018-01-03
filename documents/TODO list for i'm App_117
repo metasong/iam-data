@@ -3,7 +3,7 @@
 
 * [x] add waiting sign when document loading and document list loading
 * [x] add watting sign when monaco editor is loading.
-* [ ] doc list solt with last modified date
+* [ ] doc list sort with last modified date
 * [ ] reading progress indicator
 * [ ] app update not work, when new version avalible.
 * test and setup iamdata repository automatically
