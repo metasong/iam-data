@@ -6,7 +6,7 @@
 * [x] doc list sort with last modified date
 * [ ] reading progress indicator
 * [x] app update not work, when new version is avalible.
-* [ ] color of start flash screen and description text
+* [x] color of start flash screen and description text
 * [ ] auto update monaco editor
 * test and setup iamdata repository automatically
 * if summary not available use first para
