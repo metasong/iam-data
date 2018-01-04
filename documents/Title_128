@@ -1,0 +1,5 @@
+# Title
+*CSS
+Then set height: 100% to html and body (actual body, not your #body div) to ensure you can set minimum height as a percentage on child elements.
+Now set min-height: 100% on the #holder div so it fills the content of the screen and use position: absolute to sit the footer at the bottom of the #holder div.
+Unfortunately, you have to apply padding-bottom to the #body div that is the same height as the footer to ensure that the footer does not sit above any content:*
