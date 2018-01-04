@@ -16,7 +16,7 @@
 * [x] update not work when new version available
 * know why special char not usable
 * [ ] UI design
-  * [ ] home page bottom bar
+  * [x] home page bottom bar
   * [ ] editor toolbar seperates to top and bottom; top: back, save,preview
 * [ ] add ngstore, isEditing state to hide bottom bar.
 * [ ] ~~scrooling direction, if down hide bottons, up showing~~ waiting for mdc-bottom component.
