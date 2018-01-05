@@ -20,3 +20,4 @@
   * [ ] editor toolbar seperates to top and bottom; top: back, save,preview
 * [ ] add ngstore, isEditing state to hide bottom bar.
 * [ ] ~~scrooling direction, if down hide bottons, up showing~~ waiting for mdc-bottom component.
+* [ ] footnote in markdownit not work when baseUrl is set
