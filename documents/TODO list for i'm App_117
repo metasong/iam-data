@@ -14,7 +14,7 @@
 * undo redo of monaco editor
 * toolbar on bottom when mobile
 * [x] update not work when new version available
-* know why special char not usable
+* [x] know why special char not usable
 * [ ] UI design
   * [x] home page bottom bar
   * [ ] editor toolbar seperates to top and bottom; top: back, save,preview
