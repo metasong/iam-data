@@ -4,7 +4,7 @@
 * [x] add waiting sign when document loading and document list loading
 * [x] add watting sign when monaco editor is loading.
 * [x] doc list sort with last modified date
-* [ ] reading progress indicator
+* [x] reading progress indicator
 * [x] app update not work, when new version is avalible.
 * [x] color start flash screen and description text
 * [ ] auto update monaco editor
