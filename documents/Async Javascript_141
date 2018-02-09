@@ -18,3 +18,33 @@ function response(data) {
 ajax( "http://some.url.1", response );
 ajax( "http://some.url.2", response );
 ```
+
+```js
+var a, b;
+
+function foo(x) {
+	a = x * 2;
+	if (a && b) {
+		baz();
+	}
+}
+
+function bar(y) {
+	b = y * 2;
+	if (a && b) {
+		baz();
+	}
+}
+
+function baz() {
+	console.log( a + b );
+}
+
+// ajax(..) is some arbitrary Ajax function given by a library
+ajax( "http://some.url.1", foo );
+ajax( "http://some.url.2", bar );
+```
+
+Another concurrency interaction condition you may run into is sometimes called a "race," but more correctly called a "latch." It's characterized by "only the first one wins" behavior.
+
+
