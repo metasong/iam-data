@@ -120,5 +120,6 @@ schedule( function(){
 	} );
 } );
 ```
+it would print out A C D B, because the Jobs happen at the end of the current event loop tick, and the timer fires to schedule for the next event loop tick (if available!).
 
 
