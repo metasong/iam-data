@@ -102,3 +102,5 @@ function response(data) {
 ajax( "http://some.url.1", response );
 ajax( "http://some.url.2", response );
 ```
+## Jobs
+As of ES6, there's a new concept layered on top of the event loop queue, called the "Job queue." the event loop queue is like an amusement park ride, where once you finish the ride, you have to go to the back of the line to ride again. But the Job queue is like finishing the ride, but then cutting in line and getting right back on.
