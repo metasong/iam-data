@@ -51,4 +51,8 @@ other trust issues:
 In a crude sort of way, it's like the programming equivalent of the geopolitical principle of "**Trust But Verify.**"
 The most troublesome problem with callbacks is **inversion of control** leading to a complete breakdown along all those trust lines.
 
+## Trying to Save Callbacks
+
+
+
 
