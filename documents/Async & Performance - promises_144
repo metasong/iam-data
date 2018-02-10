@@ -1,2 +1,7 @@
 # Async & Performance - promises
 *summery*
+
+callback is lack of sequentiality and lack of trustability.
+
+
+
