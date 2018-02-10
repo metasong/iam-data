@@ -1,5 +1,7 @@
 # Async & Performanc-CALLBACKS
 *summery*
+
+https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md
 ```js
 listen( "click", function handler(evt){
 	setTimeout( function request(){
@@ -64,5 +66,24 @@ function failure(err) {
 ajax( "http://some.url.1", success, failure );
 ```
 split-callback design is what the ES6 Promise API uses, Another common callback pattern is called "error-first style" (sometimes called "Node style," as it's also the convention used across nearly all Node.js APIs), where the first argument of a single callback is reserved for an error object (if any). If success, this argument will be empty/falsy (and any subsequent arguments will be the success data), but if an error result is being signaled, the first argument is set/truthy.
+
+
+```js
+function response(err,data) {
+	// error?
+	if (err) {
+		console.error( err );
+	}
+	// otherwise, assume success
+	else {
+		console.log( data );
+	}
+}
+
+ajax( "http://some.url.1", response );
+```
+
+
+
 
 
