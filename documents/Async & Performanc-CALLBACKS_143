@@ -52,7 +52,17 @@ In a crude sort of way, it's like the programming equivalent of the geopolitical
 The most troublesome problem with callbacks is **inversion of control** leading to a complete breakdown along all those trust lines.
 
 ## Trying to Save Callbacks
+```js
+function success(data) {
+	console.log( data );
+}
 
+function failure(err) {
+	console.error( err );
+}
 
+ajax( "http://some.url.1", success, failure );
+```
+split-callback design is what the ES6 Promise API uses, Another common callback pattern is called "error-first style" (sometimes called "Node style," as it's also the convention used across nearly all Node.js APIs), where the first argument of a single callback is reserved for an error object (if any). If success, this argument will be empty/falsy (and any subsequent arguments will be the success data), but if an error result is being signaled, the first argument is set/truthy.
 
 
