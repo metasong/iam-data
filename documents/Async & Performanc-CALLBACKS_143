@@ -20,4 +20,25 @@ And as if all that's not enough, we haven't even touched what happens when two o
 
 Are you catching the notion here that **our sequential, blocking brain planning behaviors just don't map well onto callback-oriented async code**? That's the first major deficiency to articulate about callbacks: they express asynchrony in code in ways our brains have to fight just to keep in sync with (pun intended!).
 
+## Trust Issues
+
+```js
+analytics.trackPurchase( purchaseData, function(){
+	chargeCreditCard();
+	displayThankyouPage();
+} );
+```
+called several times in new version of *analytics*.
+
+```js
+var tracked = false;
+
+analytics.trackPurchase( purchaseData, function(){
+	if (!tracked) {
+		tracked = true;
+		chargeCreditCard();
+		displayThankyouPage();
+	}
+} );
+```
 
