@@ -47,4 +47,8 @@ other trust issues:
 - Call the callback too few or too many times (like the problem you encountered!)
 - Fail to pass along any necessary environment/parameters to your callback
 - Swallow any errors/exceptions that may happen
-...
+- ...
+In a crude sort of way, it's like the programming equivalent of the geopolitical principle of "**Trust But Verify.**"
+The most troublesome problem with callbacks is **inversion of control** leading to a complete breakdown along all those trust lines.
+
+
