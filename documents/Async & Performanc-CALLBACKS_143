@@ -100,6 +100,17 @@ function timeoutify(fn,delay) {
 		}
 	};
 }
+design
+function foo(err,data) {
+	if (err) {
+		console.error( err );
+	}
+	else {
+		console.log( data );
+	}
+}
+
+ajax( "http://some.url.1", timeoutify( foo, 500 ) );
 ```
 
 
