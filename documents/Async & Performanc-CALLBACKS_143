@@ -112,6 +112,45 @@ function foo(err,data) {
 
 ajax( "http://some.url.1", timeoutify( foo, 500 ) );
 ```
+Another trust issue is being called "too early." "Don't release Zalgo!" is a common cry, and it leads to very sound advice: always invoke callbacks asynchronously, even if that's "right away" on the next turn of the event loop, so that all callbacks are predictably async.
+```js
+function asyncify(fn) {
+	var orig_fn = fn,
+		intv = setTimeout( function(){
+			intv = null;
+			if (fn) fn();
+		}, 0 )
+	;
 
+	fn = null;
+
+	return function() {
+		// firing too quickly, before `intv` timer has fired to
+		// indicate async turn has passed?
+		if (intv) {
+			fn = orig_fn.bind.apply(
+				orig_fn,
+				// add the wrapper's `this` to the `bind(..)`
+				// call parameters, as well as currying any
+				// passed in parameters
+				[this].concat( [].slice.call( arguments ) )
+			);
+		}
+		// already async
+		else {
+			// invoke original function
+			orig_fn.apply( this, arguments );
+		}
+	};
+}
+function result(data) {
+	console.log( a );
+}
+
+var a = 0;
+
+ajax( "..pre-cached-url..", asyncify( result ) );
+a++;
+```
 
 
