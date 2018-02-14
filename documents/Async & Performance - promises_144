@@ -58,4 +58,16 @@ add( fetchX(), fetchY() )
 	console.log( sum ); // that was easier!
 } );
 ```
-
+```js
+add( fetchX(), fetchY() )
+.then(
+	// fullfillment handler
+	function(sum) {
+		console.log( sum );
+	},
+	// rejection handler
+	function(err) {
+		console.error( err ); // bummer!
+	}
+);
+```
