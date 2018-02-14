@@ -76,3 +76,5 @@ Because Promises encapsulate the time-dependent state -- waiting on the fulfillm
 
 Moreover, once a Promise is resolved, it stays that way forever -- it becomes an immutable value at that point -- and can then be observed as many times as necessary.
 Promises are an easily repeatable mechanism for encapsulating and composing future values.
+
+callbacks themselves represent an inversion of control. So inverting the callback pattern is actually an inversion of inversion, or an uninversion of control -- restoring control back to the calling code where we wanted it to be in the first place.
