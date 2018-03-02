@@ -112,7 +112,8 @@ function foo(err,data) {
 
 ajax( "http://some.url.1", timeoutify( foo, 500 ) );
 ```
-Another trust issue is being called "too early." "Don't release Zalgo!" is a common cry, and it leads to very sound advice: always invoke callbacks asynchronously, even if that's "right away" on the next turn of the event loop, so that all callbacks are predictably async.
+### Another trust issue is being called "too early."
+"Don't release Zalgo!" is a common cry, and it leads to very sound advice: always invoke callbacks asynchronously, even if that's "right away" on the next turn of the event loop, so that all callbacks are predictably async.
 ```js
 function asyncify(fn) {
 	var orig_fn = fn,
