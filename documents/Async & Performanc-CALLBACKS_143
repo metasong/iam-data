@@ -83,7 +83,7 @@ function response(err,data) {
 ajax( "http://some.url.1", response );
 ```
 
-the trust issue of never being calle
+### the trust issue of never being called
 ```js
 function timeoutify(fn,delay) {
 	var intv = setTimeout( function(){
