@@ -100,7 +100,7 @@ function timeoutify(fn,delay) {
 		}
 	};
 }
-design
+
 function foo(err,data) {
 	if (err) {
 		console.error( err );
