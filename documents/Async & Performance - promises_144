@@ -78,3 +78,22 @@ Moreover, once a Promise is resolved, it stays that way forever -- it becomes an
 Promises are an easily repeatable mechanism for encapsulating and composing future values.
 
 callbacks themselves represent an inversion of control. So inverting the callback pattern is actually an inversion of inversion, or an uninversion of control -- restoring control back to the calling code where we wanted it to be in the first place.
+
+
+## Thenable Duck Typing
+the duck typing check for a thenable:
+```js
+if (
+	p !== null &&
+	(
+		typeof p === "object" ||
+		typeof p === "function"
+	) &&
+	typeof p.then === "function"
+) {
+	// assume it's a thenable!
+}
+else {
+	// not a thenable
+}
+```
