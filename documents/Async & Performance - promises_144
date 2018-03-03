@@ -109,3 +109,12 @@ v.otherStuff = "not so cool";
 
 v.hasOwnProperty(
 ```
+
+```js
+/// all object and array become thenable☹️
+Object.prototype.then = function(){};
+Array.prototype.then = function(){};
+
+var v1 = { hello: "world" };
+var v2 = [ "Hello", "World" ];
+```
