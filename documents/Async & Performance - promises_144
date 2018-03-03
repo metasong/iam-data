@@ -96,3 +96,16 @@ else {
 	// not a thenable
 }
 ```
+### BUT
+```js
+/// v is a thebable here!!!☹️
+var o = { then: function(){} };
+
+// make `v` be `[[Prototype]]`-linked to `o`
+var v = Object.create( o );
+
+v.someStuff = "cool";
+v.otherStuff = "not so cool";
+
+v.hasOwnProperty(
+```
