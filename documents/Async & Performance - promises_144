@@ -83,8 +83,7 @@ callbacks themselves represent an inversion of control. So inverting the callbac
 ## Thenable Duck Typing
 the duck typing check for a thenable:
 ```js
-if (
-	p !== null &&
+if (p !== null &&
 	(
 		typeof p === "object" ||
 		typeof p === "function"
