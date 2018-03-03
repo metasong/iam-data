@@ -112,6 +112,7 @@ v.hasOwnProperty(
 
 ```js
 /// all object and array become thenable☹️
+/// if what's specified is a function that doesn't call either of its parameters as callbacks, then any Promise resolved with such a value will just silently hang forever! Crazy.😖
 Object.prototype.then = function(){};
 Array.prototype.then = function(){};
 
