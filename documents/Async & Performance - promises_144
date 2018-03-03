@@ -97,6 +97,7 @@ else {
 }
 ```
 ### BUT
+Thenable duck typing can be helpful, as we'll see later. Just beware that thenable duck typing can be hazardous if it incorrectly identifies something as a Promise that isn't.
 ```js
 /// v is a thebable here!!!☹️
 var o = { then: function(){} };
