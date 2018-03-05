@@ -130,3 +130,42 @@ Promises prevent Zalgo automatically.even an immediately fulfilled Promise (like
 ## Calling Too Late
 
 when a Promise is resolved, all then(..) registered callbacks on it will be called, in order, immediately at the next asynchronous opportunity (again, see "Jobs" in Chapter 1), and nothing that happens inside of one of those callbacks can affect/delay the calling of the other callbacks.
+
+```js
+p.then( function(){
+	p.then( function(){
+		console.log( "C" );
+	} );
+	console.log( "A" );
+} );
+p.then( function(){
+	console.log( "B" );
+} );
+// A B C
+
+```
+
+```js
+var p3 = new Promise( function(resolve,reject){
+	resolve( "B" );
+} );
+
+var p1 = new Promise( function(resolve,reject){
+	resolve( p3 );
+} );
+
+var p2 = new Promise( function(resolve,reject){
+	resolve( "A" );
+} );
+
+p1.then( function(v){
+	console.log( v );
+} );
+
+p2.then( function(v){
+	console.log( v );
+} );
+
+// A B  <-- not  B A  as you might expect
+
+```
