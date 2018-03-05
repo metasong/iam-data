@@ -145,6 +145,8 @@ p.then( function(){
 
 ```
 
+you should never rely on anything about the ordering/scheduling of callbacks across Promises. 
+
 ```js
 var p3 = new Promise( function(resolve,reject){
 	resolve( "B" );
