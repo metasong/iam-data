@@ -118,3 +118,9 @@ Array.prototype.then = function(){};
 var v1 = { hello: "world" };
 var v2 = [ "Hello", "World" ];
 ```
+## Promise Trust
+- Call the callback too early
+- Call the callback too late (or never)
+- Call the callback too few or too many - times
+- Fail to pass along any necessary environment/parameters
+- Swallow any errors/exceptions that may happen
