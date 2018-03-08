@@ -167,7 +167,7 @@ function asyncify(fn) {
 	return function() {
 		// firing too quickly, before `intv` timer has fired to
 		// indicate async turn has passed?
-		if (intv) {
+		if (intv) {/// timeout not invoked, using timeout to fire it.
 			fn = orig_fn.bind.apply(
 				orig_fn,
 				// add the wrapper's `this` to the `bind(..)`
@@ -176,7 +176,7 @@ function asyncify(fn) {
 				[this].concat( [].slice.call( arguments ) )
 			);
 		}
-		// already async
+		// timeout invoked, so already async
 		else {
 			// invoke original function
 			orig_fn.apply( this, arguments );
