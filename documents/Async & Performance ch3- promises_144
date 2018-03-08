@@ -125,7 +125,7 @@ var v2 = [ "Hello", "World" ];
 - Fail to pass along any necessary environment/parameters
 - Swallow any errors/exceptions that may happen
 ### Calling Too Early
-Promises prevent Zalgo automatically.even an immediately fulfilled Promise (like new Promise(function(resolve){ resolve(42); })) cannot be observed synchronously.when you call then(..) on a Promise, even if that Promise was already resolved, the callback you provide to then(..) will always be called asynchronously
+Promises prevent Zalgo automatically.even an immediately fulfilled Promise (like `new Promise(function(resolve){ resolve(42); })`) cannot be observed synchronously.when you call then(..) on a Promise, even if that Promise was already resolved, the callback you provide to then(..) will always be called asynchronously
 
 ## Calling Too Late
 
