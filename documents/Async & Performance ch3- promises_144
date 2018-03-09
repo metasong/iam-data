@@ -481,3 +481,8 @@ rejectedPr.then(
 	}
 );
 ```
+resolve(..) is the appropriate name for the first callback parameter of the Promise(..) constructor.
+
+
+
+The previously mentioned reject(..) does not do the unwrapping that resolve(..) does. If you pass a Promise/thenable value to reject(..), that untouched value will be set as the rejection reason. A subsequent rejection handler would receive the actual Promise/thenable you passed to reject(..), not its underlying immediate value.
