@@ -252,6 +252,9 @@ var p1 = new Promise( function(resolve,reject){
 var p2 = Promise.resolve( 42 );
 
 // p2 !==p1
+
+// if you pass a non-Promise thenable value to Promise.resolve(..),
+// it will attempt to unwrap that value
 var p1 = Promise.resolve( 42 );
 
 var p2 = Promise.resolve( p1 );
