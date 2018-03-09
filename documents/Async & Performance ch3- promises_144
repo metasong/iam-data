@@ -329,3 +329,4 @@ Promise.resolve( foo( 42 ) )
 	console.log( v );
 } );
 ```
+this also normalize that function call into a well-behaving async task. If foo(42) returns an immediate value sometimes, or a Promise other times, `Promise.resolve( foo(42) ) `makes sure it's always a Promise result.
