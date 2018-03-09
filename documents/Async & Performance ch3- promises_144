@@ -489,3 +489,43 @@ The previously mentioned reject(..) does not do the unwrapping that resolve(..) 
 
 
 ## Error Handling
+
+```js
+function foo() {
+	setTimeout( function(){
+		baz.bar();
+	}, 100 );
+}
+
+try {
+	foo();
+	// later throws global error from `baz.bar()`
+}
+catch (err) {
+	// never gets here
+}
+```
+`try..catch` would certainly be nice to have, but it doesn't work across async operations.
+```js
+function foo(cb) {
+	setTimeout( function(){
+		try {
+			var x = baz.bar();
+			cb( null, x ); // success!
+		}
+		catch (err) {
+			cb( err );
+		}
+	}, 100 );
+}
+
+foo( function(err,val){
+	if (err) {
+		console.error( err ); // bummer :(
+	}
+	else {
+		console.log( val );
+	}
+} );
+
+```
