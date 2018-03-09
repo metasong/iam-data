@@ -333,9 +333,9 @@ this also normalize that function call into a well-behaving *async *task. If foo
 
 ## Chain Flow
 
-* Every time you call then(..) on a Promise, it creates and returns a new Promise, which we can chain with.
-* Whatever value you return from the then(..) call's fulfillment callback (the first parameter) is automatically set as the fulfillment of the chained Promise (from the first point).
-
+* A then(..) call against one Promise automatically produces a new Promise to return from the call.
+* Inside the fulfillment/rejection handlers, if you return a value or an exception is thrown, the new returned (chainable) Promise is resolved accordingly.
+* If the fulfillment or rejection handler returns a Promise, it is unwrapped, so that whatever its resolution is will become the resolution of the chained Promise returned from the current then(..).
 ```js
 var p = Promise.resolve( 21 );
 
