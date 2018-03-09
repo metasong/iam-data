@@ -202,3 +202,7 @@ Promise.race( [
 	}
 );
 ```
+### Calling Too Few or Too Many Times
+
+If for some reason the Promise creation code tries to call resolve(..) or reject(..) multiple times, or tries to call both, the Promise will accept only the first resolution, and will silently ignore any subsequent attempts.any then(..) registered callbacks will only ever be called once (each).
+### Failing to Pass Along Any Parameters/Environment
