@@ -454,3 +454,30 @@ p.then(
 	}
 );
 ```
+
+### Terminology: Resolve, Fulfill, and Reject
+```js
+var rejectedTh = {
+	then: function(resolved,rejected) {
+		rejected( "Oops" );
+	}
+};
+
+var rejectedPr = Promise.resolve( rejectedTh );
+```
+So Promise.resolve(..) is a good, accurate name for the API method, because it can actually result in either fulfillment or rejection.
+```js
+var rejectedPr = new Promise( function(resolve,reject){
+	// resolve this promise with a rejected promise
+	resolve( Promise.reject( "Oops" ) );
+} );
+
+rejectedPr.then(
+	function fulfilled(){
+		// never gets here
+	},
+	function rejected(err){
+		console.log( err );	// "Oops"
+	}
+);
+```
