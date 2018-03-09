@@ -301,3 +301,15 @@ p
 	}
 );
 ```
+**it's not trustable as is.BUT:**
+```js
+Promise.resolve( p )// either of these versions of p
+.then(
+	function fulfilled(val){
+		console.log( val ); // 42
+	},
+	function rejected(err){
+		// never gets here
+	}
+);
+```
