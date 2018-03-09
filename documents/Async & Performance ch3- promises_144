@@ -303,7 +303,10 @@ p
 ```
 **it's not trustable as is.BUT:**
 ```js
-Promise.resolve( p )// either of these versions of p
+Promise.resolve( p )
+// either of these versions of p, 
+// you get back from Promise.resolve(..) a real, 
+// genuine Promise in its place, one that you can trust.
 .then(
 	function fulfilled(val){
 		console.log( val ); // 42
