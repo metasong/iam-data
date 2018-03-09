@@ -12,12 +12,12 @@ function add(getX,getY,cb) {
 		x = xVal;
 		// both are ready?
 		if (y != undefined) {
-			cb( x + y );	// send along sum
+			cb( x + y );	// send along sumi
 		}
-	} );
+	} );s
 	getY( function(yVal){
 		y = yVal;
-		// both are ready?
+		// both are ready?s
 		if (x != undefined) {
 			cb( x + y );	// send along sum
 		}
