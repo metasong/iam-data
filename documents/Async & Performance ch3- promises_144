@@ -1,5 +1,5 @@
 # Async & Performance ch3- promises
-*summery*
+*summery
 https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md
 
 callback is lack of sequentiality and lack of trustability.z
