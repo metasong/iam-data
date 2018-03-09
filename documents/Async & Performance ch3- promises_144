@@ -242,3 +242,5 @@ p.then(
 );
 ```
 The p.then(..) call itself returns another promise, and it's that promise that will be rejected with the TypeError exception.
+### Trustable Promise?
+
