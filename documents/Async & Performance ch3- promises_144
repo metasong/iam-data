@@ -5,7 +5,7 @@ https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance
 callback is lack of sequentiality and lack of trustability.z
 
 once my future value was ready, I exchanged my value-promise for the value itself.
-```js
+```jss
 function add(getX,getY,cb) {
 	var x, y;
 	getX( function(xVal){
