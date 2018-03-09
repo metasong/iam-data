@@ -505,7 +505,7 @@ catch (err) {
 	// never gets here
 }
 ```
-`try..catch` would certainly be nice to have, but it doesn't work across async operations.
+`try..catch` would certainly be nice to have, but it doesn't work across async operations.belowisasolution, but is perils of callback hell 
 ```js
 function foo(cb) {
 	setTimeout( function(){
