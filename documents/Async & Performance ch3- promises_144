@@ -13,7 +13,7 @@ function add(getX,getY,cb) {
 		// both are ready?
 		if (y != undefined) {
 			cb( x + y );	// send along sumi
-		}
+		}h
 	} );
 	getY( function(yVal){
 		y = yVal;
