@@ -10,7 +10,7 @@ function add(getX,getY,cb) {
 	var x, y;
 	getX( function(xVal){
 		x = xVal;
-		// both are ready?
+		// both are ready? 
 		if (y != undefined) {
 			cb( x + y );	// send along sum
 		}h
