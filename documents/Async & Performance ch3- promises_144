@@ -207,3 +207,6 @@ Promise.race( [
 
 If for some reason the Promise creation code tries to call resolve(..) or reject(..) multiple times, or tries to call both, the Promise will accept only the first resolution, and will silently ignore any subsequent attempts.any then(..) registered callbacks will only ever be called once (each).
 ### Failing to Pass Along Any Parameters/Environment
+If you call resolve(..) or reject(..) with multiple parameters, all subsequent parameters beyond the first will be silently ignored.
+
+
