@@ -145,7 +145,7 @@ p.then( function(){
 
 ```
 
-you should never rely on anything about the ordering/scheduling of callbacks across Promises. 
+but you should never rely on anything about the ordering/scheduling of callbacks across Promises. 
 
 ```js
 var p3 = new Promise( function(resolve,reject){
@@ -174,4 +174,31 @@ p2.then( function(v){
 
 ### Never Calling the Callback
 
+First, nothing (not even a JS error) can prevent a Promise from notifying you of its resolution (if it's resolved). If you register both fulfillment and rejection callbacks for a Promise, and the Promise gets resolved, one of the two callbacks will always be called.
+But what if the Promise itself never gets resolved either way? Even that is a condition that Promises provide an answer for, using a higher level abstraction called a "race":
+```js
+// a utility for timing out a Promise
+function timeoutPromise(delay) {
+	return new Promise( function(resolve,reject){
+		setTimeout( function(){
+			reject( "Timeout!" );
+		}, delay );
+	} );
+}
 
+// setup a timeout for `foo()`
+Promise.race( [
+	foo(),					// attempt `foo()`
+	timeoutPromise( 3000 )	// give it 3 seconds
+] )
+.then(
+	function(){
+		// `foo(..)` fulfilled in time!
+	},
+	function(err){
+		// either `foo()` rejected, or it just
+		// didn't finish in time, so inspect
+		// `err` to know which
+	}
+);
+```
