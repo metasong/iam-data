@@ -208,5 +208,21 @@ Promise.race( [
 If for some reason the Promise creation code tries to call resolve(..) or reject(..) multiple times, or tries to call both, the Promise will accept only the first resolution, and will silently ignore any subsequent attempts.any then(..) registered callbacks will only ever be called once (each).
 ### Failing to Pass Along Any Parameters/Environment
 If you call resolve(..) or reject(..) with multiple parameters, all subsequent parameters beyond the first will be silently ignored.
+### Swallowing Any Errors/Exceptions
+```js
+var p = new Promise( function(resolve,reject){
+	foo.bar();	// `foo` is not defined, so error!
+	resolve( 42 );	// never gets here :(
+} );
 
+p.then(
+	function fulfilled(){
+		// never gets here :(
+	},
+	function rejected(err){
+		// `err` will be a `TypeError` exception object
+		// from the `foo.bar()` line.
+	}
+);
+```
 
