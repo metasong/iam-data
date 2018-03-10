@@ -564,6 +564,26 @@ p.then(
 		console.log( msg.toLowerCase() );
 	}
 )
+/// handled here!
 .catch( handleErrors );
 ```
+What happens if handleErrors(..) itself also has an error in it? Who catches that? You can't just stick another catch(..) on the end of that chain, because it too could fail. 
 
+#### solutions for unhandled this problem
+
+
+```js
+var p = Promise.resolve( 42 );
+
+p.then(
+	function fulfilled(msg){
+		// numbers don't have string functions,
+		// so will throw an error
+		console.log( msg.toLowerCase() );
+	}
+)
+.done( null, handleErrors );
+
+// if `handleErrors(..)` caused its own exception, it would
+// be thrown globally here (in the developer console, basically)
+```
