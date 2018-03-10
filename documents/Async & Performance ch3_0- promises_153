@@ -162,4 +162,4 @@ Promise.map( [p1,p2,p3], function(pr,done){
 } );
 
 ```
-
+In this implementation of map(..), you can't signal async rejection, but if a synchronous exception/error occurs inside of the mapping callback (cb(..)), the main Promise.map(..) returned promise would reject.
