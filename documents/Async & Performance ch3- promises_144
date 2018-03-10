@@ -544,3 +544,4 @@ p.then(
 	}
 );
 ```
+why doesn't our error handler get notified? As we explained earlier, it's because that error handler is for the p promise, which has already been fulfilled with value 42. The p promise is immutable, so the only promise that can be notified of the error is the one returned from p.then(..), which in this case we don't capture.
