@@ -588,3 +588,5 @@ p.then(
 // be thrown globally here (in the developer console, basically)
 ```
 But the biggest problem is that it's not part of the ES6 standard
+
+good news is browsers have a unique capability that our code does not have: they can track and know for sure when any object gets thrown away and garbage collected. So, browsers can track Promise objects, and whenever they get garbage collected, if they have a rejection in them, the browser knows for sure this was a legitimate "uncaught error," and can thus confidently know it should report it to the developer console.
