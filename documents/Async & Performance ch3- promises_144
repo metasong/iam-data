@@ -593,5 +593,22 @@ good news is browsers have a unique capability that our code does not have: they
 
 ### future Pit of Success design
 
-Promises could default to reporting (to the developer console) any rejection, on the next Job or event loop tick, if at that exact moment no error handler has been registered for the Promise.
-For the cases where you want a rejected Promise to hold onto its rejected state for an indefinite amount of time before observing, you could call defer(), which suppresses automatic error reporting on that Promise
+* Promises could default to reporting (to the developer console) any rejection, on the next Job or event loop tick, if at that exact moment no error handler has been registered for the Promise.
+* For the cases where you want a rejected Promise to hold onto its rejected state for an indefinite amount of time before observing, you could call defer(), which suppresses automatic error reporting on that Promise.
+
+```js
+var p = Promise.reject( "Oops" ).defer();
+
+// `foo(..)` is Promise-aware
+foo( 42 )
+.then(
+	function fulfilled(){
+		return p;
+	},
+	function rejected(err){
+		// handle `foo(..)` error
+	}
+);
+...
+```
+the promise returned from the then(..) call has no defer() or error handler attached, so if it rejects (from inside either resolution handler), then it will be reported to the developer console as an uncaught error.
