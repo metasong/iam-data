@@ -570,8 +570,8 @@ p.then(
 What happens if handleErrors(..) itself also has an error in it? Who catches that? You can't just stick another catch(..) on the end of that chain, because it too could fail. 
 
 #### solutions for unhandled this problem
-
-
+Some Promise libraries have added methods for registering something like a "global unhandled rejection" handler, their solution for how to identify an error as "uncaught" is to have an arbitrary-length timer, say 3 seconds, running from time of rejection. If a Promise is rejected but no error handler is registered before the timer fires, then it's assumed that you won't ever be registering a handler, so it's "uncaught."
+Another more common suggestion is that Promises should have a done(..) added to them, which essentially marks the Promise chain as "done." done(..) doesn't create and return a Promise
 ```js
 var p = Promise.resolve( 42 );
 
@@ -587,3 +587,4 @@ p.then(
 // if `handleErrors(..)` caused its own exception, it would
 // be thrown globally here (in the developer console, basically)
 ```
+But the biggest problem is that it's not part of the ES6 standard
