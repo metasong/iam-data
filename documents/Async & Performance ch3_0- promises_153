@@ -61,3 +61,25 @@ The static helpers Promise.all([ .. ]) and Promise.race([ .. ]) on the ES6 Promi
 For Promise.all([ .. ]), all the promises you pass in must fulfill for the returned promise to fulfill. If any promise is rejected, the main returned promise is immediately rejected, too (discarding the results of any of the other promises). For fulfillment, you receive an array of all the passed in promises' fulfillment values. For rejection, you receive just the first promise rejection reason value. This pattern is classically called a "gate": all must arrive before the gate opens.
 
 For Promise.race([ .. ]), only the first promise to resolve (fulfillment or rejection) "wins," and whatever that resolution is becomes the resolution of the returned promise. This pattern is classically called a "latch": first one to open the latch gets through. Consider:
+
+```js
+var p1 = Promise.resolve( 42 );
+var p2 = Promise.resolve( "Hello World" );
+var p3 = Promise.reject( "Oops" );
+
+Promise.race( [p1,p2,p3] )
+.then( function(msg){
+	console.log( msg );		// 42
+} );
+
+Promise.all( [p1,p2,p3] )
+.catch( function(err){
+	console.error( err );	// "Oops"
+} );
+
+Promise.all( [p1,p2] )
+.then( function(msgs){
+	console.log( msgs );	// [42,"Hello World"]
+} );
+```
+**Warning**: Be careful! If an empty array is passed to Promise.all([ .. ]), it will fulfill immediately, but Promise.race([ .. ]) will hang forever and never resolve.
