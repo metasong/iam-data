@@ -83,3 +83,11 @@ Promise.all( [p1,p2] )
 } );
 ```
 **Warning**: Be careful! If an empty array is passed to Promise.all([ .. ]), it will fulfill immediately, but Promise.race([ .. ]) will hang forever and never resolve.
+```js
+var p = Promise.resolve( 42 );
+
+p.then( something )//resource used
+.finally( cleanup )// may comes in es7
+.then( another )
+.finally( cleanup );// clean up resource used
+```
