@@ -163,3 +163,54 @@ Promise.map( [p1,p2,p3], function(pr,done){
 
 ```
 In this implementation of map(..), you can't signal async rejection, but if a synchronous exception/error occurs inside of the mapping callback (cb(..)), the main Promise.map(..) returned promise would reject.
+
+
+### wraper
+```js
+function foo(x,y,cb) {
+	ajax(
+		"http://some.url.1/?x=" + x + "&y=" + y,
+		cb
+	);
+}
+
+foo( 11, 31, function(err,text) {
+	if (err) {
+		console.error( err );
+	}
+	else {
+		console.log( text );
+	}
+} );
+
+```
+```js
+// polyfill-safe guard check
+if (!Promise.wrap) {
+	Promise.wrap = function(fn) {
+		return function() {
+			var args = [].slice.call( arguments );
+
+			return new Promise( function(resolve,reject){
+				fn.apply(
+					null,
+					args.concat( function(err,v){
+						if (err) {
+							reject( err );
+						}
+						else {
+							resolve( v );
+						}
+					} )
+				);
+			} );
+		};
+	};
+}
+
+var request = Promise.wrap( ajax );
+
+request( "http://some.url.1/" )
+.then( .. )
+..
+```
