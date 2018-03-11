@@ -214,3 +214,71 @@ request( "http://some.url.1/" )
 .then( .. )
 ..
 ```
+#### Unwrap/Spread Arguments
+```js
+function foo(bar,baz) {
+	var x = bar * baz;
+
+	// return both promises
+	return [
+		Promise.resolve( x ),
+		getY( x )
+	];
+}
+
+Promise.all(
+	foo( 10, 20 )
+)
+.then( function(msgs){
+	var x = msgs[0];
+	var y = msgs[1];
+
+	console.log( x, y );
+} );
+```
+
+```js
+// 1
+function spread(fn) {
+	return Function.apply.bind( fn, null );
+}
+
+Promise.all(
+	foo( 10, 20 )
+)
+.then(
+	spread( function(x,y){
+		console.log( x, y );	// 200 599
+	} )
+)
+
+//2
+Promise.all(
+	foo( 10, 20 )
+)
+.then( Function.apply.bind(
+	function(x,y){
+		console.log( x, y );	// 200 599
+	},
+	null
+) );
+
+//3
+Promise.all(
+	foo( 10, 20 )
+)
+.then( function(msgs){
+	var [x,y] = msgs;
+
+	console.log( x, y );	// 200 599
+} );
+
+//3
+Promise.all(
+	foo( 10, 20 )
+)
+.then( function([x,y]){
+	console.log( x, y );	// 200 599
+} );
+
+```
