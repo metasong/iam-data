@@ -7,7 +7,7 @@
 var p = new Promise( function(resolve,reject){
 	// `resolve(..)` to resolve/fulfill the promise 
 	// `reject(..)` to reject the promise
-} );
+} ); 
 
 ```
 reject(..) simply rejects the promise, but resolve(..) can either fulfill the promise or reject it, depending on what it's passed. If resolve(..) is passed an immediate, non-Promise, non-thenable value, then the promise is fulfilled with that value. But if resolve(..) is passed a genuine Promise or thenable value, that value is unwrapped recursively, and whatever its final resolution/state is will be adopted by the promise. 
