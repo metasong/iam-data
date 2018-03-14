@@ -1,6 +1,6 @@
 # Async & Performance ch3_0- promises 
 *summery* 
-## Promise API 
+## Promise API  
 
 ### new Promise(..) Constructor
 ```js
