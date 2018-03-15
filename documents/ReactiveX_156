@@ -1,6 +1,6 @@
 # ReactiveX
 *summery*
-![](http://reactivex.io/assets/operators/legend.png )
+![](http://reactivex.io/assets/operators/legend.png =100%x)
 
 By convention, in this document, calls to onNext are usually called “emissions” of items, whereas calls to onCompleted or onError are called “notifications.”
 
