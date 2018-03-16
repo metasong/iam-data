@@ -163,7 +163,7 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-![Minion](https://octodex.github.com/images/minion.png =400x)
+test inline style![Minion](https://octodex.github.com/images/minion.png =400x)
 ![Minion](https://octodex.github.com/images/minion.png =x300)
 ![Minion](https://octodex.github.com/images/minion.png =10%x300)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat" =400x300)
