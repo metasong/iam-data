@@ -163,14 +163,14 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-test inline style![Minion](https://octodex.github.com/images/minion.png =400x)
-![Minion](https://octodex.github.com/images/minion.png =x300)
-![Minion](https://octodex.github.com/images/minion.png =10%x300)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat" =400x300)
+![Minion =400x](https://octodex.github.com/images/minion.png)
+![=*300 Minion](https://octodex.github.com/images/minion.png )
+![Minion  =10%*300](https://octodex.github.com/images/minion.png )
+![Stormtroopocat  =400x300](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 Like links, Images also have a footnote style syntax
 
-![Alt text][id]
+![Alt text =100*][id]
 
 With a reference later in the document defining the URL location:
 
