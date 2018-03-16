@@ -170,7 +170,7 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 Like links, Images also have a footnote style syntax
 
-![Alt text =100*][id]
+![Alt text =200*][id]
 
 With a reference later in the document defining the URL location:
 
