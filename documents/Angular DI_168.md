@@ -16,6 +16,11 @@ The @Optional decorator tells Angular to continue when it can't find the depende
 
 The @Host decorator Specifies that an injector should retrieve a dependency from any injector until reaching the host element of the current component. the host component is typically the component requesting the dependency. But when this component is projected into a parent component, that parent component becomes the host. The next example covers this second case.
 
+@SkipSelf is essential for two reasons:
+
+* It tells the injector to start its search for a Parent dependency in a component above itself, which is what parent means.
+
+* Angular throws a cyclic dependency error if you omit the @SkipSelf decorator. Cannot instantiate cyclic dependency! (BethComponent -> Parent -> BethComponent)
 ## Aliased class providers
 
 ```js
@@ -62,3 +67,24 @@ When a component requests a dependency, Angular tries to satisfy that dependency
     this.highlight(this.highlightColor || 'cyan');
   }
 ```
+
+## forwardRef
+forwardRef is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined. could be used to solve this problem: You're in a bind when class 'A' refers to class 'B' and 'B' refers to 'A'. One of them has to be defined first.
+```typescript
+class Door {
+  lock: Lock;
+
+  // Door attempts to inject Lock, despite it not being defined yet.
+  // forwardRef makes this possible.
+  constructor(@Inject(forwardRef(() => Lock)) lock: Lock) { this.lock = lock; }
+}
+
+// Only at this point Lock is defined.
+class Lock {}
+
+const injector = ReflectiveInjector.resolveAndCreate([Door, Lock]);
+const door = injector.get(Door);
+expect(door instanceof Door).toBeTruthy();
+expect(door.lock instanceof Lock).toBeTruthy();
+```
+
