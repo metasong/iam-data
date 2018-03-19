@@ -12,7 +12,7 @@ When Angular destroys one of these component instance, it also destroys the comp
 
 The @Optional decorator tells Angular to continue when it can't find the dependency. Angular sets the injection parameter to null instead.
 
-The @Host decorator stops the upward search at the host component. he host component is typically the component requesting the dependency. But when this component is projected into a parent component, that parent component becomes the host. The next example covers this second case.
+The @Host decorator stops the upward search at the host component. the host component is typically the component requesting the dependency. But when this component is projected into a parent component, that parent component becomes the host. The next example covers this second case.
 
 ## Aliased class providers
 
