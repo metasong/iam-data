@@ -25,4 +25,4 @@ When Angular destroys one of these component instance, it also destroys the comp
   { provide: OldLogger, useExisting: NewLogger}]
 ```
 
-TypeScript interfaces aren't valid tokens, An interface is a TypeScript design-time artifact. JavaScript doesn't have interfaces. 
+TypeScript interfaces aren't valid tokens, An interface is a TypeScript design-time artifact. JavaScript doesn't have interfaces. The TypeScript interface disappears from the generated JavaScript. There is no interface type information left for Angular to find at runtime. One solution is using InjectionToken.
