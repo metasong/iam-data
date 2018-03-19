@@ -20,10 +20,7 @@ When Angular destroys one of these component instance, it also destroys the comp
 
 ```js
 // An object in the shape of the logger service
-export function SilentLoggerFn() {}
-
-const silentLogger = {
-  logs: ['Silent logger says "Shhhhh!". Provided via "useValue"'],
-  log: SilentLoggerFn
-};
+[ NewLogger,
+  // Alias OldLogger w/ reference to NewLogger, only one NewLogger instance
+  { provide: OldLogger, useExisting: NewLogger}]
 ```
