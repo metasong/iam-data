@@ -128,15 +128,17 @@ export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices:
     view = view.parent !;
   }
 
-/*                                        If the source component or one of its ancestor components was loaded by the Router Outlet (the router component), the root injector is the Outlet Injector. This injector supplies some dependencies like the Router service. Otherwise, the root injector is the bootstrap component’s injector.
+/*                                        If the source component or one of its ancestor components was loaded by the Router Outlet (the router component), the root injector is the Outlet Injector. This injector supplies some dependencies like the *Router* service. Otherwise, the root injector is the bootstrap component’s injector.
  */                                   
   const value = startView.root.injector.get(depDef.token, NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR);
 
   if (value !== NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR || ...) {
     return value;
   }
-
-  return startView.root.ngModule.injector.get(depDef.token, notFoundValue);
+/*
+tries to get the dependency from the application module injector or the root module. 
+*/
+  return startView.root.ngModule.injector.get(depDef.token, notFoundValue);
 }
 
 ```
