@@ -140,6 +140,7 @@ export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices:
 ```
 
 **Notes:**
-* !. is non-null assertion operator - it just saying to type checker that you're sure that a is not null or undefined. More info [here](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#non-null-assertion-operator)
+* !. is non-null assertion operator - it just saying to type checker that you're sure that a is not null or undefined.  the operation x! produces a value of the type of x with null and undefined excluded. Similar to type assertions of the forms <T>x and x as T, the ! non-null assertion operator is simply removed in the emitted JavaScript code.
+more info [here](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#non-null-assertion-operator)
 
 
