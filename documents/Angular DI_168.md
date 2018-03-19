@@ -88,7 +88,7 @@ expect(door instanceof Door).toBeTruthy();
 expect(door.lock instanceof Lock).toBeTruthy();
 ```
 
-## Let’s see the code
+## [Let’s see the code](https://medium.freecodecamp.org/angulars-backyard-the-resolving-of-component-dependencies-2015b40e5bd1)
 
 ```typescript
 export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices: boolean, 
