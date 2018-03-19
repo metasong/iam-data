@@ -139,4 +139,7 @@ export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices:
 
 ```
 
+**Notes:**
+* The ! post-fix expression operator may be used to assert that its operand is non-null and non-undefined in contexts where the type checker is unable to conclude that fact.
+
 
