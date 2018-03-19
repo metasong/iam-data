@@ -24,3 +24,5 @@ When Angular destroys one of these component instance, it also destroys the comp
   // Alias OldLogger w/ reference to NewLogger, only one NewLogger instance
   { provide: OldLogger, useExisting: NewLogger}]
 ```
+
+TypeScript interfaces aren't valid tokens
