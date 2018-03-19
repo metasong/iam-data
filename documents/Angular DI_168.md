@@ -88,3 +88,54 @@ expect(door instanceof Door).toBeTruthy();
 expect(door.lock instanceof Lock).toBeTruthy();
 ```
 
+## Let’s see the code
+
+```typescript
+export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices: boolean, 
+    depDef: DepDef, notFoundValue: any = Injector.THROW_IF_NOT_FOUND): any {
+  
+  const startView = view;
+  const tokenKey = depDef.tokenKey;
+  ...
+
+  while (view) {
+    if (elDef) {
+      switch (tokenKey) {
+        case RendererV1TokenKey: { ... }
+        case Renderer2TokenKey: { ... }
+        case ElementRefTokenKey: { ... }
+        case ViewContainerRefTokenKey: { ... }
+        case TemplateRefTokenKey: { ... }
+        case ChangeDetectorRefTokenKey: { ... }
+        case InjectorRefTokenKey: { ... }
+        default:
+          const providerDef =
+              (allowPrivateServices ? elDef.element !.allProviders :
+                                      elDef.element !.publicProviders) ![tokenKey];
+          if (providerDef) {
+            const providerData = asProviderData(view, providerDef.index);
+            if (providerData.instance === NOT_CREATED) {
+              providerData.instance = _createProviderInstance(view, providerDef);
+            }
+            return providerData.instance;
+          }
+      }
+    }
+    ...
+    
+    elDef = viewParentEl(view) !;
+    view = view.parent !;
+  }
+
+  const value = startView.root.injector.get(depDef.token, NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR);
+
+  if (value !== NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR || ...) {
+    return value;
+  }
+
+  return startView.root.ngModule.injector.get(depDef.token, notFoundValue);
+}
+
+```
+
+
