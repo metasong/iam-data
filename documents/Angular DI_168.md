@@ -140,6 +140,6 @@ export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices:
 ```
 
 **Notes:**
-* The ! post-fix expression operator may be used to assert that its operand is non-null and non-undefined in contexts where the type checker is unable to conclude that fact.
+* !. is non-null assertion operator - it just saying to type checker that you're sure that a is not null or undefined. More info [here](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#non-null-assertion-operator)
 
 
