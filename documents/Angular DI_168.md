@@ -49,3 +49,16 @@ ngOnInit() {
 
 When a component requests a dependency, Angular tries to satisfy that dependency with a provider registered in that component's own injector. If the component's injector lacks the provider, it passes the request up to its parent component's injector. If that injector can't satisfy the request, it passes it along to its parent injector. The requests keep bubbling up until Angular finds an injector that can handle the request or runs out of ancestor injectors. If it runs out of ancestors, Angular throws an error.
 
+## Inject the component's DOM element
+
+```js
+  private el: HTMLElement;
+
+  constructor(el: ElementRef) {
+    this.el = el.nativeElement;
+  }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.highlight(this.highlightColor || 'cyan');
+  }
+```
