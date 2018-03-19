@@ -125,7 +125,10 @@ export function resolveDep(view: ViewData, elDef: NodeDef, allowPrivateServices:
     ...
     
     elDef = viewParentEl(view) !;
-    view = view.parent !;
+    view = view.parent !;
+/*
+The while loop will continue running until the dependency is found in the ancestor injector.
+*/
   }
 
 /*                                        If the source component or one of its ancestor components was loaded by the Router Outlet (the router component), the root injector is the Outlet Injector. This injector supplies some dependencies like the *Router* service. Otherwise, the root injector is the bootstrap component’s injector.
