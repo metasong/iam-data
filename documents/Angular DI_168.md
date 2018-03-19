@@ -4,7 +4,7 @@ The `@Injectable()` decorator identifies a service class that might require inje
 
 Angular module providers (@NgModule.providers) are registered with the application's root injector. unless the module is lazy loaded. Once created, a service instance lives for the life of the app and Angular injects this one service instance in every class that needs it.
 
-A component's providers (@Component.providers) are registered with each component instance's own injector. Angular can only inject the corresponding services in that component instance or one of its descendant component instances. Each new instance of the component gets its own instance of the service and, when the component instance is destroyed, so is that service instance.
+A component's providers (@Component.providers) are registered with each component instance's own injector. Angular can only inject the corresponding services in that component instance or one of its descendant component instances. Each new instance of the component gets its own instance of the service when the component instance is destroyed, so is that service instance. roviding the service at the component level ensures that every instance of the component gets its own, private instance of the service.
 
 Services are singletons within the scope of an injector. There is at most one instance of a service in a given injector.  
 
@@ -37,5 +37,9 @@ ngOnInit() {
   this.heroService = this.injector.get(HeroService);
   this.hero = this.heroService.getHeroes()[0];
 }
-
 ```
+
+## Hierarchical Dependency Injectors
+
+When a component requests a dependency, Angular tries to satisfy that dependency with a provider registered in that component's own injector. If the component's injector lacks the provider, it passes the request up to its parent component's injector. If that injector can't satisfy the request, it passes it along to its parent injector. The requests keep bubbling up until Angular finds an injector that can handle the request or runs out of ancestor injectors. If it runs out of ancestors, Angular throws an error.
+
