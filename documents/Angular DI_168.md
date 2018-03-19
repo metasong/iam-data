@@ -14,7 +14,7 @@ When Angular destroys one of these component instance, it also destroys the comp
 
 ```js
 [ NewLogger,
-  // Not aliased! Creates two instances of `NewLogger`
+  // Not aliased! Creates two instances of `NewLogger`, one for NewLogger and one for OldLogger
   { provide: OldLogger, useClass: NewLogger}]
 ```
 
