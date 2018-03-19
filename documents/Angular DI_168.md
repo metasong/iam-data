@@ -1,5 +1,7 @@
 # Angular DI
 
+Notes from [Angular DI](https://angular.io/guide/dependency-injection-pattern)
+
 The `@Injectable()` decorator identifies a service class that might require injected dependencies.
 
 Angular module providers (@NgModule.providers) are registered with the application's root injector. unless the module is lazy loaded. Once created, a service instance lives for the life of the app and Angular injects this one service instance in every class that needs it.
