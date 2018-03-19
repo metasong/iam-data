@@ -9,3 +9,21 @@ A component's providers (@Component.providers) are registered with each componen
 Services are singletons within the scope of an injector. There is at most one instance of a service in a given injector.  
 
 When Angular destroys one of these component instance, it also destroys the component's injector and that injector's service instances. A component's injector is a child of its parent component's injector, and a descendent of its parent's parent's injector, and so on all the way back to the application's root injector
+
+## Aliased class providers
+
+```js
+[ NewLogger,
+  // Not aliased! Creates two instances of `NewLogger`
+  { provide: OldLogger, useClass: NewLogger}]
+```
+
+```js
+// An object in the shape of the logger service
+export function SilentLoggerFn() {}
+
+const silentLogger = {
+  logs: ['Silent logger says "Shhhhh!". Provided via "useValue"'],
+  log: SilentLoggerFn
+};
+```
