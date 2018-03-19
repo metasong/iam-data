@@ -10,6 +10,10 @@ Services are singletons within the scope of an injector. There is at most one in
 
 When Angular destroys one of these component instance, it also destroys the component's injector and that injector's service instances. A component's injector is a child of its parent component's injector, and a descendent of its parent's parent's injector, and so on all the way back to the application's root injector
 
+The @Optional decorator tells Angular to continue when it can't find the dependency. Angular sets the injection parameter to null instead.
+
+The @Host decorator stops the upward search at the host component. he host component is typically the component requesting the dependency. But when this component is projected into a parent component, that parent component becomes the host. The next example covers this second case.
+
 ## Aliased class providers
 
 ```js
