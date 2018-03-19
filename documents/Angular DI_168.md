@@ -26,3 +26,16 @@ When Angular destroys one of these component instance, it also destroys the comp
 ```
 
 TypeScript interfaces aren't valid tokens, An interface is a TypeScript design-time artifact. JavaScript doesn't have interfaces. The TypeScript interface disappears from the generated JavaScript. There is no interface type information left for Angular to find at runtime. One solution is using InjectionToken.
+
+## Working with injectors directly
+
+```js 
+constructor(private injector: Injector) { }
+
+ngOnInit() {
+  this.car = this.injector.get(Car);
+  this.heroService = this.injector.get(HeroService);
+  this.hero = this.heroService.getHeroes()[0];
+}
+
+```
