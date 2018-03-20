@@ -74,6 +74,7 @@ class Store extends Rx.BehaviorSubject{
        .subscribe(state => super.next(state));
   }
   //create basic middleware that logs actions before reducer, and newly outputted state
+  //Middleware has been removed since ngrx/store v2.
 const preMiddleware = obs => { return obs.do(val => console.log('ACTION: ', val))};
 const postMiddleware = obs => { return obs.do(val => console.log('STATE: ', val))};
 
