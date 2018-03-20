@@ -49,6 +49,73 @@ Observable.combineLatest(
     //projection here
 })
 ```
+**Associating the Dispatcher with Store**
+```ts
+/*
+All actions should pass through pipeline before newly calculated state is passed to store. 
+1.) Dispatched Action
+2.) Pre-Middleware
+3.) Reducers (return new state)
+4.) Post-Middleware
+5.) store.next(newState)
+*/
+
+class Dispatcher extends Rx.Subject{
+  dispatch(value : any) : void {
+    this.next(value);
+  }
+}
+
+class Store extends Rx.BehaviorSubject{
+  constructor(
+    private dispatcher,
+    initialState
+  ){
+    super(initialState);
+    /* 
+    all dispatched actions pass through action pipeline before new state is passed
+    to store
+    */
+    this.dispatcher 
+       //pre-middleware
+       //reducers
+       //post-middleware 
+       .subscribe(state => super.next(state)); 
+
+  }
+  //delegate store.dispatch first through dispatched action pipeline
+  dispatch(value){
+    this.dispatcher.dispatch(value);  
+  }
+  //override store next to allow direct subscription to action streams by store
+  next(value){
+    this.dispatcher.dispatch(value);
+  }
+}
+
+const dispatcher = new Dispatcher();
+const store = new Store(dispatcher, 'INITIAL STATE');
+
+const subscriber = store.subscribe(val => console.log(`VALUE FROM STORE: ${val}`));
+/*
+All dispatched actions first flow through action pipeline, calculating new state which is
+then passed to store. To recap, our ideal behavior:
+dispatched action -> pre-middleware -> reducers -> post-middleware -> store.next(newState)
+*/
+
+//both methods are same behind the scenes
+dispatcher.dispatch('DISPATCHED VALUE!');
+store.dispatch('ANOTHER DISPATCHED VALUE!');
+
+const actionStream$ = new Rx.Subject();
+/*
+Overriding store next method allows us to subscribe store directly to action streams, providing same behavior as manually calling store.dispatch or dispatcher.dispatch
+*/
+actionStream$.subscribe(store);
+actionStream$.next('NEW ACTION!');
+```
+
+
 **Equipping Store with scan**
 ```ts
 class Store extends Rx.BehaviorSubject{
