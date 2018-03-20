@@ -105,6 +105,25 @@ export class CathyComponent {
 }
 ```
 
+### Find the parent in a tree of parents with @SkipSelf()
+Alice -> Barry -> Carol (Alice is parent of Barry...)
+```typescript
+const templateB = `
+  <div class="b">
+    <carol></carol>
+  </div>`;
+
+@Component({
+  selector:   'barry',
+  template:   templateB,
+  providers:  [{ provide: Parent, useExisting: forwardRef(() => BarryComponent) }]
+})
+export class BarryComponent implements Parent {
+  name = 'Barry';
+  constructor( @SkipSelf() @Optional() public parent: Parent ) { }
+}
+```
+
 ## forwardRef
 forwardRef is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined. could be used to solve this problem: You're in a bind when class 'A' refers to class 'B' and 'B' refers to 'A'. One of them has to be defined first.
 ```typescript
