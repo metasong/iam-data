@@ -22,7 +22,7 @@ The @Host decorator Specifies that an injector should retrieve a dependency from
 
 * Angular throws a cyclic dependency error if you omit the @SkipSelf decorator. Cannot instantiate cyclic dependency! (BethComponent -> Parent -> BethComponent)
 ## Aliased class providers
-
+Provider token alternatives: the class-interface(abstract class) and InjectionToken
 ```js
 [ NewLogger,
   // Not aliased! Creates two instances of `NewLogger`, one for NewLogger and one for OldLogger
@@ -67,6 +67,9 @@ When a component requests a dependency, Angular tries to satisfy that dependency
     this.highlight(this.highlightColor || 'cyan');
   }
 ```
+
+## Component Finding
+There is an API for acquiring a child reference. Check out `Query`, `QueryList`, `ViewChildren`, and ContentChildren in the [API Reference](https://angular.io/api/).
 
 ## forwardRef
 forwardRef is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined. could be used to solve this problem: You're in a bind when class 'A' refers to class 'B' and 'B' refers to 'A'. One of them has to be defined first.
