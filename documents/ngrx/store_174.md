@@ -35,4 +35,17 @@ dispatch({type: 'DECREMENT'});
 //action with an associated payload
 dispatch({type: ADD_TODO, payload: {id: 1, message: 'Learn ngrx/store', completed: true}
 ```
+**State Projection**
 
+```ts
+//most basic example, get people from state
+store.select('people')
+  
+//combine multiple state slices
+Observable.combineLatest(
+  store.select('people'),
+  store.select('events'),
+  (people, events) => {
+    //projection here
+})
+```
