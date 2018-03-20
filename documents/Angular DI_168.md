@@ -70,6 +70,7 @@ When a component requests a dependency, Angular tries to satisfy that dependency
 
 ## Component Finding
 There is an API for acquiring a child reference. Check out `Query`, `QueryList`, `ViewChildren`, and ContentChildren in the [API Reference](https://angular.io/api/).
+You use standard class injection to acquire a parent component whose type you know.
 
 ## forwardRef
 forwardRef is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined. could be used to solve this problem: You're in a bind when class 'A' refers to class 'B' and 'B' refers to 'A'. One of them has to be defined first.
