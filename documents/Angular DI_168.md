@@ -72,6 +72,39 @@ When a component requests a dependency, Angular tries to satisfy that dependency
 There is an API for acquiring a child reference. Check out `Query`, `QueryList`, `ViewChildren`, and ContentChildren in the [API Reference](https://angular.io/api/).
 You use standard class injection to acquire a parent component whose type you know.
 
+### find parent component via class interface
+
+```typescript
+// Marker class, used as an interface
+export abstract class Parent { name: string; }
+@Component({
+  selector: 'alex',
+  template: `
+    <div class="a">
+      <h3>{{name}}</h3>
+      <cathy></cathy>
+    </div>`,
+  providers: [{ provide: Parent, useExisting: forwardRef(() => AlexComponent) }],
+})
+// Todo: Add `... implements Parent` to class signature
+export class AlexComponent extends Base
+{
+  name= 'Alex';
+}
+
+@Component({
+  selector: 'cathy',
+  template: `
+  <div class="c">
+    <h3>Cathy</h3>
+    {{alex ? 'Found' : 'Did not find'}} Alex via the component class.<br>
+  </div>`
+})
+export class CathyComponent {
+  constructor( @Optional() public alex: AlexComponent ) { }
+}
+```
+
 ## forwardRef
 forwardRef is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined. could be used to solve this problem: You're in a bind when class 'A' refers to class 'B' and 'B' refers to 'A'. One of them has to be defined first.
 ```typescript
