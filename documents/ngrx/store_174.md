@@ -73,8 +73,11 @@ class Store extends Rx.BehaviorSubject{
        .let(postMiddleware) 
        .subscribe(state => super.next(state));
   }
-  
-  /*
+  //create basic middleware that logs actions before reducer, and newly outputted state
+const preMiddleware = obs => { return obs.do(val => console.log('ACTION: ', val))};
+const postMiddleware = obs => { return obs.do(val => console.log('STATE: ', val))};
+
+  /*
     distinctUntilChanged only emits new values when output is distinct, per last emitted value. 
     In the example below, the observable with the distinctUntilChanged operator will emit one less value then the other       with only the map operator applied
   */
