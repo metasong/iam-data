@@ -51,7 +51,26 @@ Observable.combineLatest(
 ```
 **Equipping Store with scan**
 ```ts
-
+class Store extends Rx.BehaviorSubject{
+  constructor(
+    private dispatcher,
+    private reducer,
+    initialState = {}
+  ){
+    super(initialState);
+    this.dispatcher 
+       //pre-middleware?
+/*
+Scan is a reduce over time. In the previous lesson we compared reduce to a snowball rolling downhill, accumulating mass
+(or calculated value). Scan can be thought of similarly, except the hill has no certain end. The accumulator (in this
+case, state) will continue to collect until destroyed. This makes it the ideal operator for managing application state.
+*/
+       .scan((state, action) => this.reducer(state, action), initialState)
+       //post-middleware? 
+       .subscribe(state => super.next(state));
+  }
+  //...store implementation
+}
 ```
 
 
