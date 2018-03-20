@@ -49,6 +49,11 @@ Observable.combineLatest(
     //projection here
 })
 ```
+**Equipping Store with scan**
+```ts
+
+```
+
 
 **distinctUntilChanged With Store**
 ```ts
