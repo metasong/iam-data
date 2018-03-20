@@ -4,11 +4,25 @@ Notes from [Angular DI](https://angular.io/guide/dependency-injection-pattern)
 
 The `@Injectable()` decorator identifies a service class that might require injected dependencies.
 
-Angular module providers (@NgModule.providers) are registered with the application's root injector. unless the module is lazy loaded. Once created, a service instance lives for the life of the app and Angular injects this one service instance in every class that needs it. when you import a module that has providers, those providers are also available to all the classes in the app as long they have the lookup toke
-
-A component's providers (@Component.providers) are registered with each component instance's own injector. Angular can only inject the corresponding services in that component instance or one of its descendant component instances. Each new instance of the component gets its own instance of the service when the component instance is destroyed, so is that service instance. roviding the service at the component level ensures that every instance of the component gets its own, private instance of the service.When the Angular router lazy-loads a module, it creates a new injector. This injector is a child of the root application injector. Imagine a tree of injectors; there is a single root injector and then a child injector for each lazy loaded module. The router adds all of the providers from the root injector to the child injector. When the router creates a component within the lazy-loaded context, Angular prefers service instances created from these providers to the service instances of the application root injector.
+Angular module providers (@NgModule.providers) are registered with the application's root injector. unless the module is lazy loaded. Once created, a service instance lives for the life of the app and Angular injects this one service instance in every class that needs it. When you import an NgModule, Angular adds the module's service providers (the contents of its providers list) to the application root injector. When the Angular router lazy-loads a module, it creates a new injector. This injector is a child of the root application injector. Imagine a tree of injectors; there is a single root injector and then a child injector for each lazy loaded module. The router adds all of the providers from the root injector to the child injector. When the router creates a component within the lazy-loaded context, Angular prefers service instances created from these providers to the service instances of the application root injector.
 Any component created within a lazy loaded module’s context, such as by router navigation, gets the local instance of the service, not the instance in the root application injector. Components in external modules continue to receive the instance created for the application root.
 Though you can provide services by lazy loading modules, not all services can be lazy loaded. For instance, some modules only work in the root module, such as the Router. The Router works with the global location object in the browser.
+
+[ngModule-faq](https://angular.io/guide/ngmodule-faq)
+
+### Why is a service provided in a lazy-loaded module visible only to that module?
+> Unlike providers of the modules loaded at launch, providers of lazy-loaded modules are module-scoped.
+> When the Angular router lazy-loads a module, it creates a new execution context. That context has its own injector, which is a direct child of the application injector.
+> The router adds the lazy module's providers and the providers of its imported NgModules to this child injector.
+### What if two modules provide the same service?
+> When Angular looks to inject a service for that token, it creates and delivers the instance created by the second provider.
+Every class that injects this service gets the instance created by the second provider. Even classes declared within the first module get the instance created by the second provider.If NgModule A provides a service for token 'X' and imports an NgModule B that also provides a service for token 'X', then NgModule A's service definition "wins".The service provided by the root AppModule takes precedence over services provided by imported NgModules. The AppModule always wins.
+### How do I restrict service scope to a module?
+
+
+
+These providers are insulated from changes to application providers with the same lookup token. When the router creates a component within the lazy-loaded context, Angular prefers service instances created from these providers to the service instances of the application root injector.
+A component's providers (@Component.providers) are registered with each component instance's own injector. Angular can only inject the corresponding services in that component instance or one of its descendant component instances. Each new instance of the component gets its own instance of the service when the component instance is destroyed, so is that service instance. roviding the service at the component level ensures that every instance of the component gets its own, private instance of the service.
 
 Services are singletons within the scope of an injector. There is at most one instance of a service in a given injector.  
 
