@@ -106,7 +106,7 @@ export class CathyComponent {
 ```
 
 ### Find the parent in a tree of parents with @SkipSelf()
-Alice -> Barry -> Carol (Alice is parent of Barry...)
+Alice -> Barry -> Carol (Alice is parent of Barry..., Carol and Barry want to find their parrent component via class interface)
 ```typescript
 const templateB = `
   <div class="b">
