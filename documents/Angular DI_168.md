@@ -1,4 +1,5 @@
 # Angular DI
+[[TOC]]
 
 Notes from [Angular DI](https://angular.io/guide/dependency-injection-pattern)
 
