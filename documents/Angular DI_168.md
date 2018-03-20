@@ -131,7 +131,8 @@ The while loop will continue running until the dependency is found in the ancest
 */
   }
 
-/*                                        If the source component or one of its ancestor components was loaded by the Router Outlet (the router component), the root injector is the Outlet Injector. This injector supplies some dependencies like the *Router* service. Otherwise, the root injector is the bootstrap component’s injector.
+/*
+If the source component or one of its ancestor components was loaded by the Router Outlet (the router component), the root injector is the Outlet Injector. This injector supplies some dependencies like the *Router* service. Otherwise, the root injector is the bootstrap component’s injector.
  */                                   
   const value = startView.root.injector.get(depDef.token, NOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR);
 
