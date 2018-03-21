@@ -14,3 +14,18 @@ a {
 
 ```
 ### Nested Properties
+```css
+.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+// The property namespace itself can also have a value.
+.funky {
+  font: 20px/24px fantasy {
+    weight: bold;
+  }
+}
+```
