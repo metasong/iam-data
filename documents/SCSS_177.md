@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   &:hover { text-decoration: underline; }
   body.firefox & { font-weight: normal; }
+  &-sidebar { border: 1px solid; }
 }
 
 ```
