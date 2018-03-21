@@ -13,7 +13,7 @@ https://sass-lang.com/documentation/file.SASS_REFERENCE.html
 * lists of values, separated by spaces or commas (e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif)
 * maps from one value to another (e.g. (key1: value1, key2: value2))
 * function references
-if one kind of string is used in the Sass document, that kind of string will be used in the resulting CSS.but when using #{} interpolation, quoted strings are unquoted
+if one kind of string(with or without quote) is used in the Sass document, that kind of string will be used in the resulting CSS.but when using #{} interpolation, quoted strings are unquoted
 ```css
 @mixin firefox-message($selector) {
   body.firefox #{$selector}:before {
