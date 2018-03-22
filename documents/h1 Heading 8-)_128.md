@@ -1,4 +1,5 @@
 test supported markdown
+<!-- comment -->
 
 <kbd>Alt</kbd> + <kbd>B</kbd>
 
