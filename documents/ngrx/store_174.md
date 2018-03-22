@@ -6,7 +6,7 @@
 your store can be thought of as a client side ‘single source of truth’, or database. 
 
 **reducer interface**
-```ts
+```ts 
 export interface Reducer<T> {
   (state: T, action: Action): T;
 }
