@@ -31,7 +31,7 @@ const takeEveryNthSimple = (n: number) => <T>(source: Observable<T>) =>
 const takeEveryNthSimplest = (n: number) => filter((value, index) => index % n === 0);
 
 interval(1000)/*ex.0->O*/.pipe(/*ex.2->O*/
-  takeEveryNth(2),/*ex.1->(O=>O):FO*/ /*FO ex.4->O*/
+  takeEveryNth(2),/*ex.1->(O=>O):FO*/ /*FO ex.4->O auto conneced with last O*/ 
   map(x => x + x),
   takeEveryNthSimple(3),
   map(x => x * x),
