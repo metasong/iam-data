@@ -46,4 +46,4 @@ interval(1000)/*ex.0->O*/.pipe(/*ex.2->O*/
 
 * operator function-P is excuted before passed to pipe function as an argument.
 * pipe() return another observable.
-* when `subscribe(...)` function-O* excuted by sequence `observable.pipe(fO1,fO2,fO3...).subscribe(...)` then the observables are linked by sequence.
+* when `subscribe(...)`' function-O* excuted by sequence `observable.pipe(fO1,fO2,fO3...).subscribe(...)` then the observables are linked by sequence.
