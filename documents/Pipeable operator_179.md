@@ -43,7 +43,3 @@ interval(1000)/*ex.0->O*/.pipe(/*ex.2->O*/
 // [0, 2304, 9216]
 ```
 * `P`ipeable operator is a `function-P` that take configuraton parameters and return another `function-O` which take an observable and return another observable
-
-* operator function-P is excuted before passed to pipe function as an argument.
-* pipe() return another observable.
-* when `subscribe(...)`, function-O* excuted by sequence `observable.pipe(fO1,fO2,fO3...).subscribe(...)` then the observables are linked by sequence.
