@@ -46,4 +46,4 @@ interval(1000).pipe(
 
 * operator function(P) is excuted before passed to pipe function as an argument.
 
-* when `subscribe(...)` function(O) excuted by sequence `O0.pipe(O1,O2,O3...).subscribe(...)`
+* when `subscribe(...)` function(O*) excuted by sequence `observable.pipe(O1,O2,O3...).subscribe(...)`
