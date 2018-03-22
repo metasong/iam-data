@@ -4,9 +4,6 @@
 import { interval } from 'rxjs/observable/interval';
 import { filter, map, take, toArray } from 'rxjs/operators';
 
-/**
- * an operator that takes every Nth value
- */
 const takeEveryNth = (n: number) => <T>(source: Observable<T>) =>
   new Observable<T>(observer => {
     let count = 0;
