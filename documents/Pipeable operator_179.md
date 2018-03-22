@@ -5,7 +5,7 @@ import { interval } from 'rxjs/observable/interval';
 import { filter, map, take, toArray } from 'rxjs/operators';
 
 const takeEveryNth = (n: number) => <T>(source: Observable<T>) =>
-  new Observable<T>(observer => {/*(obsver):subscription*/
+  new Observable<T>(observer => {/*(obsver):subscription subscribe function*/
     let count = 0;
     return source.subscribe({
       next(x) {
