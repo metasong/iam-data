@@ -36,7 +36,7 @@ interval(1000)/*ex.0->O*/.pipe(/*ex.2->O*/
   take(3),
   toArray()
 )
-.subscribe/*ex.3->void*/(x => console.log(x));
+.subscribe/*ex.3->subscription*/(x => console.log(x));
 // [0, 2304, 9216]
 ```
 * `P`ipeable operator is a `function-P` that take configuraton parameters and return another `function-O` which take an observable and return another observable
