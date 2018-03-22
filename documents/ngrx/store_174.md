@@ -8,7 +8,7 @@ your store can be thought of as a client side ‘single source of truth’, or d
 **reducer interface**
 ```ts 
 export interface Reducer<T> {
-  (state: T, action: Action): T;
+  (state: T, action: Action): T;  
 }
 
 export const counter: Reducer<number> = (state: number = 0, action: Action) => {
