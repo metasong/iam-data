@@ -42,7 +42,7 @@ interval(1000).pipe(
 .subscribe(x => console.log(x));
 // [0, 2304, 9216]
 ```
-* pipeable operator is a `function(P)` that take configuraton parameters and return another `function(O)` which take an observable and return another observable
+* `P`ipeable operator is a `function(P)` that take configuraton parameters and return another `function(O)` which take an observable and return another observable
 
 * operator function(P) is excuted before passed to pipe function as an argument.
 
