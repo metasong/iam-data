@@ -224,6 +224,7 @@ also, you can use:
 </div>
 
 <iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2OTUyNTQ0NA==' frameborder=0 'allowfullscreen'></iframe>
+> **Note**: should using https, otherwise it would be blocked.
 
 ## Plugins
 
