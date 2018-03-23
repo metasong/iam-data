@@ -18,7 +18,7 @@ at the end of the line will break
 the line.
 
 you could use html tags and  use '\' to make it render as pure text  
-you are a ~~bad~~<ins>good</ins> student!  
+<ins>good</ins> 
 \<ins>test \</ins>
 
 ---
