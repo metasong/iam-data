@@ -17,6 +17,10 @@ add extra spaces(2 spaces)
 at the end of the line will break  
 the line.
 
+you could use html tags and  use '\' to make it render as pure text  
+you are a ~~bad~~<ins>good</ins> student!  
+\<ins>test \</ins>
+
 ---
 [[toc]]
 # h1 Heading 8-)
@@ -169,7 +173,6 @@ Right aligned columns
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
 
 ## Images
 
