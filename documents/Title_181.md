@@ -15,7 +15,14 @@ adfad
 
 
 adfaf
+ 
 
+dfadkf     
+
+
+adfad
+adfafsdfadfajdkfjiadfadfadfidafkjijkikiki
+     
 
 dfadkf
 
@@ -77,13 +84,6 @@ dfadkf
 
 
 adfad
-adfaf
-
-
-dfadkf
-
-
-adfad
 
 
 
@@ -110,10 +110,12 @@ adfad
 
 
 
+bbbbbbbbbklkklklklklkjkjkjljlj
 
-
-
-<img alt="..."
+<div style="width:200px;height:200px">
+<img style="width:100%;heith:100%" alt="..."
 data-src="https://res.cloudinary.com/sourcetoad/image/upload/v1483582294/frog-sm_sg9llg.jpg"
-     width="220" height="280">
+     >         
+     </div>
+     afdadfkadjfkasdjfikkkkklllllllkjklkkjkjjh
      
