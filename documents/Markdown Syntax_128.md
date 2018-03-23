@@ -190,7 +190,7 @@ With a reference later in the document defining the URL location:
 ### YoutTube
 <div style="width:80%;margin:auto;" >
 
-@[youtube](dQw4w9WgXcQ)
+@[youtube](JoyUUokcX5g)
 </div>  
 
 below is also works:
@@ -206,7 +206,7 @@ below is also works:
 ```
 
 ### Vimeo
-@[vimeo](260267587)
+`@[vimeo](260267587)`
 alternately, you could use the url:
 ```
 @[vimeo](https://vimeo.com/19706846)
