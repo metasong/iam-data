@@ -212,12 +212,12 @@ alternately, you could use the url:
 ### others: Vine, Prezi,OSF are similar
 
 ### workaround for others
-use a fake picture as a link:
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME, click to watch!")
+use a fake picture as a link:  
+[![Everything Is AWESOME =50%*](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME, click to watch!")
 
-also, you can use:
+also, you can use:  
 <div align="center">
-  <a href="https://youtu.be/StTqXEQ2l-Y?t=35s"><img src="http://i.imgur.com/Ot5DWAW.png" alt="IMAGE ALT TEXT"></a>
+  <a href="https://youtu.be/StTqXEQ2l-Y?t=35s"><img src="http://i.imgur.com/Ot5DWAW.png"  style="width:50%" alt="IMAGE ALT TEXT"></a>
 </div>
 
 <iframe height=498 width=510 src='http://player.youku.com/embed/XMzQ2OTUyNTQ0NA==' frameborder=0 'allowfullscreen'></iframe>
