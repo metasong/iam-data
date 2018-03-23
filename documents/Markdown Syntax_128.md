@@ -223,7 +223,7 @@ also, you can use:
   <a href="https://youtu.be/StTqXEQ2l-Y?t=35s"><img src="http://i.imgur.com/Ot5DWAW.png"  style="width:50%" alt="IMAGE ALT TEXT"></a>
 </div>
 
-<iframe height=498 width=510 src='http://player.youku.com/embed/XMzQ2OTUyNTQ0NA==' frameborder=0 'allowfullscreen'></iframe>
+<iframe height=498 width=510 src='https://player.youku.com/embed/XMzQ2OTUyNTQ0NA==' frameborder=0 'allowfullscreen'></iframe>
 
 ## Plugins
 
