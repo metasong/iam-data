@@ -186,7 +186,30 @@ With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
+## Videos
+### YoutTube
+@[youtube](dQw4w9WgXcQ)
 
+below is also works:
+```
+@[youtube](http://www.youtube.com/embed/dQw4w9WgXcQ)
+@[youtube](https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=feedrec_centerforopenscience_index)
+@[youtube](http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/QdK8U-VIH_o)
+@[youtube](http://www.youtube.com/v/dQw4w9WgXcQ?fs=1&amp;hl=en_US&amp;rel=0)
+@[youtube](http://www.youtube.com/watch?v=dQw4w9WgXcQ#t=0m10s)
+@[youtube](http://www.youtube.com/embed/dQw4w9WgXcQ?rel=0)
+@[youtube](http://www.youtube.com/watch?v=dQw4w9WgXcQ)
+@[youtube](http://youtu.be/dQw4w9WgXcQ)
+```
+
+### Vimeo
+@[vimeo](260267587)
+alternately, you could use the url:
+```
+@[vimeo](https://vimeo.com/19706846)
+@[vimeo](https://player.vimeo.com/video/19706846)
+```
+### others: Vine, Prezi,OSF are similar
 ## Plugins
 
 The killer feature of `markdown-it` is very effective support of
