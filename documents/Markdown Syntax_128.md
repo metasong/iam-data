@@ -65,6 +65,8 @@ _This is italic text_
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
+> add extra spaces at the end of the line,  
+> you can break the line in the quote.
 
 ## Lists
 
