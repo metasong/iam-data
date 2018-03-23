@@ -7,3 +7,8 @@ https://blog.angularindepth.com/angular-dependency-injection-and-tree-shakeable-
 * MyService2 from EagerModule2 will be included into the root injector.
 * `ComponentFactoryResolver` is also [added](https://github.com/angular/angular/blob/f258ec67bf20974362c33f59ec2be79fa9f8b9c8/packages/compiler/src/ng_module_compiler.ts#L36) to the root module injector by Angular. This resolver is responsible for _dynamic_ creation components since it stores factories of `entryComponents`.
 *  Module Tokens are actually types of all merged NgModules.
+
+> **Tip**: If you have angular application in dev mode and want to see all providers from root AppModule injector then just open devtools console and write:  
+> `ng.probe(getAllAngularRootElements()[0]).injector.view.root.ngModule._providers`
+
+ometimes it’s useful to have different levels of headings to structure your documents. Start line
