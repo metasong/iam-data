@@ -213,7 +213,12 @@ alternately, you could use the url:
 
 ### workaround for others
 use a fake picture as a link:
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME, click to watch!")
+
+also, you can use:
+<div align="center">
+  <a href="https://youtu.be/StTqXEQ2l-Y?t=35s"><img src="http://i.imgur.com/Ot5DWAW.png" alt="IMAGE ALT TEXT"></a>
+</div>
 ## Plugins
 
 The killer feature of `markdown-it` is very effective support of
