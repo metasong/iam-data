@@ -188,7 +188,7 @@ With a reference later in the document defining the URL location:
 
 ## Videos
 ### YoutTube
-<div style="width:50%;margin:auto;" >
+<div style="width:80%;margin:auto;" >
 
 @[youtube](dQw4w9WgXcQ)
 </div>  
