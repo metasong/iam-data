@@ -210,6 +210,10 @@ alternately, you could use the url:
 @[vimeo](https://player.vimeo.com/video/19706846)
 ```
 ### others: Vine, Prezi,OSF are similar
+
+### workaround for others
+use a fake picture as a link:
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 ## Plugins
 
 The killer feature of `markdown-it` is very effective support of
