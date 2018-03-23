@@ -261,7 +261,7 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
-~~aadf~~++Inserted text++~~adfdfa~~
+you are a ~~bad~~++good++ student!
 
 
 ### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
