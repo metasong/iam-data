@@ -188,8 +188,10 @@ With a reference later in the document defining the URL location:
 
 ## Videos
 ### YoutTube
+<div style="width:50%;margin:auto;" >
+            
 @[youtube](dQw4w9WgXcQ)
-
+</div>
 below is also works:
 ```
 @[youtube](http://www.youtube.com/embed/dQw4w9WgXcQ)
