@@ -1,5 +1,4 @@
 # css center align
 *summery*
-```lang
 
-```
+http://mp.weixin.qq.com/s/yBZsCoLUR7mishjkfsWyQA
