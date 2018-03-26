@@ -139,4 +139,16 @@ https://segmentfault.com/a/1190000013565024
 .right {
     overflow:hidden;
 }
+
+// 2
+.left {
+    float:left;
+    width:100px;
+}
+.right {
+    margin-left:120px;
+}
+
+// 
+
 ```
