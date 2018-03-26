@@ -77,3 +77,44 @@ https://segmentfault.com/a/1190000013565024
 // 4
 
 ```
+## vertical & horizontal alignment
+
+```html
+<div class="parent">
+    <div class="child>DEMO</div>
+</div>
+```
+
+```css
+// 1
+.parent {
+    position:relative;
+}
+.child {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:tranplate(-50%,-50%);
+}
+
+// 2
+.parent {
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+.child {
+    display:inline-block;
+}
+
+// 3
+.parent {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+// 4
+
+```
+
