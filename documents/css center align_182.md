@@ -8,6 +8,8 @@ https://segmentfault.com/a/1190000013565024
     <div class="child>DEMO</div>
 </div>
 ```
+## horizonal center alignment
+
 ```css
 // 1
 .child{
@@ -43,4 +45,23 @@ https://segmentfault.com/a/1190000013565024
     justify-content:center;
 }
 // 6
+
+```
+## vertical center alignment 
+```html
+<div class="parent">
+    <div class="child>DEMO</div>
+</div>
+```
+```css
+// 1
+.child{
+    display:inline-block;
+}
+.parent{
+    text-align:center;
+}
+
+// 2
+
 ```
