@@ -55,13 +55,25 @@ https://segmentfault.com/a/1190000013565024
 ```
 ```css
 // 1
-.child{
-    display:inline-block;
+.parent {
+    display:table-cell;
+    vertical-align:middle;
 }
-.parent{
-    text-align:center;
+// 2
+.parent {
+    position:relative;
+}
+.child {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+// 3
+.parent {
+    position:flex;
+    align-items:center;
 }
 
-// 2
+// 4
 
 ```
