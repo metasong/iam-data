@@ -9,5 +9,10 @@ https://segmentfault.com/a/1190000013565024
 </div>
 ```
 ```css
-
+.child{
+    display:inline-block;
+}
+.parent{
+    text-align:center;
+}
 ```
