@@ -118,3 +118,5 @@ https://segmentfault.com/a/1190000013565024
 
 ```
 
+## 2 columns: one fixed, one auto scale
+
