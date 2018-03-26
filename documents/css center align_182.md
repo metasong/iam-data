@@ -119,4 +119,17 @@ https://segmentfault.com/a/1190000013565024
 ```
 
 ## 2 columns: one fixed, one auto scale
+```html
+<div class="parent">
+    <div class="left">
+        <p>left</p>
+    </div>
+    <div class="right">
+        <p>right</p>
+        <p>right</p>
+    </div>
+</div>
+```
+```css
 
+```
