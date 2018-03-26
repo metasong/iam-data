@@ -131,5 +131,12 @@ https://segmentfault.com/a/1190000013565024
 </div>
 ```
 ```css
-
+.left {
+    float:left;
+    width:100px;
+    margin-right:20px;
+}
+.right {
+    overflow:hidden;
+}
 ```
