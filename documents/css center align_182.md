@@ -30,4 +30,17 @@ https://segmentfault.com/a/1190000013565024
     left:50%;
     transform:translateX(-50%);
 }
+// 4
+.parent {
+    display:flex;
+}
+.child {
+    margin:0 auto;
+}
+// 5
+.parent {
+    display:flex;
+    justify-content:center;
+}
+// 6
 ```
