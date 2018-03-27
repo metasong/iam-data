@@ -49,3 +49,7 @@ foo( 2 );
 > Engine: Cool. Passing the value of a, which is 2, into log(..).
 
 > ...
+
+## Nested Scope
+
+Scope is a set of rules for looking up variables by their identifier name. Just as a block or function is nested inside another block or function, scopes are nested inside other scopes. Engine starts at the currently executing Scope, looks for the variable there, then if not found, keeps going up one level, and so on. If the outermost global scope is reached, the search stops, whether it finds the variable or not.
