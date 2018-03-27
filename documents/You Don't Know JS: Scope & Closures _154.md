@@ -59,3 +59,24 @@ LHS references result from assignment operations. Scope-related assignments can 
 
 
 https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch2.md
+
+lexical scope is scope that is defined at lexing time. In other words, lexical scope is based on where variables and blocks of scope are authored, by you, at write time, and thus is (mostly) set in stone by the time the lexer processes your code.
+
+> **Note**: We will see in a little bit there are some ways to cheat lexical scope, thereby modifying it after the lexer has passed by, but these are frowned upon. It is considered best practice to treat lexical scope as, in fact, lexical-only, and thus entirely author-time in nature.
+
+```js
+function foo(a) {
+
+	var b = a * 2;
+
+	function bar(c) {
+		console.log( a, b, c );
+	}
+
+	bar(b * 3);
+}
+
+foo( 2 ); // 2 4 12
+```
+
+
