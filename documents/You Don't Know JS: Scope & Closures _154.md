@@ -52,4 +52,5 @@ foo( 2 );
 
 ## Nested Scope
 
-Scope is a set of rules for looking up variables by their identifier name. Just as a block or function is nested inside another block or function, scopes are nested inside other scopes. Engine starts at the currently executing Scope, looks for the variable there, then if not found, keeps going up one level, and so on. If the outermost global scope is reached, the search stops, whether it finds the variable or not.
+Scope is a set of rules for looking up variables by their identifier name. Just as a block or function is nested inside another block or function, scopes are nested inside other scopes. Engine starts at the currently executing Scope, looks for the variable there, then if not found, keeps going up one level, and so on. If the outermost global scope is reached, the search stops, whether it finds the variable or not.Unfulfilled RHS references result in ReferenceErrors being thrown. Unfulfilled LHS references result in an automatic, implicitly-created global of that name (if not in "Strict Mode" [^note-strictmode]), or a ReferenceError (if in "Strict Mode" [^note-strictmode]).
+[^note-strictmode]: MDN: Strict Mode
