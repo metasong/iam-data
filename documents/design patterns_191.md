@@ -11,9 +11,9 @@ https://en.m.wikipedia.org/wiki/Abstract_factory_pattern
 ## bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
-
-
-
+## visitor
+![=100%*](https://upload.wikimedia.org/wikipedia/en/e/eb/Visitor_design_pattern.svg)
+https://en.wikipedia.org/wiki/Visitor_pattern
 
 
 
