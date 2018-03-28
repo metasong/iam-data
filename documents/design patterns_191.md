@@ -14,8 +14,9 @@ https://en.m.wikipedia.org/wiki/Abstract_factory_pattern
 ## visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/en/e/eb/Visitor_design_pattern.svg)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
+
 https://en.wikipedia.org/wiki/Visitor_pattern
 ## interpreter
-![=100%*](https://commons.wikimedia.org/wiki/File:W3sDesign_Interpreter_Design_Pattern_UML.jpg)
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Interpreter_pattern
 
