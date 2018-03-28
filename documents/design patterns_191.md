@@ -8,7 +8,8 @@
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 
 
-
+## bridge 
+![](https://upload.wikimedia.org/wikipedia/commons/c/cf/Bridge_UML_class_diagram.svg)
 
 
 
