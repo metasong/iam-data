@@ -94,3 +94,15 @@ This technique gives access to a global variable which would otherwise be inacce
 
 ## Cheating Lexical
 
+cheating lexical scope leads to poorer performance.
+
+```js
+function foo(str, a) {
+	eval( str ); // cheating!
+	console.log( a, b );
+}
+
+var b = 2;
+
+foo( "var b = 3;", 1 ); // 1 3
+```
