@@ -9,7 +9,7 @@
 
 
 ## bridge 
-![](https://upload.wikimedia.org/wikipedia/commons/c/cf/Bridge_UML_class_diagram.svg)
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/cf/Bridge_UML_class_diagram.svg)
 
 
 
