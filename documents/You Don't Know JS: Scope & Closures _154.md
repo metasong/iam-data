@@ -79,7 +79,9 @@ function foo(a) {
 foo( 2 ); // 2 4 12
 ```
 
-![=100%* ](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/fig2.png)
+![dd](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/fig2.png)
+
+[pic](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/fig2.png)
 
 Bubble 1 encompasses the global scope, and has just one identifier in it: foo.
 
@@ -118,3 +120,47 @@ foo( "var a = 2" );
 ```
 
 ### with
+
+```js
+var obj = {
+	a: 1,
+	b: 2,
+	c: 3
+};
+
+// more "tedious" to repeat "obj"
+obj.a = 2;
+obj.b = 3;
+obj.c = 4;
+
+// "easier" short-hand
+with (obj) {
+	a = 3;
+	b = 4;
+	c = 5;
+}
+
+function foo(obj) {
+	with (obj) {
+		a = 2;
+	}
+}
+
+var o1 = {
+	a: 3
+};
+
+var o2 = {
+	b: 3
+};
+
+foo( o1 );
+console.log( o1.a ); // 2
+
+foo( o2 );// it does not have an a property, no such property is created, and o2.a remains undefined.
+console.log( o2.a ); // undefined
+console.log( a ); // 2 -- Oops, leaked global!
+```
+The with statement takes an object, one which has zero or more properties, and **treats that object as if it is a wholly separate lexical scope**, and thus the object's properties are treated as lexically defined identifiers in that "scope".
+
+> **Note**: Even though a with block treats an object like a lexical scope, a normal var declaration inside that with block will not be scoped to that with block, but instead the containing function scope.
