@@ -106,3 +106,13 @@ var b = 2;
 
 foo( "var b = 3;", 1 ); // 1 3
 ```
+Note: eval(..) when used in a strict-mode program operates in its own lexical scope, which means declarations made inside of the eval() do not actually modify the enclosing scope.
+```js
+function foo(str) {
+   "use strict";
+   eval( str );
+   console.log( a ); // ReferenceError: a is not defined
+}
+
+foo( "var a = 2" );
+```
