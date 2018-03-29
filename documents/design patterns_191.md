@@ -18,7 +18,16 @@ The Factory Method design pattern describes how to solve such problems:
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Abstract_factory_pattern
 
+The Abstract Factory design pattern solves problems like: 
 
+* How can an application be independent of how its objects are created?
+* How can a class be independent of how the objects it requires are created?
+* How can families of related or dependent objects be created?
+
+The Abstract Factory design pattern describes how to solve such problems:
+
+* Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
+* A class delegates object creation to a factory object instead of creating objects directly.
 ## bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
