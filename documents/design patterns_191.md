@@ -47,6 +47,21 @@ The Factory Method design pattern describes how to solve such problems:
 * Define a separate operation (factory method) for creating an object.
 * Create an object by calling a factory method.
 
+### prototype
+
+![100%*](https://upload.wikimedia.org/wikipedia/commons/c/c4/W3sDesign_Prototype_Design_Pattern_UML.jpg)
+https://en.wikipedia.org/wiki/Prototype_pattern
+
+The Prototype design pattern solves problems like: [3]
+
+How can objects be created so that which objects to create can be specified at run-time?
+How can dynamically loaded classes be instantiated?
+Creating objects directly within the class that requires (uses) the objects is inflexible because it commits the class to particular objects at compile-time and makes it impossible to specify which objects to create at run-time.
+
+The Prototype design pattern describes how to solve such problems:
+
+Define a Prototype object that returns a copy of itself.
+Create new objects by copying a Prototype object.
 ### singleton
 The singleton design pattern solves problems like:
 
