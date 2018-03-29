@@ -21,6 +21,7 @@ The Abstract Factory design pattern describes how to solve such problems:
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/8/87/W3sDesign_Builder_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Builder_pattern
+
 The Builder design pattern solves problems like:
 
 * How can a class (the same construction process) create different representations of a complex object?
