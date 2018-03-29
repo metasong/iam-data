@@ -377,6 +377,25 @@ The responsibility of observers is to register (and unregister) themselves on a 
 This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time.
 This notification-registration interaction is also known as publish-subscribe.
 
+### state
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/ec/W3sDesign_State_Design_Pattern_UML.jpg)
+
+https://en.wikipedia.org/wiki/State_pattern
+
+What problems can the State design pattern solve? 
+
+* An object should change its behavior when its internal state changes.
+State-specific behavior should be defined independently. That is, new states should be added and the behavior of existing states should be changed independently.
+Implementing state-specific behavior directly within a class is inflexible because it commits the class to a particular behavior and makes it impossible to add a new state or change the behavior of an existing state later independently from (without changing) the class.
+
+What solution does the State design pattern describe?
+
+Define separate (state) objects that encapsulate state-specific behavior for each state. That is, define an interface (State) for performing state-specific behavior, and define classes that implement the interface for each state.
+A class delegates state-specific behavior to its current state object instead of implementing state-specific behavior directly.
+This makes a class independent of how state-specific behavior is implemented. New states can be added by defining new state classes.
+A class can change its behavior at run-time by changing its current state object.
+
 
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
