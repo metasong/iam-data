@@ -23,3 +23,6 @@ https://en.wikipedia.org/wiki/Interpreter_pattern
 ## flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
+## chain of responsibility
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
+https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
