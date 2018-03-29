@@ -390,7 +390,7 @@ What problems can the State design pattern solve?
 
 Implementing state-specific behavior directly within a class is inflexible because it commits the class to a particular behavior and makes it impossible to add a new state or change the behavior of an existing state later independently from (without changing) the class.
 
-What solution does the State design pattern describe?
+**What solution does the State design pattern describe?**
 
 * Define separate (state) objects that encapsulate state-specific behavior for each state. That is, define an interface (State) for performing state-specific behavior, and define classes that implement the interface for each state.
 * A class delegates state-specific behavior to its current state object instead of implementing state-specific behavior directly.
