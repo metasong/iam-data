@@ -17,7 +17,7 @@ The Abstract Factory design pattern describes how to solve such problems:
 * Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
 * A class delegates object creation to a factory object instead of creating objects directly.
 
-### builder
+### builder(parts and assemble together)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/8/87/W3sDesign_Builder_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Builder_pattern
