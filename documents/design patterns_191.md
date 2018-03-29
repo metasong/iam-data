@@ -38,8 +38,7 @@ What problems can the Flyweight design pattern solve?
 
 What solution does the Flyweight design pattern describe?
 
-* Define Flyweight objects that store intrinsic (invariant) state that can be shared and
-provide an interface through which extrinsic (variant) state can be passed in.
+* Define Flyweight objects that store intrinsic (invariant) state that can be shared and provide an interface through which extrinsic (variant) state can be passed in.
 ```csharp
 using System.Collections.Concurrent;
 using System.Collections.Generic;
