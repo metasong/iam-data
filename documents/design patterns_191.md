@@ -1,5 +1,5 @@
 # design patterns
-
+[[TOC]]
 ## Creatinal
 ### abstract factory
 
