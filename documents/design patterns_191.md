@@ -329,6 +329,32 @@ What problems can the Mediator design pattern solve?
 * Tight coupling between a set of interacting objects should be avoided.
 * It should be possible to change the interaction between a set of objects independently.
 
+### observer
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/01/W3sDesign_Observer_Design_Pattern_UML.jpg)
+
+What problems can the Observer design pattern solve?
+
+* A one-to-many dependency between objects should be defined without making the objects tightly coupled.
+* It should be ensured that when one object changes state an open-ended number of dependent objects are updated automatically.
+* It should be possible that one object can notify an open-ended number of other objects.
+
+Defining a one-to-many dependency between objects by defining one object (subject) that updates the state of dependent objects directly is inflexible because it commits (tightly couples) the subject to particular dependent objects. Tightly coupled objects are hard to implement, change, test, and reuse because they refer to and know about (how to update) many different objects with different interfaces.
+
+What solution does the Observer design pattern describe?
+* Define Subject and Observer objects
+* so that when a subject changes state, all registered observers are notified and updated automatically.
+
+The sole responsibility of a subject is to maintain a list of observers and to notify them of state changes by calling their update() operation.
+The responsibility of observers is to register (and unregister) themselves on a subject (to get notified of state changes) and to update their state (synchronize their state with subject's state) when they are notified.
+This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time.
+This notification-registration interaction is also known as publish-subscribe.
+
+See also the UML class and sequence diagram below.
+
+
+https://en.wikipedia.org/wiki/Observer_pattern
+
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
