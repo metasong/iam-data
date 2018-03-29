@@ -108,35 +108,7 @@ What solution does the Bridge design pattern describe?
 
 * Separate an abstraction (Abstraction) from its implementation (Implementor) by putting them in separate class hierarchies.
 * Implement the Abstraction in terms of (by delegating to) an Implementor object.
-
-## Behavioral
-
-### visitor
-![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
-
-https://en.wikipedia.org/wiki/Visitor_pattern
-
-What problems can the Visitor design pattern solve? 
-* It should be possible to define a new operation for (some) classes of an object structure without changing the classes.
-
-What solution does the Visitor design pattern describe?
-
-* Define a separate (visitor) object that implements an operation to be performed on elements of an object structure.
-* Clients traverse the object structure and call a dispatching operation accept(visitor) on an element — that "dispatches" (delegates) the request to the "accepted visitor object". The visitor object then performs the operation on the element ("visits the element").
-## interpreter
-![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
-https://en.wikipedia.org/wiki/Interpreter_pattern
-
-What problems can the Interpreter design pattern solve? 
-
-* A grammar for a simple language should be defined
-* so that sentences in the language can be interpreted.
-
-What solution does the Interpreter design pattern describe?
-
-* Define a grammar for a simple language by defining an Expression class hierarchy and implementing an interpret() operation.
-* Represent a sentence in the language by an abstract syntax tree (AST) made up of Expression instances. Interpret a sentence by calling interpret() on the AST.
-## flyweight
+### flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
@@ -186,7 +158,11 @@ public class MinimumMemoryFootprint : ICoffeeFlavourFactory {
     }
 }
 ```
-## chain of responsibility
+
+
+examples: Windows WPF user event handle, bubble up the tree.
+## Behavioral
+### chain of responsibility
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
@@ -198,9 +174,33 @@ What problems can the Chain of Responsibility design pattern solve?
 What solution does the Chain of Responsibility design pattern describe?
 
 * Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
+### visitor
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
-examples: Windows WPF user event handle, bubble up the tree.
-## mediator
+https://en.wikipedia.org/wiki/Visitor_pattern
+
+What problems can the Visitor design pattern solve? 
+* It should be possible to define a new operation for (some) classes of an object structure without changing the classes.
+
+What solution does the Visitor design pattern describe?
+
+* Define a separate (visitor) object that implements an operation to be performed on elements of an object structure.
+* Clients traverse the object structure and call a dispatching operation accept(visitor) on an element — that "dispatches" (delegates) the request to the "accepted visitor object". The visitor object then performs the operation on the element ("visits the element").
+### interpreter
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
+https://en.wikipedia.org/wiki/Interpreter_pattern
+
+What problems can the Interpreter design pattern solve? 
+
+* A grammar for a simple language should be defined
+* so that sentences in the language can be interpreted.
+
+What solution does the Interpreter design pattern describe?
+
+* Define a grammar for a simple language by defining an Expression class hierarchy and implementing an interpret() operation.
+* Represent a sentence in the language by an abstract syntax tree (AST) made up of Expression instances. Interpret a sentence by calling interpret() on the AST.
+
+### mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
 
 What solution does the Mediator design pattern describe?
