@@ -175,7 +175,7 @@ What solution does the Decorator design pattern describe?
 * Define Decorator objects that implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it and perform additional functionality before/after forwarding a request.
 
 
-### proxy
+### proxy(control)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6e/W3sDesign_Proxy_Design_Pattern_UML.jpg)
 What problems can the Proxy design pattern solve? 
