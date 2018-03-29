@@ -43,6 +43,7 @@ What solution does the Chain of Responsibility design pattern describe?
 
 * Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
 
+examples: window user event handle, bubble up the tree.
 ## mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
 
