@@ -146,7 +146,11 @@ What solution does the Bridge design pattern describe?
 * Separate an abstraction (Abstraction) from its implementation (Implementor) by putting them in separate class hierarchies.
 * Implement the Abstraction in terms of (by delegating to) an Implementor object.
 
-> *Note*: the abstraction defines what kinds of 
+### composite
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/65/W3sDesign_Composite_Design_Pattern_UML.jpg)
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/39/W3sDesign_Composite_Design_Pattern_Type_Safety_UML.jpg)
+
 ### flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
