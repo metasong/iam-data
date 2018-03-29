@@ -146,7 +146,7 @@ What solution does the Bridge design pattern describe?
 * Separate an abstraction (Abstraction) from its implementation (Implementor) by putting them in separate class hierarchies.
 * Implement the Abstraction in terms of (by delegating to) an Implementor object.
 
-### composite
+### composite(tree)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/65/W3sDesign_Composite_Design_Pattern_UML.jpg)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/39/W3sDesign_Composite_Design_Pattern_Type_Safety_UML.jpg)
@@ -161,13 +161,14 @@ What solution does the Composite design pattern describe?
 * Define a unified Component interface for both part (Leaf) objects and whole (Composite) objects.
 * Individual Leaf objects implement the Component interface directly, and Composite objects forward requests to their child components.
 
-### decorator
+### decorator(add function)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg)
 
 What problems can the Decorator design pattern solve? 
 
 * Responsibilities should be added to (and removed from) an object dynamically at run-time.
 * A flexible alternative to subclassing for extending functionality should be provided.
+
 When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
 
 What solution does the Decorator design pattern describe?
