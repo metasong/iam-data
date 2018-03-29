@@ -120,7 +120,7 @@ decouple an abstraction from its implementation so that the two can vary indepen
 
 https://en.wikipedia.org/wiki/Bridge_pattern
 
-When:
+Before:
 
                          ----Shape---
                         /            \
@@ -128,11 +128,13 @@ When:
               /         \            /      \
       BlueRectangle  RedRectangle BlueCircle RedCircle
 
-Refactor to:
+After:
 
                 ----Shape---                        Color
                /            \                       /   \
       Rectangle(Color)   Circle(Color)           Blue   Red
+
+> Before is `4`, after is `2 * 2`
 
 What problems can the Bridge design pattern solve? 
 
