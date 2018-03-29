@@ -49,7 +49,7 @@ The Factory Method design pattern describes how to solve such problems:
 
 ### prototype
 
-![100%*](https://upload.wikimedia.org/wikipedia/commons/c/c4/W3sDesign_Prototype_Design_Pattern_UML.jpg)
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c4/W3sDesign_Prototype_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Prototype_pattern
 
 The Prototype design pattern solves problems like:
