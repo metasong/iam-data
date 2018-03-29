@@ -1,6 +1,6 @@
 # design patterns
 [[TOC]]
-## Creatinal
+## Creational
 ### abstract factory
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
