@@ -95,6 +95,23 @@ public class Singleton
 https://en.wikipedia.org/wiki/Singleton_pattern
 ## Structural
 
+### adapter
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
+
+https://en.wikipedia.org/wiki/Adapter_pattern
+
+The Adapter design pattern solves problems like: [3]
+
+* How can a class be reused that does not have an interface that a client requires?
+* How can classes that have incompatible interfaces work together?
+* How can an alternative interface be provided for a class?
+
+The Adapter design pattern describes how to solve such problems:
+
+* Define a separate Adapter class that converts the (incompatible) interface of a class (Adaptee) into another interface (Target) clients require.
+* Work through an Adapter to work with (reuse) classes that do not have the required interface.
+
 ### bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
