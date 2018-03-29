@@ -321,6 +321,8 @@ New access and traversal operations can be defined independently by defining new
 ### mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
 
+https://en.wikipedia.org/wiki/Mediator_pattern
+
 What solution does the Mediator design pattern describe?
 * Define a separate (mediator) object that encapsulates the interaction between a set of objects.
 * Objects delegate their interaction to a mediator object instead of interacting with each other directly.
