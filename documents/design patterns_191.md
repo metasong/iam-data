@@ -97,7 +97,7 @@ public class Singleton
 https://en.wikipedia.org/wiki/Singleton_pattern
 ## Structural
 
-### adapter
+### adapter(interface)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
 
