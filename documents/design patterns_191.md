@@ -32,7 +32,15 @@ The Abstract Factory design pattern describes how to solve such problems:
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Bridge_pattern
+What problems can the Bridge design pattern solve? 
 
+* An abstraction and its implementation should be defined and extended independently from each other.
+* A compile-time binding between an abstraction and its implementation should be avoided so that an implementation can be selected at run-time.
+
+What solution does the Bridge design pattern describe?
+
+* Separate an abstraction (Abstraction) from its implementation (Implementor) by putting them in separate class hierarchies.
+* Implement the Abstraction in terms of (by delegating to) an Implementor object.
 ## visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
