@@ -115,7 +115,7 @@ The Adapter design pattern describes how to solve such problems:
 ### bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
-decouple an abstraction from its implementation so that the two can vary independently, The bridge pattern can also be thought of as two layers of abstraction.
+decouple an abstraction from its implementation so that the two can vary independently. The bridge pattern can also be thought of as two layers of abstraction.
 
 https://en.wikipedia.org/wiki/Bridge_pattern
 
