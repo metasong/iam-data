@@ -119,6 +119,8 @@ decouple an abstraction from its implementation so that the two can vary indepen
 
 https://en.wikipedia.org/wiki/Bridge_pattern
 
+When:
+
                          ----Shape---
                         /            \
                Rectangle              Circle
