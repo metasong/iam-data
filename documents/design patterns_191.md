@@ -62,30 +62,7 @@ The Prototype design pattern describes how to solve such problems:
 * Define a Prototype object that returns a copy of itself.
 * Create new objects by copying a Prototype object.
 
-```csharp
-public abstract class Prototype
-{
-    // normal implementation
 
-    public abstract Prototype Clone();
-}
-
-public class ConcretePrototype1 : Prototype
-{
-    public override Prototype Clone()
-    {
-        return (Prototype)this.MemberwiseClone(); // Clones the concrete class.
-    }
-}
-
-public class ConcretePrototype2 : Prototype
-{
-    public override Prototype Clone()
-    {
-        return (Prototype)this.MemberwiseClone(); // Clones the concrete class.
-    }
-}
-```
 ### singleton
 The singleton design pattern solves problems like:
 
