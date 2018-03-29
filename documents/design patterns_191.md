@@ -7,6 +7,7 @@ https://en.m.wikipedia.org/wiki/Factory_method_pattern
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 https://en.m.wikipedia.org/wiki/Abstract_factory_pattern
+
 The Factory Method design pattern solves problems like: 
 
 * How can an object be created so that subclasses can redefine which class to instantiate?
