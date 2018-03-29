@@ -187,7 +187,7 @@ When accessing sensitive objects, for example, it should be possible to check th
 
 What solution does the Proxy design pattern describe?
 
-* Define a separate Proxy object that can be used as substitute for another object (Subject) and implements additional functionality to control the access to this subject.
+* Define a separate Proxy object that can be used as substitute for another object (Subject) and kkimplements additional functionality to control the access to this subject.
 ### facade
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/96/W3sDesign_Facade_Design_Pattern_UML.jpg)
 
