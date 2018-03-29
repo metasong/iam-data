@@ -172,8 +172,7 @@ When using subclassing, different subclasses extend a class in different ways. B
 
 What solution does the Decorator design pattern describe?
 
-* Define Decorator objects that implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it and
-* perform additional functionality before/after forwarding a request.
+* Define Decorator objects that implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it and perform additional functionality before/after forwarding a request.
 
 ### flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
