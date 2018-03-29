@@ -378,7 +378,7 @@ The responsibility of observers is to register (and unregister) themselves on a 
 This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time.
 This notification-registration interaction is also known as publish-subscribe.
 
-### state(machine)
+### state(operation)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/ec/W3sDesign_State_Design_Pattern_UML.jpg)
 
