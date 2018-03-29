@@ -47,7 +47,10 @@ The Factory Method design pattern describes how to solve such problems:
 * Define a separate operation (factory method) for creating an object.
 * Create an object by calling a factory method.
 
-## bridge 
+
+## Structural
+
+### bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Bridge_pattern
@@ -60,6 +63,9 @@ What solution does the Bridge design pattern describe?
 
 * Separate an abstraction (Abstraction) from its implementation (Implementor) by putting them in separate class hierarchies.
 * Implement the Abstraction in terms of (by delegating to) an Implementor object.
+
+## Behavioral
+
 ## visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
