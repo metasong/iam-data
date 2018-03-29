@@ -350,8 +350,6 @@ The responsibility of observers is to register (and unregister) themselves on a 
 This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time.
 This notification-registration interaction is also known as publish-subscribe.
 
-See also the UML class and sequence diagram below.
-
 
 https://en.wikipedia.org/wiki/Observer_pattern
 
