@@ -336,7 +336,7 @@ What problems can the Mediator design pattern solve?
 * Tight coupling between a set of interacting objects should be avoided.
 * It should be possible to change the interaction between a set of objects independently.
 
-### memento
+### memento(save/restore states)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/38/W3sDesign_Memento_Design_Pattern_UML.jpg)
 
