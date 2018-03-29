@@ -174,6 +174,20 @@ What solution does the Decorator design pattern describe?
 
 * Define Decorator objects that implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it and perform additional functionality before/after forwarding a request.
 
+
+### proxy
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6e/W3sDesign_Proxy_Design_Pattern_UML.jpg)
+What problems can the Proxy design pattern solve? 
+
+* The access to an object should be controlled.
+* Additional functionality should be provided when accessing an object.
+
+When accessing sensitive objects, for example, it should be possible to check that clients have the needed access rights.
+
+What solution does the Proxy design pattern describe?
+
+* Define a separate Proxy object that can be used as substitute for another object (Subject) and implements additional functionality to control the access to this subject.
 ### facade
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/96/W3sDesign_Facade_Design_Pattern_UML.jpg)
 
