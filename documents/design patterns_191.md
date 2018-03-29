@@ -33,4 +33,10 @@ This enables to send a request to a chain of receivers without having to know wh
 ## mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
 
-The essence of the Mediator Pattern is to "define an object that encapsulates how a set of objects interact"; Objects delegate their interaction to a mediator object instead of interacting with each other directly.
+What solution does the Mediator design pattern describe?
+* Define a separate (mediator) object that encapsulates the interaction between a set of objects.
+* Objects delegate their interaction to a mediator object instead of interacting with each other directly.
+
+What problems can the Mediator design pattern solve? 
+* Tight coupling between a set of interacting objects should be avoided.
+* It should be possible to change the interaction between a set of objects independently.
