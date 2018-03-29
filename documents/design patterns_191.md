@@ -398,6 +398,12 @@ Implementing state-specific behavior directly within a class is inflexible becau
 This makes a class independent of how state-specific behavior is implemented. New states can be added by defining new state classes.
 A class can change its behavior at run-time by changing its current state object.
 
+### strategy
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/45/W3sDesign_Strategy_Design_Pattern_UML.jpg)
+
+
+https://en.wikipedia.org/wiki/Strategy_pattern
 
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
