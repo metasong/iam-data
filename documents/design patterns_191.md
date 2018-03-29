@@ -270,6 +270,20 @@ What solution does the Chain of Responsibility design pattern describe?
 
 * Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
 
+### command
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c8/W3sDesign_Command_Design_Pattern_UML.jpg)
+
+What problems can the Command design pattern solve?
+
+* Coupling the invoker of a request to a particular request should be avoided. That is, hard-wired requests should be avoided.
+* It should be possible to configure an object (that invokes a request) with a request.
+Implementing (hard-wiring) a request directly into a class is inflexible because it couples the class to a particular request at compile-time, which makes it impossible to specify a request at run-time.
+
+What solution does the Command design pattern describe?
+
+* Define separate (command) objects that encapsulate a request.
+* A class delegates a request to a command object instead of implementing a particular request directly.
+
 ### interpreter
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Interpreter_pattern
