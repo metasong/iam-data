@@ -448,7 +448,7 @@ Usually, subclasses control how the behavior of a parent class is redefined, and
 
 This is also referred to as inversion of control because subclasses do no longer control how the behavior of a parent class is redefined.
 
-### visitor
+### visitor(has/perform operation on elements)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Visitor_pattern
