@@ -303,6 +303,18 @@ What solution does the Interpreter design pattern describe?
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c5/W3sDesign_Iterator_Design_Pattern_UML.jpg)
 
+What problems can the Iterator design pattern solve?
+
+* The elements of an aggregate object should be accessed and traversed without exposing its representation (data structures).
+New traversal operations should be defined for an aggregate object without changing its interface.
+Defining access and traversal operations in the aggregate interface is inflexible because it commits the aggregate to particular access and traversal operations and makes it impossible to add new operations later without having to change the aggregate interface.
+
+What solution does the Iterator design pattern describe?
+
+Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
+Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
+Different iterators can be used to access and traverse an aggregate in different ways.
+New access and traversal operations can be defined independently by defining new iterators.
 
 ### mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
