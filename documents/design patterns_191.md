@@ -209,7 +209,7 @@ What solution does the Facade design pattern describe?
 * may perform additional functionality before/after forwarding a request.
 
 ### flyweight
-![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W/3sDesign_Flyweight_Design_Pattern_UML.jpg)
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
 What problems can the Flyweight design pattern solve?
