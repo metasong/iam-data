@@ -47,7 +47,7 @@ The Factory Method design pattern describes how to solve such problems:
 * Define a separate operation (factory method) for creating an object.
 * Create an object by calling a factory method.
 
-### prototype
+### prototype(to clone)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c4/W3sDesign_Prototype_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Prototype_pattern
