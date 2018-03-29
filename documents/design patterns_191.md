@@ -1,5 +1,7 @@
 # design patterns
-## abstract factory
+
+## Creatinal
+### abstract factory
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Abstract_factory_pattern
@@ -15,7 +17,7 @@ The Abstract Factory design pattern describes how to solve such problems:
 * Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
 * A class delegates object creation to a factory object instead of creating objects directly.
 
-## factory methord
+### factory methord
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Factory_method_pattern
