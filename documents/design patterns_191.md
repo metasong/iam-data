@@ -402,8 +402,23 @@ A class can change its behavior at run-time by changing its current state object
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/45/W3sDesign_Strategy_Design_Pattern_UML.jpg)
 
-
 https://en.wikipedia.org/wiki/Strategy_pattern
+
+**What problems can the Strategy design pattern solve? **
+
+* A class should be configured with an algorithm instead of implementing an algorithm directly.
+* An algorithm should be selected and exchanged at run-time.
+
+What is an algorithm? An algorithm is usually defined as a procedure that takes some value as input, performs a finite number of steps, and produces some value as output.
+From a more general point of view, an algorithm is a piece of code that does something appropriate.
+
+Implementing an algorithm directly within the class that uses the algorithm is inflexible because it commits the class to a particular algorithm at compile-time and makes it impossible to change the algorithm later independently from (without having to change) the class. This also stops the class from being reusable when another algorithm should be used.
+
+**What solution does the Strategy design pattern describe?**
+
+* Define a separate (strategy) object that encapsulates an algorithm. That is, define an interface (Strategy) for performing an algorithm, and define classes that implement the interface (algorithm) in different ways.
+* A class delegates an algorithm to a strategy object at run-time instead of implementing an algorithm directly (that is, instead of committing to an algorithm at compile-time). This makes a class independent of a particular algorithm (how an algorithm is implemented).
+* A class can be configured with a strategy object, which is used to perform an algorithm. Moreover, the strategy object can be exchanged at run-time.
 
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
