@@ -404,7 +404,7 @@ A class can change its behavior at run-time by changing its current state object
 
 https://en.wikipedia.org/wiki/Strategy_pattern
 
-**What problems can the Strategy design pattern solve? **
+**What problems can the Strategy design pattern solve?**
 
 * A class should be configured with an algorithm instead of implementing an algorithm directly.
 * An algorithm should be selected and exchanged at run-time.
@@ -419,6 +419,28 @@ Implementing an algorithm directly within the class that uses the algorithm is i
 * Define a separate (strategy) object that encapsulates an algorithm. That is, define an interface (Strategy) for performing an algorithm, and define classes that implement the interface (algorithm) in different ways.
 * A class delegates an algorithm to a strategy object at run-time instead of implementing an algorithm directly (that is, instead of committing to an algorithm at compile-time). This makes a class independent of a particular algorithm (how an algorithm is implemented).
 * A class can be configured with a strategy object, which is used to perform an algorithm. Moreover, the strategy object can be exchanged at run-time.
+
+
+### template
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/2/2a/W3sDesign_Template_Method_Design_Pattern_UML.jpg)
+
+https://en.wikipedia.org/wiki/Template_method_pattern
+
+**What problems can the Template Method design pattern solve?**
+
+* The invariant parts of a behavior should be implemented only once so that subclasses can implement the variant parts.
+* Subclasses should redefine only certain parts of a behavior without changing the other parts.
+
+Usually, subclasses control how the behavior of a parent class is redefined, and they aren't restricted to redefine only certain parts of a behavior.
+
+**What solution does the Template Method design pattern describe?**
+
+* Define abstract operations (primitives) for the variant parts of a behavior.
+* Define a template method that implements the invariant parts of a behavior and calls abstract operations (primitives) that subclasses implement.
+* The template method controls how subclasses redefine a behavior.
+
+This is also referred to as inversion of control because subclasses do no longer control how the behavior of a parent class is redefined.
 
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
