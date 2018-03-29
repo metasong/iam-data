@@ -31,15 +31,15 @@ https://en.wikipedia.org/wiki/Interpreter_pattern
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
-What problems can the Chain of Responsibility design pattern solve?
+What problems can the Flyweight design pattern solve?
 
-* Coupling the sender of a request to its receiver should be avoided.
-* It should be possible that more than one receiver can handle a request.
-* Implementing a request directly within the class that sends the request is inflexible because it couples the class to a particular receiver and makes it impossible to support multiple receivers.
+* Large numbers of objects should be supported efficiently.
+* Creating large numbers of objects should be avoided.
 
-What solution does the Chain of Responsibility design pattern describe?
+What solution does the Flyweight design pattern describe?
 
-* Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
+* Define Flyweight objects that store intrinsic (invariant) state that can be shared and
+provide an interface through which extrinsic (variant) state can be passed in.
 ```csharp
 using System.Collections.Concurrent;
 using System.Collections.Generic;
