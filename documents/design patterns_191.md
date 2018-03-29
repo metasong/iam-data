@@ -360,7 +360,8 @@ This enables to save and restore the internal state of an originator without vio
 
 https://en.wikipedia.org/wiki/Observer_pattern
 
-What problems can the Observer design pattern solve?
+
+**What problems can the Observer design pattern solve?**
 
 * A one-to-many dependency between objects should be defined without making the objects tightly coupled.
 * It should be ensured that when one object changes state an open-ended number of dependent objects are updated automatically.
