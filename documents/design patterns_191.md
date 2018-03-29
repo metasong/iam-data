@@ -333,6 +333,8 @@ What problems can the Mediator design pattern solve?
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/01/W3sDesign_Observer_Design_Pattern_UML.jpg)
 
+https://en.wikipedia.org/wiki/Observer_pattern
+
 What problems can the Observer design pattern solve?
 
 * A one-to-many dependency between objects should be defined without making the objects tightly coupled.
@@ -350,8 +352,6 @@ The responsibility of observers is to register (and unregister) themselves on a 
 This makes subject and observers loosely coupled. Subject and observers have no explicit knowledge of each other. Observers can be added and removed independently at run-time.
 This notification-registration interaction is also known as publish-subscribe.
 
-
-https://en.wikipedia.org/wiki/Observer_pattern
 
 ### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
