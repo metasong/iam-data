@@ -150,6 +150,17 @@ What solution does the Bridge design pattern describe?
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/65/W3sDesign_Composite_Design_Pattern_UML.jpg)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/39/W3sDesign_Composite_Design_Pattern_Type_Safety_UML.jpg)
+What problems can the Composite design pattern solve?
+
+* A part-whole hierarchy should be represented so that clients can treat part and whole objects uniformly.
+* A part-whole hierarchy should be represented as tree structure.
+When defining Part objects and Whole objects that act as containers for Part objects, clients must treat them separately, which complicates client code.
+
+What solution does the Composite design pattern describe?
+
+* Define a unified Component interface for both part (Leaf) objects and whole (Composite) objects.
+* Individual Leaf objects implement the Component interface directly, and Composite objects forward requests to their child components.
+
 
 ### flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
