@@ -20,3 +20,5 @@ https://en.wikipedia.org/wiki/Visitor_pattern
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Interpreter_pattern
 
+## flyweight
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
