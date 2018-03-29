@@ -161,6 +161,19 @@ What solution does the Composite design pattern describe?
 * Define a unified Component interface for both part (Leaf) objects and whole (Composite) objects.
 * Individual Leaf objects implement the Component interface directly, and Composite objects forward requests to their child components.
 
+### decorator
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg)
+
+What problems can the Decorator design pattern solve? 
+
+* Responsibilities should be added to (and removed from) an object dynamically at run-time.
+* A flexible alternative to subclassing for extending functionality should be provided.
+When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
+
+What solution does the Decorator design pattern describe?
+
+* Define Decorator objects that implement the interface of the extended (decorated) object (Component) transparently by forwarding all requests to it and
+* perform additional functionality before/after forwarding a request.
 
 ### flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
