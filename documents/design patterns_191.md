@@ -119,6 +119,17 @@ decouple an abstraction from its implementation so that the two can vary indepen
 
 https://en.wikipedia.org/wiki/Bridge_pattern
 
+                         ----Shape---
+                        /            \
+               Rectangle              Circle
+              /         \            /      \
+      BlueRectangle  RedRectangle BlueCircle RedCircle
+
+Refactor to:
+
+                ----Shape---                        Color
+               /            \                       /   \
+      Rectangle(Color)   Circle(Color)           Blue   Red
 
 What problems can the Bridge design pattern solve? 
 
