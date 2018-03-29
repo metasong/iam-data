@@ -112,7 +112,7 @@ The Adapter design pattern describes how to solve such problems:
 * Define a separate Adapter class that converts the (incompatible) interface of a class (Adaptee) into another interface (Target) clients require.
 * Work through an Adapter to work with (reuse) classes that do not have the required interface.
 
-### bridge 
+### bridge(abstraction with implementation)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
 The Bridge pattern is an application of the old advice, "prefer composition over inheritance".  
@@ -139,7 +139,9 @@ After:
 What problems can the Bridge design pattern solve? 
 
 * An abstraction and its implementation should be defined and extended independently from each other.
-* A compile-time binding between an abstraction and its implementation should be avoided so that an implementation can be selected at run-time. When using subclassing, different subclasses implement an abstract class in different ways. But an implementation is bound to the abstraction at compile-time and can't be changed at run-time.
+* A compile-time binding between an abstraction and its implementation should be avoided so that an implementation can be selected at run-time via interface.
+
+When using subclassing, different subclasses implement an abstract class in different ways. But an implementation is bound to the abstraction at compile-time and can't be changed at run-time.
 
 What solution does the Bridge design pattern describe?
 
