@@ -16,7 +16,13 @@ https://en.m.wikipedia.org/wiki/Abstract_factory_pattern
 
 https://en.wikipedia.org/wiki/Visitor_pattern
 
+What problems can the Visitor design pattern solve? 
+* It should be possible to define a new operation for (some) classes of an object structure without changing the classes.
 
+What solution does the Visitor design pattern describe?
+
+* Define a separate (visitor) object that implements an operation to be performed on elements of an object structure.
+* Clients traverse the object structure and call a dispatching operation accept(visitor) on an element — that "dispatches" (delegates) the request to the "accepted visitor object". The visitor object then performs the operation on the element ("visits the element").
 ## interpreter
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Interpreter_pattern
