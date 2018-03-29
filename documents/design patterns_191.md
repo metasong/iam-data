@@ -18,6 +18,7 @@ The Abstract Factory design pattern describes how to solve such problems:
 * A class delegates object creation to a factory object instead of creating objects directly.
 
 ### builder
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/8/87/W3sDesign_Builder_Design_Pattern_UML.jpg)
 The Builder design pattern solves problems like:
 
 * How can a class (the same construction process) create different representations of a complex object?
