@@ -313,8 +313,8 @@ Defining access and traversal operations in the aggregate interface is *inflexib
 What solution does the Iterator design pattern describe?
 
 * Define a separate (iterator) object that encapsulates accessing and traversing an aggregate object.
+* Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
 
-Clients use an iterator to access and traverse an aggregate without knowing its representation (data structures).
 Different iterators can be used to access and traverse an aggregate in different ways.
 New access and traversal operations can be defined independently by defining new iterators.
 
