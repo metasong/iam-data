@@ -101,7 +101,7 @@ https://en.wikipedia.org/wiki/Singleton_pattern
 
 https://en.wikipedia.org/wiki/Adapter_pattern
 
-The Adapter design pattern solves problems like: [3]
+The Adapter design pattern solves problems like: 
 
 * How can a class be reused that does not have an interface that a client requires?
 * How can classes that have incompatible interfaces work together?
