@@ -30,6 +30,45 @@ https://en.wikipedia.org/wiki/Interpreter_pattern
 ## flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
+
+```csharp
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Threading;
+
+public interface ICoffeeFlavourFactory {
+    CoffeeFlavour GetFlavour(string flavour);
+}
+
+public class ReducedMemoryFootprint : ICoffeeFlavourFactory {
+    private readonly object _cacheLock = new object();
+    private readonly IDictionary<string, CoffeeFlavour> _cache = new Dictionary<string, CoffeeFlavour>();
+
+    public CoffeeFlavour GetFlavour(string flavour) {
+        if (_cache.ContainsKey(flavour)) return _cache[flavour];
+        var coffeeFlavour = new CoffeeFlavour(flavour);
+        ThreadPool.QueueUserWorkItem(AddFlavourToCache, coffeeFlavour);
+        return coffeeFlavour;
+    }
+
+    private void AddFlavourToCache(object state) {
+        var coffeeFlavour = (CoffeeFlavour)state;
+        if (!_cache.ContainsKey(coffeeFlavour.Flavour)) {
+            lock (_cacheLock) {
+                if (!_cache.ContainsKey(coffeeFlavour.Flavour)) _cache.Add(coffeeFlavour.Flavour, coffeeFlavour);
+            }
+        }
+    }
+}
+
+public class MinimumMemoryFootprint : ICoffeeFlavourFactory {
+    private readonly ConcurrentDictionary<string, CoffeeFlavour> _cache = new ConcurrentDictionary<string, CoffeeFlavour>();
+
+    public CoffeeFlavour GetFlavour(string flavour) {
+        return _cache.GetOrAdd(flavour, flv => new CoffeeFlavour(flv));
+    }
+}
+```
 ## chain of responsibility
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
