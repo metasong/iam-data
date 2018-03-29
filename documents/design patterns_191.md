@@ -47,7 +47,26 @@ The Factory Method design pattern describes how to solve such problems:
 * Define a separate operation (factory method) for creating an object.
 * Create an object by calling a factory method.
 
+### singleton
 
+```csharp
+public class Singleton
+{
+   private static Singleton instance = new Singleton();
+
+   private Singleton() {}
+
+   public static Singleton Instance
+   {
+      get 
+      {
+         return instance;
+      }
+   }
+}
+```
+
+https://en.wikipedia.org/wiki/Singleton_pattern
 ## Structural
 
 ### bridge 
