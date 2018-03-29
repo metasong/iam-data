@@ -1,4 +1,6 @@
 # design patterns
+the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
+
 [[TOC]]
 ## Creational
 ### abstract factory
