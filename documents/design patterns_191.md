@@ -31,6 +31,8 @@ The Abstract Factory design pattern describes how to solve such problems:
 ## bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
+https://en.wikipedia.org/wiki/Bridge_pattern
+
 ## visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
