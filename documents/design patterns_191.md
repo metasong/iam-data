@@ -66,7 +66,7 @@ What solution does the Bridge design pattern describe?
 
 ## Behavioral
 
-## visitor
+### visitor
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/0/00/W3sDesign_Visitor_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Visitor_pattern
