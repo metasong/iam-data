@@ -34,8 +34,14 @@ https://en.wikipedia.org/wiki/Flyweight_pattern
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
-Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
-This enables to send a request to a chain of receivers without having to know which one handles the request. The request gets passed along the chain until a receiver handles the request. The sender of a request is no longer coupled to a particular receiver.
+What problems can the Chain of Responsibility design pattern solve? 
+
+* Coupling the sender of a request to its receiver should be avoided.
+* It should be possible that more than one receiver can handle a request.
+
+What solution does the Chain of Responsibility design pattern describe?
+
+* Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
 
 ## mediator
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
