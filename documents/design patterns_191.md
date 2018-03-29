@@ -57,6 +57,15 @@ What solution does the Visitor design pattern describe?
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/3/33/W3sDesign_Interpreter_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Interpreter_pattern
 
+What problems can the Interpreter design pattern solve? 
+
+* A grammar for a simple language should be defined
+* so that sentences in the language can be interpreted.
+
+What solution does the Interpreter design pattern describe?
+
+* Define a grammar for a simple language by defining an Expression class hierarchy and implementing an interpret() operation.
+* Represent a sentence in the language by an abstract syntax tree (AST) made up of Expression instances. Interpret a sentence by calling interpret() on the AST.
 ## flyweight
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
