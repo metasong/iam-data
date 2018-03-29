@@ -1,18 +1,4 @@
 # design patterns
-## factory methord
-
-![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg)
-https://en.wikipedia.org/wiki/Factory_method_pattern
-
-The Factory Method design pattern solves problems like: 
-
-* How can an object be created so that subclasses can redefine which class to instantiate?
-* How can a class defer instantiation to subclasses?
-
-The Factory Method design pattern describes how to solve such problems:
-
-* Define a separate operation (factory method) for creating an object.
-* Create an object by calling a factory method.
 ## abstract factory
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
@@ -28,6 +14,22 @@ The Abstract Factory design pattern describes how to solve such problems:
 
 * Encapsulate object creation in a separate (factory) object. That is, define an interface (AbstractFactory) for creating objects, and implement the interface.
 * A class delegates object creation to a factory object instead of creating objects directly.
+
+## factory methord
+
+![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg)
+https://en.wikipedia.org/wiki/Factory_method_pattern
+
+The Factory Method design pattern solves problems like: 
+
+* How can an object be created so that subclasses can redefine which class to instantiate?
+* How can a class defer instantiation to subclasses?
+
+The Factory Method design pattern describes how to solve such problems:
+
+* Define a separate operation (factory method) for creating an object.
+* Create an object by calling a factory method.
+
 ## bridge 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
