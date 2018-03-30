@@ -237,7 +237,7 @@ Extrinsic state is variant (context dependent) and therefore can not be shared a
 
 * extrinsic state that belongs to the context of the object (external) or unique to that instance
 
-intrinsic - state that naturally belongs to the 'FlyWeight' object and thus should be permanent or immutable (internal) or context free.
+* intrinsic - state that naturally belongs to the 'FlyWeight' object and thus should be permanent or immutable (internal) or context free.
 
 ```csharp
 using System.Collections.Concurrent;
