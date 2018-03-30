@@ -233,9 +233,9 @@ Intrinsic state is invariant (context independent) and therefore can be shared (
 
 Extrinsic state is variant (context dependent) and therefore can not be shared and must be passed in (for example, the position of character 'A' in a text document).
 
-intrinsic state owned by flyweight, extrinsic state owned by client.
+* intrinsic state owned by flyweight, extrinsic state owned by client.
 
-extrinsic - state that belongs to the context of the object (external) or unique to that instance
+* extrinsic state that belongs to the context of the object (external) or unique to that instance
 
 intrinsic - state that naturally belongs to the 'FlyWeight' object and thus should be permanent or immutable (internal) or context free.
 
