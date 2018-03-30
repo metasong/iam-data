@@ -3,7 +3,7 @@ the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
 [[TOC]]
 ## Creational
-### abstract(interface) factory
+### abstract(interface) factory(to create objects)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Abstract_factory_pattern
