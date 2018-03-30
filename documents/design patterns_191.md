@@ -208,7 +208,7 @@ What solution does the Facade design pattern describe?
 * Define a Facade object that implements a simple interface in terms of (by delegating to) the interfaces in the subsystem and
 * may perform additional functionality before/after forwarding a request.
 
-### flyweight(s have shared intrinsic states, operate with extrinsic states)
+### flyweight(s have shared intrinsic states, operate with extrinsic states from context)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
