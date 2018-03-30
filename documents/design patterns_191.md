@@ -304,7 +304,7 @@ What solution does the Interpreter design pattern describe?
 * Define a grammar for a simple language by defining an Expression class hierarchy and implementing an interpret() operation.
 * Represent a sentence in the language by an abstract syntax tree (AST) made up of Expression instances. Interpret a sentence by calling interpret() on the AST.
 
-### Iterator pattern
+### Iterator(s have traversal operations on aggregater)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c5/W3sDesign_Iterator_Design_Pattern_UML.jpg)
 
