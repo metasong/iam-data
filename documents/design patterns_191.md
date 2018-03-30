@@ -217,9 +217,24 @@ What problems can the Flyweight design pattern solve?
 * Large numbers of objects should be supported efficiently.
 * Creating large numbers of objects should be avoided.
 
+When representing large text documents, for example, creating an object for each character in the document would result in a huge amount of objects that couldn't be processed efficiently.
+
 What solution does the Flyweight design pattern describe?
 
-* Define Flyweight objects that store intrinsic (invariant) state that can be shared and provide an interface through which extrinsic (variant) state can be passed in.
+Define Flyweight objects that 
+1. store intrinsic (invariant) state that can be shared and 
+2. provide an interface through which extrinsic (variant) state can be passed in.
+
+This enables clients to (1) reuse (share) Flyweight objects (instead of creating a new object each time) and (2) pass in extrinsic state when they invoke a Flyweight operation.
+
+This greatly reduces the number of physically created objects.
+
+Intrinsic state is invariant (context independent) and therefore can be shared (for example, the code of character 'A' in a given character set).
+
+Extrinsic state is variant (context dependent) and therefore can not be shared and must be passed in (for example, the position of character 'A' in a text document).
+
+intrinsic state owned by flyweight, extrinsic state owned by client.
+
 ```csharp
 using System.Collections.Concurrent;
 using System.Collections.Generic;
