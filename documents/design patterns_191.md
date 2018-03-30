@@ -262,7 +262,7 @@ public class MinimumMemoryFootprint : ICoffeeFlavourFactory {
 
 examples: Windows WPF user event handle, bubble up the tree.
 ## Behavioral
-### chain of responsibility
+### chain of responsibility(hander)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
