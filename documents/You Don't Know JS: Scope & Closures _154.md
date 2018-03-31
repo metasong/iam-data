@@ -88,7 +88,7 @@ Bubble 2 encompasses the scope of foo, which includes the three identifiers: a, 
 
 Bubble 3 encompasses the scope of bar, and it includes just one identifier: c.
 
-Note: Global variables are also automatically properties of the global object (window in browsers, etc.), so it is possible to reference a global variable not directly by its lexical name, but instead indirectly as a property reference of the global object.
+>Note: Global variables are also automatically properties of the global object (window in browsers, etc.), so it is possible to reference a global variable not directly by its lexical name, but instead indirectly as a property reference of the global object.
 
 `window.a`
 This technique gives access to a global variable which would otherwise be inaccessible due to it being shadowed. However, non-global shadowed variables cannot be accessed.
