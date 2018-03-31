@@ -79,9 +79,8 @@ function foo(a) {
 foo( 2 ); // 2 4 12
 ```
 
-![dd](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/fig2.png)
 
-[pic](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/fig2.png)
+[pic](https://raw.githubusercontent.com/getify/You-Dont-Know-JS/master/scope%20%26%20closures/fig2.png)
 
 Bubble 1 encompasses the global scope, and has just one identifier in it: foo.
 
