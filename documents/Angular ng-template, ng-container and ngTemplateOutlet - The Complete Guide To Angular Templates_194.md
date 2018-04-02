@@ -67,6 +67,20 @@ export class AppComponent {
 ```
 > Uncaught Error: Template parse errors:
 Can't have multiple template bindings on one element. Use only one attribute 
-named 'template' or prefixed with *
+named 'template' or prefixed with 
+
+```ts
+<ng-container *ngIf="lessons">
+    <div class="lesson" *ngFor="let lesson of lessons">
+        <div class="lesson-detail">
+            {{lesson | json}}
+        </div>
+    </div>
+</ng-container>
+```
+the ng-container directive provides us with an element that we can attach a structural directive to a section of the page, without having to create an extra element just for that
+
+
+## Dynamic Template Creation with the ngTemplateOutlet directive
 
 
