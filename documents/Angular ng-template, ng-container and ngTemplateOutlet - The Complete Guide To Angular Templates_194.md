@@ -54,3 +54,6 @@ export class AppComponent {
 </ng-template>
 
 ```
+
+## Multiple Structural Directives
+
