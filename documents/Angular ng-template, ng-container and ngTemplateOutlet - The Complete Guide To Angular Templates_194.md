@@ -6,7 +6,7 @@ https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateou
 this means that the content of this tag will contain part of a template, that can be then be composed together with other templates in order to form the final component template.
 
 ```ts
-/// nothing diaplayed, because the temolate is defed but not used.
+/// nothing diaplayed, because the temolate is defined but not used.
 @Component({
   selector: 'app-root',
   template: `      
