@@ -34,7 +34,7 @@ The Builder design pattern describes how to solve such problems:
 * Encapsulate creating and assembling the parts of a complex object in a separate Builder object.
 * A class delegates object creation to a Builder object instead of creating the objects directly.
 
-### factory methord
+### factory methord(implemented in child class and called in parent class)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/43/W3sDesign_Factory_Method_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Factory_method_pattern
