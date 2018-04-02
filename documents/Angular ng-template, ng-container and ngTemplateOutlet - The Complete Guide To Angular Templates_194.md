@@ -31,3 +31,26 @@ export class AppComponent {
     }
 }
 ```
+
+
+```html
+<div class="lessons-list" *ngIf="lessons else loading">
+  ... 
+</div>
+
+<ng-template #loading>
+    <div>Loading...</div>
+</ng-template>
+
+
+<ng-template [ngIf]="lessons" [ngIfElse]="loading">
+   <div class="lessons-list">
+     ... 
+   </div>
+</ng-template>
+
+<ng-template #loading>
+    <div>Loading...</div>
+</ng-template>
+
+```
