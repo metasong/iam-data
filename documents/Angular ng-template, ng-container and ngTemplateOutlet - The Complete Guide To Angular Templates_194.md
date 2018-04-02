@@ -56,4 +56,17 @@ export class AppComponent {
 ```
 
 ## Multiple Structural Directives
+```ts
+<div class="lesson" *ngIf="lessons" 
+       *ngFor="let lesson of lessons">
+    <div class="lesson-detail">
+        {{lesson | json}}
+    </div>
+</div>  
+
+```
+> Uncaught Error: Template parse errors:
+Can't have multiple template bindings on one element. Use only one attribute 
+named 'template' or prefixed with *
+
 
