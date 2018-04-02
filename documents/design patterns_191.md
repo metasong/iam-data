@@ -342,7 +342,7 @@ What solution does the Iterator design pattern describe?
 Different iterators can be used to access and traverse an aggregate in different ways.
 New access and traversal operations can be defined independently by defining new iterators.
 
-### mediator
+### mediator(control and coordinates the interaction between objects)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/9/92/W3sDesign_Mediator_Design_Pattern_UML.jpg)
 
 https://en.wikipedia.org/wiki/Mediator_pattern
