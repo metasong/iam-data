@@ -81,6 +81,26 @@ named 'template' or prefixed with
 the ng-container directive provides us with an element that we can attach a structural directive to a section of the page, without having to create an extra element just for that
 
 
-## Dynamic Template Creation with the ngTemplateOutlet directive
+## Dynamic Template Creation with the ngTemplateOutlet directive & Template Context
+
+```ts
+@Component({
+  selector: 'app-root',
+  template: `      
+<ng-template #estimateTemplate let-lessonsCounter="estimate">
+    <div> Approximately {{lessonsCounter}} lessons ...</div>
+</ng-template>
+<ng-container 
+   *ngTemplateOutlet="estimateTemplate;context:ctx">
+</ng-container>
+`})
+export class AppComponent {
+
+    totalEstimate = 10;
+    ctx = {estimate: this.totalEstimate};
+  
+}
+
+```
 
 
