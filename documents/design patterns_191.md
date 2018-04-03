@@ -4,12 +4,13 @@ the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 [[TOC]]
 ## Creational
 ### abstract(interface) factory(to create objects)
-  <i-code
-    [language]="ts"
-    [linenums]="true"
-    [path]="router/src/app/app.module.ts"
-    [region]="animations-module">
-  </i-code>
+
+<i-code
+language="ts"
+linenums="true"
+path="router/src/app/app.module.ts"
+region="animations-module">
+</i-code>
   
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/a/aa/W3sDesign_Abstract_Factory_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Abstract_factory_pattern
