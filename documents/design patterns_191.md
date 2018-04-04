@@ -2,11 +2,10 @@
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 <i-toc> 
 
-
-[[TOC]]
+[[TOC]] 
 ## Creational
 ### abstract(interface) factory(to create objects)
-
+ 
 <i-code
 language="ts"
 linenums="true"
@@ -33,7 +32,7 @@ The Abstract Factory design pattern describes how to solve such problems:
 
 https://en.wikipedia.org/wiki/Builder_pattern
 
-The Builder design pattern solves problems like:
+The Builder design pattern solves problems like:   
 
 * How can a class (the same construction process) create different representations of a complex object?
 * How can a class that includes creating a complex object be simplified?
