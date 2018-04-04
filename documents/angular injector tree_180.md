@@ -22,5 +22,8 @@ platform.bootstrapModule(AppModule);
 platform.bootstrapModule(AppModule2);
 ```
 ![=100%*](https://i.stack.imgur.com/PSvBz.png)
+
 https://stackoverflow.com/questions/48594944/can-deps-also-be-used-with-useclass/48595518#48595518
+
+
 
