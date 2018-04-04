@@ -11,3 +11,13 @@ https://blog.angularindepth.com/angular-dependency-injection-and-tree-shakeable-
 > **Tip**: If you have angular application in dev mode and want to see all providers from root AppModule injector then just open devtools console and write:  
 > `ng.probe(getAllAngularRootElements()[0]).injector.view.root.ngModule._providers`
 
+the AppModule root injector has a parent NgZoneInjector , which is a child of PlatformInjector.
+
+```ts
+const platform = platformBrowserDynamic([ { 
+  provide: SharedService, // shared static providers
+  deps:[] 
+}]);
+platform.bootstrapModule(AppModule);
+platform.bootstrapModule(AppModule2);
+```
