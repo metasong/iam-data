@@ -21,3 +21,4 @@ const platform = platformBrowserDynamic([ {
 platform.bootstrapModule(AppModule);
 platform.bootstrapModule(AppModule2);
 ```
+
