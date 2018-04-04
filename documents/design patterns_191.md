@@ -1,6 +1,8 @@
 # design patterns
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
-<i-toc></i-toc>
+<i-toc> 
+
+
 [[TOC]]
 ## Creational
 ### abstract(interface) factory(to create objects)
