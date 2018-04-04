@@ -4,3 +4,5 @@
  // a code block
  console.log('do stuff');
  </i-code>
+ 
+ <i-toc></i-toc>
