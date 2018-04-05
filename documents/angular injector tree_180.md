@@ -91,4 +91,4 @@ class Injector_ implements Injector {
 ```
 
 As we can see in the preceding code Merge injector is just combination of view and element definition.
-![](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
+![=100%*](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
