@@ -69,3 +69,20 @@ This design proposal is to resolve #13722 which causes double instantiation of l
 Background
 Imagine that we have components cX, cY, cZ declared in module mX, mY and mZ respectively. Also assume that we want to load the components in the order of cX <- cY <- cZ (Where cX is the root, cY is the child and cZ is the grandchild, arrow implies parent relationship).  These components have associated injectors ciX <- ciY <- ciZ. Finally let’s assume that all components are being lazy loaded by the router and have corresponding guards gY and gZ which need to approve the loading of the component cY and cZ.
 
+We will introduce a special merge Injector which will itself not have any values, but it will resolve values first in component injector and then in module injector. This merge injector will be private to the component.
+
+```js
+null <-- mX <--------- mY <--------- mZ
+
+         ^             ^             ^
+
+         |             |             |
+
+         miX <- cX    miY <- cY     miZ <- cZ
+
+         |             |             |
+
+         v             v             v
+
+null <- ciX <-------- ciY <-------- ciZ
+```
