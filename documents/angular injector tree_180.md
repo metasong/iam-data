@@ -52,3 +52,20 @@ function createRootData(
 
 https://docs.google.com/document/d/1OEUIwc-s69l1o97K0wBd_-Lth5BBxir1KuCRWklTlI4/mobilebasic
 
+DESIGN DOC: Separating Module Injector and Component Injectors
+Separating Module Injector and Component Injectors
+
+author: Misko@angular.io
+
+last update: 2016-12-19
+
+status: draft
+
+This document is published to the web as part of the public Angular Design Docs folder
+
+Objective
+This design proposal is to resolve #13722 which causes double instantiation of lazy loaded modules.  The proposed solution is to change the injector hierarchy to not interleave the module and component injectors.
+
+Background
+Imagine that we have components cX, cY, cZ declared in module mX, mY and mZ respectively. Also assume that we want to load the components in the order of cX <- cY <- cZ (Where cX is the root, cY is the child and cZ is the grandchild, arrow implies parent relationship).  These components have associated injectors ciX <- ciY <- ciZ. Finally let’s assume that all components are being lazy loaded by the router and have corresponding guards gY and gZ which need to approve the loading of the component cY and cZ.
+
