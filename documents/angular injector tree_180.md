@@ -74,3 +74,21 @@ null <- ciX <-------- ciY <-------- ciZ
 
 * If cZ would ask for dependency Q it would be resolved in: ciZ, ciY, ciX, and then in mZ, mY, and mX.
 * If cY would ask for dependency R it would be resolved in: ciY, ciX, and then in mY, and mX.
+
+
+```ts
+class Injector_ implements Injector {
+  constructor(private view: ViewData, private elDef: NodeDef|null) {}
+  get(token: any, notFoundValue: any = Injector.THROW_IF_NOT_FOUND): any {
+    const allowPrivateServices =
+        this.elDef ? (this.elDef.flags & NodeFlags.ComponentView) !== 0 : false;
+    return Services.resolveDep(
+        this.view, this.elDef, allowPrivateServices,
+        {flags: DepFlags.None, token, tokenKey: tokenKey(token)}, notFoundValue);
+  }
+}
+
+```
+
+As we can see in the preceding code Merge injector is just combination of view and element definition.
+![](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
