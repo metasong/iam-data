@@ -27,5 +27,23 @@ https://stackoverflow.com/questions/48594944/can-deps-also-be-used-with-useclass
 
 ## EntryComponent and RootData
 
+Every time we create dynamic component angular creates root view with root data, that contains references to elInjector and ngModule injector.
+
+These types of components are usually passed either in bootstrap or entryComponents array of NgModule. Angular router also creates component dynamically.
+
+```ts
+function createRootData(
+    elInjector: Injector, ngModule: NgModuleRef<any>, rendererFactory: RendererFactory2,
+    projectableNodes: any[][], rootSelectorOrNode: any): RootData {
+  const sanitizer = ngModule.injector.get(Sanitizer);
+  const errorHandler = ngModule.injector.get(ErrorHandler);
+  const renderer = rendererFactory.createRenderer(null, null);
+  return {
+    ngModule,
+    injector: elInjector, projectableNodes,
+    selectorOrNode: rootSelectorOrNode, sanitizer, rendererFactory, renderer, errorHandler
+  };
+}
+```
 
 
