@@ -86,3 +86,6 @@ null <-- mX <--------- mY <--------- mZ
 
 null <- ciX <-------- ciY <-------- ciZ
 ```
+
+* If cZ would ask for dependency Q it would be resolved in: ciZ, ciY, ciX, and then in mZ, mY, and mX.
+* If cY would ask for dependency R it would be resolved in: ciY, ciX, and then in mY, and mX.
