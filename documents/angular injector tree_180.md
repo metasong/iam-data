@@ -93,7 +93,7 @@ class Injector_ implements Injector {
 As we can see in the preceding code Merge injector is just combination of view and element definition.
 ![=100%*](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
 
-Merge injector:
+Merge injector:is just combination of view and element definition. This injector works like a bridge between element injector tree and module injector tree.
 ```ts
 class Injector_ implements Injector {
   constructor(private view: ViewData, private elDef: NodeDef|null) {}
@@ -106,3 +106,8 @@ class Injector_ implements Injector {
   }
 }
 ```
+
+Basically every element can have merge injector even if you didn’t provide any token on it.
+
+![=100%*](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
+
