@@ -92,3 +92,17 @@ class Injector_ implements Injector {
 
 As we can see in the preceding code Merge injector is just combination of view and element definition.
 ![=100%*](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
+
+Merge injector:
+```ts
+class Injector_ implements Injector {
+  constructor(private view: ViewData, private elDef: NodeDef|null) {}
+  get(token: any, notFoundValue: any = Injector.THROW_IF_NOT_FOUND): any {
+    const allowPrivateServices =
+        this.elDef ? (this.elDef.flags & NodeFlags.ComponentView) !== 0 : false;
+    return Services.resolveDep(
+        this.view, this.elDef, allowPrivateServices,
+        {flags: DepFlags.None, token, tokenKey: tokenKey(token)}, notFoundValue);
+  }
+}
+```
