@@ -111,3 +111,18 @@ Basically every element can have merge injector even if you didn’t provide any
 
 ![=100%*](https://cdn-images-1.medium.com/max/2000/1*WGyA-RolH_Z68SMks4FmJA.gif)
 
+```ts
+/**
+ * for component views, this is the host element.
+ * for embedded views, this is the index of the parent node
+ * that contains the view container.
+ */
+export function viewParentEl(view: ViewData): NodeDef|null {
+  const parentView = view.parent;
+  if (parentView) {
+    return view.parentNodeDef !.parent;
+  } else {
+    return null;
+  }
+}
+```
