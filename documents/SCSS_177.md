@@ -56,10 +56,30 @@ a {
 ```
 
 ### Placeholder Selectors: %foo
+These look like class and id selectors, except the # or . is replaced by %. They're meant to be used with the @extend directive
+```scss
+// This ruleset won't be rendered on its own.
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+.notice {
+  @extend %extreme;
+}
+// Is compiled to:
+#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em; }
 
 
+
+```
 
 ### CSS comments 
+ /* */ and //
+ 
 The multiline comments are preserved in the CSS output where possible, while the single-line comments are removed. 
 
 ```css
