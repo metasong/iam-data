@@ -3,10 +3,6 @@
 
 <i-toc> </i-toc>   
 
-<i-toc> </i-toc>
-
-<i-code> </i-code>
-
 https://sass-lang.com/documentation/file.SASS_REFERENCE.html
 
 ### Data Types
