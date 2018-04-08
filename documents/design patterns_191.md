@@ -1,6 +1,8 @@
 # design patterns
-<i-code></i-code>
+ 
 <i-toc>
+</i-toc>
+
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
 
