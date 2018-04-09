@@ -29,3 +29,10 @@ bar();
 x;						// 3
 it.next();				// x: 3
 ```
+
+
+## Iteration Messaging
+
+```js
+
+```
