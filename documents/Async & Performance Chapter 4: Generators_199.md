@@ -207,8 +207,8 @@ for (var v of it) {
 			it.return( "Hello World" ).value
 		);
 		// no `break` needed here
-      // if break here, the finally still would be called, but the itor 
-      //generally caused by a break, return, or an uncaught exception -- sends a signal to the generator's iterator for it to terminate.
+      // if break here, the finally still would be called. 
+      // a break, return, or an uncaught exception -- sends a signal to the generator's iterator for it to terminate.
 	}
 }
 // 1 9 33 105 321 969
