@@ -190,14 +190,14 @@ function *something() {
 			yield nextVal;
 		}
 	}
-	// cleanup clause
+	// cleanup clause, database connections, etc.
 	finally {
 		console.log( "cleaning up!" );
 	}
 }
 
 var it = something();
-for (var v of it) {
+for (var v of it) {//iterator also has a Symbol.iterator function on it, which basically does a return this
 	console.log( v );
 
 	// don't let the loop run forever!
