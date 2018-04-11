@@ -92,3 +92,18 @@ it1.next( val2 / 2 );					// y:300
 it2.next( val1 / 4 );					// y:10
 										// 200 10 3
 ```
+
+helper function
+
+```js
+function step(gen) {
+	var it = gen();
+	var last;
+
+	return function() {
+		// whatever is `yield`ed out, just
+		// send it right back in the next time!
+		last = it.next( last ).value;
+	};
+}
+```
