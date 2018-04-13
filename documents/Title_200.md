@@ -10,4 +10,18 @@ h1 {color:red;}
 
 p {color:blue;}
 </style>
-<p>okay</p>
+<p id="demo">okay</p>
+
+
+<script type="text/javascript">
+// JavaScript example
+
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<p id="demo">okay</p>
+
+
+
+
+
+
