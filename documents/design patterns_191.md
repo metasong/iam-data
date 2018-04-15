@@ -455,7 +455,7 @@ Implementing an algorithm directly within the class that uses the algorithm is i
 * A class can be configured with a strategy object, which is used to perform an algorithm. Moreover, the strategy object can be exchanged at run-time.
 
 
-### template method
+### template method(in parent class)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/2/2a/W3sDesign_Template_Method_Design_Pattern_UML.jpg)
 
