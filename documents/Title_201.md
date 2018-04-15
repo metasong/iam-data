@@ -1,6 +1,0 @@
----
-softbreak: false
----
-
-# Title
-*summery*
