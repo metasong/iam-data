@@ -295,3 +295,7 @@ catch (err) {
 	console.error( err );			// Oops
 }
 ```
+
+
+## Generators + Promises
+
