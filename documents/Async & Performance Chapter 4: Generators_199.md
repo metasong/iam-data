@@ -220,3 +220,54 @@ When we call it.return(..), it immediately terminates the generator, which of co
 
 
 ## Iterating Generators Asynchronously
+
+
+```js
+function foo(x,y,cb) {
+	ajax(
+		"http://some.url.1/?x=" + x + "&y=" + y,
+		cb
+	);
+}
+
+foo( 11, 31, function(err,text) {
+	if (err) {
+		console.error( err );
+	}
+	else {
+		console.log( text );
+	}
+} );
+
+function foo(x,y) {
+	ajax(
+		"http://some.url.1/?x=" + x + "&y=" + y,
+		function(err,data){
+			if (err) {
+				// throw an error into `*main()`
+				it.throw( err );
+			}
+			else {
+				// resume `*main()` with received `data`
+				it.next( data );
+			}
+		}
+	);
+}
+
+function *main() {
+	try {
+		var text = yield foo( 11, 31 );
+      // express asynchrony in a sequential, synchronous fashion that our brains can relate to
+		console.log( text );
+	}
+	catch (err) {
+		console.error( err );
+	}
+}
+
+var it = main();
+
+// start it all up!
+it.next();
+```
