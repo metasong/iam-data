@@ -128,7 +128,7 @@ The Adapter design pattern describes how to solve such problems:
 ### bridge(abstraction with implementation, prefer composition to subclass)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/f/fd/W3sDesign_Bridge_Design_Pattern_UML.jpg)
 
-![=100%](https://obsoletedeveloper.files.wordpress.com/2012/09/bridgepatternuml.jpg)
+![=100%*](https://obsoletedeveloper.files.wordpress.com/2012/09/bridgepatternuml.jpg)
 
 The bridge pattern is useful when both the class and what it does vary often. The class itself can be thought of as the abstraction and what the class can do as the implementation. The bridge pattern can also be thought of as two layers of abstraction.
 
