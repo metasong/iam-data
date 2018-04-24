@@ -194,7 +194,8 @@ What solution does the Composite design pattern describe?
 
 What problems can the Decorator design pattern solve? 
 
-* Responsibilities should be added to (and removed from) an object dynamically at run-time.
+* Responsibilities should be added to (and removed from) an object dynamically at run-time.(i.e. select unselect)
+
 * A flexible alternative to subclassing for extending functionality should be provided.
 
 When using subclassing, different subclasses extend a class in different ways. But an extension is bound to the class at compile-time and can't be changed at run-time.
