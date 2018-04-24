@@ -134,7 +134,7 @@ The Adapter design pattern describes how to solve such problems:
 
 ![=100%*](http://www.hsufengko.com/uploads/8/0/5/7/8057674/8141893_orig.jpeg)
 
-> implementation of portable Window abstration in a user interface toolkit, X Window System and IBM's Presentation Manager(PM)  
+> implementation of portable Window abstration in a user interface toolkit, X Window System and IBM's Presentation Manager(PM).  
 > the up image looks like a bridge
 
 
