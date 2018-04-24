@@ -291,8 +291,9 @@ try {
 	it.throw( "Oops" );
 }
 catch (err) {
-	// nope, didn't handle it!
-	console.error( err );			// Oops
+	// nope, generator didn't handle it!
+	console.error( err );
+    // it handles it: Oops
 }
 ```
 
