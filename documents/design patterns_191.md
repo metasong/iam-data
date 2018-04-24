@@ -134,7 +134,7 @@ The Adapter design pattern describes how to solve such problems:
 
 ![=100%*](http://www.hsufengko.com/uploads/8/0/5/7/8057674/8141893_orig.jpeg)
 
-> implementation of portable Windoe abstration in a user interface toolkit, X Window System and IBM's Presentation Manager(PM)
+> implementation of portable Window abstration in a user interface toolkit, X Window System and IBM's Presentation Manager(PM)
 
 
 The bridge pattern is useful when both the class and what it does vary often. The class itself can be thought of as the abstraction and what the class can do as the implementation. The bridge pattern can also be thought of as two layers of abstraction.
