@@ -300,3 +300,6 @@ catch (err) {
 
 ## Generators + Promises
 
+generators (synchronous-looking async code) with Promises (trustable and composable)
+
+
