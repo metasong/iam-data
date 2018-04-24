@@ -110,6 +110,8 @@ https://en.wikipedia.org/wiki/Singleton_pattern
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/e5/W3sDesign_Adapter_Design_Pattern_UML.jpg)
 
+the interface one could use the bridge pattern 
+
 https://en.wikipedia.org/wiki/Adapter_pattern
 
 The Adapter design pattern solves problems like: 
