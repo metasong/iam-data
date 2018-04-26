@@ -305,7 +305,7 @@ public class MinimumMemoryFootprint : ICoffeeFlavourFactory {
 ```
 
 
-examples: Windows WPF user event handle, bubble up the tree.
+
 ## Behavioral
 ### chain of responsibility(hander)
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/6/6a/W3sDesign_Chain_of_Responsibility_Design_Pattern_UML.jpg)
@@ -319,6 +319,8 @@ What problems can the Chain of Responsibility design pattern solve?
 What solution does the Chain of Responsibility design pattern describe?
 
 * Define a chain of receiver objects having the responsibility, depending on run-time conditions, to either handle a request or forward it to the next receiver on the chain (if any).
+
+examples: Windows WPF user event handle, bubble up the tree.
 
 ### command
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/c/c8/W3sDesign_Command_Design_Pattern_UML.jpg)
