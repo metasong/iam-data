@@ -378,6 +378,11 @@ New access and traversal operations can be defined independently by defining new
 
 ![=100%*](http://wiki3.cosc.canterbury.ac.nz/images/a/a0/MediatorExample.png)
 
+![=100%*](https://flylib.com/books/2/505/1/html/2/pictures/state-eg.gif)
+
+![=100%*](https://flylib.com/books/2/505/1/html/2/pictures/state012.gif)
+
+
 https://en.wikipedia.org/wiki/Mediator_pattern
 
 What solution does the Mediator design pattern describe?
