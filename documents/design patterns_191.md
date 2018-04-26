@@ -238,6 +238,8 @@ What solution does the Facade design pattern describe?
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
+not all flyweight subclasses need to be shared
+
 What problems can the Flyweight design pattern solve?
 
 * Large numbers of objects should be supported efficiently.
