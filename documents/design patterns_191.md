@@ -247,7 +247,7 @@ When representing large text documents, for example, creating an object for each
 
 What solution does the Flyweight design pattern describe?
 
-Define Flyweight objects that 
+Define Flyweight objects stored in flyweight pool that 
 1. store intrinsic (invariant) state that can be shared and 
 2. provide an interface through which extrinsic (variant) state can be passed in.
 
