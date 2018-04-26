@@ -385,7 +385,7 @@ What problems can the Mediator design pattern solve?
 * Tight coupling between a set of interacting objects should be avoided.
 * It should be possible to change the interaction between a set of objects independently.
 
-a Form/Dialog in .net Winform can be seen as a mefiator/director
+a Form/Dialog in .net Winform can be seen as a mefiator/director of controls on it.
 
 ### memento(save/restore states)
 
