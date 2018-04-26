@@ -591,3 +591,44 @@ catch (err) {
 }
 // error caught outside: F
 ```
+
+
+## Delegating Asynchrony
+
+```js
+function *foo() {
+	var r2 = yield request( "http://some.url.2" );
+	var r3 = yield request( "http://some.url.3/?v=" + r2 );
+
+	return r3;
+}
+
+function *bar() {
+	var r1 = yield request( "http://some.url.1" );
+
+	var r3 = yield *foo();
+
+	console.log( r3 );
+}
+
+run( bar );
+```
+## Delegating "Recursion"
+
+```js
+function *foo(val) {
+	if (val > 1) {
+		// generator recursion
+		val = yield *foo( val - 1 );
+	}
+
+	return yield request( "http://some.url/?v=" + val );
+}
+
+function *bar() {
+	var r1 = yield *foo( 3 );
+	console.log( r1 );
+}
+
+run( bar );
+```
