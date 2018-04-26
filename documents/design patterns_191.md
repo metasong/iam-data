@@ -238,7 +238,7 @@ What solution does the Facade design pattern describe?
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/4/4e/W3sDesign_Flyweight_Design_Pattern_UML.jpg)
 https://en.wikipedia.org/wiki/Flyweight_pattern
 
-not all flyweight subclasses need to be shared. the flyweight interface enables sharing; it doesn't enforce it.(rows has many columns, and column has many charactors in article. They have shared flyweight charactor children , but they are not shared)
+not all flyweight subclasses need to be shared. the flyweight interface enables sharing; it doesn't enforce it.(rows has many columns, and column has many charactors in article. They have shared flyweight charactor children at bottom level, but they are not shared)
 
 What problems can the Flyweight design pattern solve?
 
