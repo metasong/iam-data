@@ -378,10 +378,6 @@ New access and traversal operations can be defined independently by defining new
 
 ![=100%*](http://wiki3.cosc.canterbury.ac.nz/images/a/a0/MediatorExample.png)
 
-![=100%*](https://flylib.com/books/2/505/1/html/2/pictures/state-eg.gif)
-
-![=100%*](https://flylib.com/books/2/505/1/html/2/pictures/state012.gif)
-
 
 https://en.wikipedia.org/wiki/Mediator_pattern
 
@@ -445,6 +441,9 @@ This notification-registration interaction is also known as publish-subscribe.
 ### state(specific operation switch)
 
 ![=100%*](https://upload.wikimedia.org/wikipedia/commons/e/ec/W3sDesign_State_Design_Pattern_UML.jpg)
+![=100%*](https://flylib.com/books/2/505/1/html/2/pictures/state-eg.gif)
+
+![=100%*](https://www.cs.unb.ca/~wdu/cs4015/dpbook/hires/Pictures/state012.gif)
 
 https://en.wikipedia.org/wiki/State_pattern
 
