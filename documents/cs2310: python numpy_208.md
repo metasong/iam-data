@@ -13,3 +13,8 @@ print(t != f)  # Logical XOR; prints "True"
 hw12 = '%s %s %d' % (hello, world, 12)  # sprintf style string formatting
 print(hw12)  # prints "hello world 12"
 ```
+## Containers
+### list
+```python
+x= [3,'cat',2]
+```
