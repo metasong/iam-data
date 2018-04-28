@@ -9,3 +9,7 @@ xor is: !=
 ```python
 print(t != f)  # Logical XOR; prints "True" 
 ```
+```python
+hw12 = '%s %s %d' % (hello, world, 12)  # sprintf style string formatting
+print(hw12)  # prints "hello world 12"
+```
