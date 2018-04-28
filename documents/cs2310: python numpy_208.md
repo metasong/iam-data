@@ -17,4 +17,6 @@ print(hw12)  # prints "hello world 12"
 ### list
 ```python
 x= [3,'cat',2]
+
+print(x[-1] # 2 index is lenth-1
 ```
