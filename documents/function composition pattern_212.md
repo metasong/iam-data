@@ -11,7 +11,7 @@ export function compose<A, B, C, D, E, F>(
 export function compose<A = any, F = any>(...functions: any[]): (i: A) => F;
 export function compose(...functions: any[]) {
   return function(arg: any) {
-    return functions.reduceRight((composed, fn) => fn(composed), arg);
+    return functions.reduceRight((lastValue, fn) => fn(lastValue), arg);
   };
 }
 ```
