@@ -43,12 +43,18 @@ sequenceDiagram
     participant F as MemorizedComputorFactory
     participant P as MemorizedComputer
     C->>F:create(computeFn,isEqual)
+    activate F
     F->>P:new()
     F-->>C:MemorizedComputer
+    deactivate F
     C->>P:compute(parameterA)
-    P->>C:result(A)
+    activate P
+    P-->>C:result(A)
+    deactivate P
     C->>P:compute(parameterA)
-    P->>C:directly return result(A)
-    C->>MemorizedComputer:reset()
+    P-->>C:directly return result(A)
+    C->>P:reset()
+    activate P
+    deactivate P
     
 ```
