@@ -43,6 +43,11 @@ sequenceDiagram
     participant MemorizedComputorFactory
     Client->>MemorizedComputorFactory:create(computeFn,isEqual)
     MemorizedComputorFactory->>MemorizedComputer:new
-    
+    MemorizedComputorFactory->>Client:MemorizedComputer
+    Client->>MemorizedComputer:compute(parameterA)
+    MemorizedComputer->>Client:result(A)
+    Client->>MemorizedComputer:compute(parameterA)
+    MemorizedComputer->>Client:directly return result(A)
+    Client->>MemorizedComputer:reset()
     
 ```
