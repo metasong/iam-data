@@ -53,6 +53,7 @@ sequenceDiagram
     deactivate P
     C->>P:compute(parameterA)
     P-->>C:directly return result(A)
+    Note over C, P: compute with same parameters directly return the same result
     C->>P:reset()
     activate P
     deactivate P
