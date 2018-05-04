@@ -37,4 +37,9 @@ export function createMemoizedComputor(
 }
 ```
 
-
+```mermaid
+sequenceDiagram
+	participant Client
+    participant Memorizedomputor
+    
+```
