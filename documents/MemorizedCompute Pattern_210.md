@@ -39,15 +39,16 @@ export function createMemoizedComputor(
 
 ```mermaid
 sequenceDiagram
-	participant Client
-    participant MemorizedComputorFactory
-    Client->>MemorizedComputorFactory:create(computeFn,isEqual)
-    MemorizedComputorFactory->>MemorizedComputer:new
-    MemorizedComputorFactory->>Client:MemorizedComputer
-    Client->>MemorizedComputer:compute(parameterA)
-    MemorizedComputer->>Client:result(A)
-    Client->>MemorizedComputer:compute(parameterA)
-    MemorizedComputer->>Client:directly return result(A)
-    Client->>MemorizedComputer:reset()
+	participant C as Client
+    participant F as MemorizedComputorFactory
+    participant P as MemorizedComputer
+    C->>F:create(computeFn,isEqual)
+    F->>P:new()
+    F-->>C:MemorizedComputer
+    C->>P:compute(parameterA)
+    P->>C:result(A)
+    C->>P:compute(parameterA)
+    P->>C:directly return result(A)
+    C->>MemorizedComputer:reset()
     
 ```
