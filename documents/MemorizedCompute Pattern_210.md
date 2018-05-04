@@ -4,7 +4,7 @@
 export function createMemoizedComputer(
   compute: AnyFn,
   isEqual = isEqualCheck
-): MemoizedComputor {
+): MemoizedComputer {
   let lastArguments: null | IArguments = null;
   let lastResult: any = null;
 
