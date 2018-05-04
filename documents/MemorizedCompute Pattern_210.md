@@ -42,7 +42,7 @@ sequenceDiagram
 	participant C as Client
     participant F as ComputerFactory
     participant P as Computer
-    C->>F:create(computeFn,isEqual)
+    C->>F:create(computeFn,isEqualFn)
     activate F
     F->>P:new()
     F-->>C:MemorizedComputer
