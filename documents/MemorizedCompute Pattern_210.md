@@ -40,8 +40,8 @@ export function createMemoizedComputor(
 ```mermaid
 sequenceDiagram
 	participant C as Client
-    participant F as MemorizedComputorFactory
-    participant P as MemorizedComputer
+    participant F as ComputorFactory
+    participant P as Computer
     C->>F:create(computeFn,isEqual)
     activate F
     F->>P:new()
