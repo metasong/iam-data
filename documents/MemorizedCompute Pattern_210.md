@@ -1,7 +1,7 @@
 # MemorizedCompute Pattern
 
 ```ts
-export function createMemoizedComputor(
+export function createMemoizedComputer(
   compute: AnyFn,
   isEqual = isEqualCheck
 ): MemoizedComputor {
@@ -40,7 +40,7 @@ export function createMemoizedComputor(
 ```mermaid
 sequenceDiagram
 	participant C as Client
-    participant F as ComputorFactory
+    participant F as ComputerFactory
     participant P as Computer
     C->>F:create(computeFn,isEqual)
     activate F
