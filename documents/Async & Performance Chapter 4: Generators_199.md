@@ -677,17 +677,25 @@ function thunkify(fn) {
 	};
 }
 
-var whatIsThis = thunkify( foo );
+var fooThunkory = thunkify( foo );
 
-var fooThunk = whatIsThis( 3, 4 );
+var fooThunk1 = fooThunkory( 3, 4 );
+var fooThunk2 = fooThunkory( 5, 6 );
 
 // later
 
-fooThunk( function(sum) {
+fooThunk1( function(sum) {
 	console.log( sum );		// 7
 } );
 
+fooThunk2( function(sum) {
+	console.log( sum );		// 11
+} );
+
 ```
+## s/promise/thunk/
+
+
 
 ##  Pre-ES6 Generators
 
