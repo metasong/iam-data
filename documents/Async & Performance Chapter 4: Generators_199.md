@@ -694,9 +694,11 @@ fooThunk2( function(sum) {
 
 ```
 ## s/promise/thunk/
+as a thunk-aware patch to our earlier run(..) utility, we would need logic like this:
 
+```js
 
-
+```
 ##  Pre-ES6 Generators
 
 ```js
