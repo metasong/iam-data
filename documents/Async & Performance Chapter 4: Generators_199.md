@@ -722,6 +722,8 @@ else if (typeof next.value == "function") {
 	);
 }
 ```
+Now, our generators can either call promisories to yield Promises, or call thunkories to yield thunks, and in either case, run(..) would handle that value and use it to wait for the completion to resume the generator.
+
 ##  Pre-ES6 Generators
 
 ```js
