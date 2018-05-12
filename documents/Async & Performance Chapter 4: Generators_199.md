@@ -692,7 +692,7 @@ var foo = regeneratorRuntime.mark(function foo(url) {
 });
 
 ```
-// make and return an iterator	
+//every time the above code make and return an iterator	
 return {
 		next: function(v) {
 			// ..
