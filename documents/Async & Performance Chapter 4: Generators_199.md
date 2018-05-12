@@ -690,4 +690,16 @@ var foo = regeneratorRuntime.mark(function foo(url) {
         }
     }, foo, this, [[0, 8]]);
 });
+
 ```
+// make and return an iterator	
+return {
+		next: function(v) {
+			// ..
+		},
+		throw: function(e) {
+			// ..
+		}
+};
+    
+ 
