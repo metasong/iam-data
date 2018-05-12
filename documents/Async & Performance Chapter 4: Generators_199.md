@@ -697,7 +697,30 @@ fooThunk2( function(sum) {
 as a thunk-aware patch to our earlier run(..) utility, we would need logic like this:
 
 ```js
-
+// ..
+// did we receive a thunk back?
+else if (typeof next.value == "function") {
+	return new Promise( function(resolve,reject){
+		// call the thunk with an error-first callback
+		next.value( function(err,msg) {
+			if (err) {
+				reject( err );
+			}
+			else {
+				resolve( msg );
+			}
+		} );
+	} )
+	.then(
+		handleNext,
+		function handleErr(err) {
+			return Promise.resolve(
+				it.throw( err )
+			)
+			.then( handleResult );
+		}
+	);
+}
 ```
 ##  Pre-ES6 Generators
 
