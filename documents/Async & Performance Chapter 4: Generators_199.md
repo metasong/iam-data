@@ -662,6 +662,31 @@ var fooThunk = thunkify( foo, 3, 4 );
 fooThunk( function(sum) {
 	console.log( sum );		// 7
 } );
+
+
+
+// another 
+
+function thunkify(fn) {
+	return function() {
+		var args = [].slice.call( arguments );
+		return function(cb) {
+			args.push( cb );
+			return fn.apply( null, args );
+		};
+	};
+}
+
+var whatIsThis = thunkify( foo );
+
+var fooThunk = whatIsThis( 3, 4 );
+
+// later
+
+fooThunk( function(sum) {
+	console.log( sum );		// 7
+} );
+
 ```
 
 ##  Pre-ES6 Generators
