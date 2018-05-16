@@ -6,3 +6,5 @@ https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230
 
 
 https://betterexplained.com/articles/adept-method/
+
+https://quantblog.wordpress.com/tag/math/
