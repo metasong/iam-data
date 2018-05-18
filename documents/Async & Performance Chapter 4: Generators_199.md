@@ -637,7 +637,34 @@ run( bar );
 
 https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch4.md#generator-concurrency
 
+```js
+// `request(..)` is a Promise-aware Ajax utility
 
+var res = [];
+
+function *reqData(url) {
+	res.push(
+		yield request( url )
+	);
+}
+
+var it1 = reqData( "http://some.url.1" );
+var it2 = reqData( "http://some.url.2" );
+
+var p1 = it1.next().value;
+var p2 = it2.next().value;
+
+p1
+.then( function(data){
+	it1.next( data );
+	return p2;
+} )
+.then( function(data){
+	it2.next( data );
+} );
+// problem: if first is not fulfiled we can not get the second one
+
+```
 
 ## Thunks
 ```js
