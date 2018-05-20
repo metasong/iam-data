@@ -387,7 +387,7 @@ function *main() {
 
 run( main );
 ```
-> The run(..) we defined returns a promise which is wired to resolve once the generator is complete, or receive an uncaught exception if the generator doesn't handle it. We don't show that capability here, but we'll come back to it later in the chapter.
+> The run(..) we defined returns a promise which is wired to resolve once the generator is complete, or receive an uncaught exception if the generator doesn't handle it. 
 ## ES7: async and await?
 
 ```js
