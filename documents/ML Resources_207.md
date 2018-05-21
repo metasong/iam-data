@@ -11,6 +11,8 @@ https://www.mathsisfun.com/data/standard-deviation.html
 
 https://distill.pub
 
+https://colab.research.google.com/
+
 https://ai.googleblog.com/?m=1
 
 
