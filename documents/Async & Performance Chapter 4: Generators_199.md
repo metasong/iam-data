@@ -695,8 +695,8 @@ p2.then( function(data){
 
 Promise.all( [p1,p2] )
 .then( function(){
-	it1.next();// in res
-	it2.next();
+	it1.next();// in res[0]
+	it2.next();// in res[1]
 } );
 ```
 ## Thunks
