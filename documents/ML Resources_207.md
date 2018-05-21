@@ -9,6 +9,7 @@ http://colah.github.io/posts/2015-09-Visual-Information/
 
 https://www.mathsisfun.com/data/standard-deviation.html
 
+https://distill.pub
 
 http://colah.github.io/posts/2015-08-Backprop/
 
