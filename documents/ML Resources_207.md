@@ -1,9 +1,9 @@
 # ML Resources
 *summery*
 
-http://cs231n.github.io
+https://cs231n.github.io
 
-http://cs229.stanford.edu/notes/
+https://cs229.stanford.edu/notes/
 
 https://colah.github.io/posts/2015-09-Visual-Information/
 
