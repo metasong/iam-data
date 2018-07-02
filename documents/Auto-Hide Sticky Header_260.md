@@ -1,2 +1,0 @@
-# Auto-Hide Sticky Header
-
