@@ -8,7 +8,11 @@ https://maryrosecook.com/blog/post/little-lisp-interpreter
 1. the fence of the metaseed language is ..,
 1. ```lisp
     // map
-    (1 true 'abc' a:2 b:tr
+    (1 true 'abc' a:2 b:true; 'ef' b:2)
+    // equas to
+    (0:1 1:true 2:'abc' a:2 b:true children:(0:'ef' b:2))
+    
+    // 
     ```	
 1. ```js  
     fn(1 true a:'abc'; 'de',2) 
