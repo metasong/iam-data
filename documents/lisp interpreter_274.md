@@ -1,5 +1,8 @@
 # lisp interpreter
 
+..,
+....
+
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 ssswww
 ffff 
@@ -7,7 +10,8 @@ ffff
 
 sss
 ```lisp
-..,a(1 3 b:2;   
+..,
+a(1 3 b:2;   
   b( '3c' true  
    
   )  
@@ -15,6 +19,7 @@ sss
   	;'abcd'
   )
 )
+..,
 ```
 
 ```js
