@@ -32,7 +32,8 @@ https://maryrosecook.com/blog/post/little-lisp-interpreter
     
 1. ```lisp
     // define class
-    ,(className constArg1 const
+    ,(className constArg1 constArg2;content)
+    
     ```
    
 ```lisp
