@@ -1,4 +1,4 @@
- # lisp interpreter
+  # lisp interpreter
 
 ..,
 ....
@@ -12,7 +12,8 @@ https://maryrosecook.com/blog/post/little-lisp-interpreter
     // equas to
     (0:1 1:true 2:'abc' a:2 b:true children:(0:'ef' b:2))
     
-    // 
+    // embedded map
+      (1 a:true ;('ef' b:2; c:3))
     ```	
 1. ```js  
     fn(1 true a:'abc'; 'de',2) 
