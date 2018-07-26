@@ -24,7 +24,12 @@ https://maryrosecook.com/blog/post/little-lisp-interpreter
     ```	
 1. ```js
     // define funciton
-    fn(a b)
+    fn(a b)(
+    // function body
+    if(true)(
+        
+    )
+    )
     // function call
     fn(a b) 
     ```
