@@ -7,11 +7,11 @@ ffff
 
 sss
 ```lisp
-:(a 1 3 b:2   
-  :(b '3c' true  
+:a(1 3 b:2   
+  :b( '3c' true  
    
   )  
-  :(c 1 3 true  
+  :c(1 3 true  
   	:'abcd'
   )
 )
