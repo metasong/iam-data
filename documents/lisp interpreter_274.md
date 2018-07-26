@@ -9,7 +9,8 @@ ffff
 (:
 
 1. the fence of the metaseed language is ..,
-2. 
+2.
+fn(1 true a:'abc'; 'de',2) equals to fn(0:1 1:true a:'abc' children:(0:'de' 1:2))
 ```lisp
 ..,
 a(1 3 b:2;   
