@@ -8,7 +8,8 @@ ssswww
 ffff 
 (:
 
-sss
+1. the fence of the metaseed language is ..,
+2. 
 ```lisp
 ..,
 a(1 3 b:2;   
