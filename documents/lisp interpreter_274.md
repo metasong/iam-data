@@ -25,16 +25,14 @@ https://maryrosecook.com/blog/post/little-lisp-interpreter
     ```	
 1. ```js
     // define funciton
-    .fn (a b) (
-    // function body
-    if(true () ())
-    )
-    
-    // .fn()()
-    // equals to 
-    // .(fun () ())
+    .(fun arg1 arg2 ;content)
     // function call
     fn(a b) 
+    ```
+    
+1. ```lisp
+    // define class
+    ,(className constArg1 const
     ```
    
 ```lisp
