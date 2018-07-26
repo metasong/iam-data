@@ -10,7 +10,7 @@ sss
    
   )  
   (:c 1 3 true  
-  	:'abcd'
+  	(:'abcd')
   )
 )
 ```
