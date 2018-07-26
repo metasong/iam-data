@@ -5,6 +5,7 @@
 
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 
+
 1. the fence of the metaseed language is ..,
 1. ```lisp
     // list
@@ -65,6 +66,8 @@ graph TD
 +-->b
 +-->c
 ```
+
+[lisp tutorial](https://www.tutorialspoint.com/lisp/index.htm)
 
 
 
