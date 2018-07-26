@@ -2,15 +2,17 @@
 
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 ssswww
-ffff
+ffff 
+(:
+
 sss
 ```lisp
-(:a 1 3 b:2   
-  (:b '3c' true  
+:(a 1 3 b:2   
+  :(b '3c' true  
    
   )  
-  (:c 1 3 true  
-  	(:'abcd')
+  :(c 1 3 true  
+  	:'abcd'
   )
 )
 ```
