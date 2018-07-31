@@ -1,7 +1,11 @@
   # lisp interpreter
+<i-toc>
+  
+  
+  
+##  ddd
+## bc
 
-..,
-....
 
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 
