@@ -2,6 +2,29 @@
 *summery*
 yggg
 fvv
+<svg width="100" height="200" viewBox="0 0 50 50"
+     preserveAspectRatio="xMinYMin meet"
+     style="border: 1px solid #cccccc;">
+    <circle cx="25" cy="25" r="25"
+            style="stroke: #000000; fill:none;"/>
+</svg>
+
+
+<svg width="100" height="200" viewBox="0 0 50 50"
+     preserveAspectRatio="xMinYMin meet"
+     style="border: 1px solid #cccccc;">
+    <circle cx="25" cy="25" r="25"
+            style="stroke: #000000; fill:none;"/>
+</svg>
+
+<svg width="100" height="200" viewBox="0 0 50 50"
+     preserveAspectRatio="xMinYMin meet"
+     style="border: 1px solid #cccccc;">
+    <circle cx="25" cy="25" r="25"
+            style="stroke: #000000; fill:none;"/>
+</svg>
+
+
 ddd.,bbbbbbbbbbbb
 <svg width="100" height="200" viewBox="0 0 50 50"
      preserveAspectRatio="xMinYMin meet"
