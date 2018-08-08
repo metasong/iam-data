@@ -12,7 +12,12 @@ The optional parameter PreferredType is either `Number` or `String`. It only exp
 
 If PreferredType is `String`, steps 2 and 3 are swapped. If PreferredType is missing then it is set to `String` for instances of `Date` and to `Number` for all other values.
 
-
+Argument	Result
+undefined	NaN
+null	+0
+boolean value	true is converted to 1, false is converted to +0
+number value	no conversion necessary
+string value	parse the number in the string. For example, "324" is converted to 324
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
