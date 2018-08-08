@@ -1,4 +1,6 @@
 # javascript + operator
+There are two kinds of values in JavaScript: primitives and objects [1]. The primitive values are: undefined, null, booleans, numbers, and strings. All other values are objects, including arrays and functions.
+
 
 
 ## References
