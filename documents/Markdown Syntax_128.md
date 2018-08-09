@@ -2,7 +2,6 @@
 <!-- comment -->
 
 <kbd>Alt</kbd> + <kbd>B</kbd>
-
 <i-toc>
 
 ---
