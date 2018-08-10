@@ -22,3 +22,5 @@ string value	parse the number in the string. For example, "324" is converted to 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
 
+adfadd ad adf dad fa
+<word-count></word-count>
