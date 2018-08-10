@@ -23,4 +23,4 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arit
 http://2ality.com/2012/01/object-plus-object.html
 
 adfadd ad adf dad fa
-<word-count></word-count>
+<i-toc/>
