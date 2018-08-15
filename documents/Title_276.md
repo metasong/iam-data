@@ -2,7 +2,5 @@
 *summery*
 ## sdsdf
 
-.(.toc).
-
-.('s')
+sd sd df 
    
