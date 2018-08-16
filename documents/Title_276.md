@@ -13,9 +13,9 @@ h.(.toc
 dsfsdflll
 fskdfd kll
  
-g.(,h1 
+g*(,h1 
 .:'abc'
-,:'color:red;background-color:yellow').
+,:'color:red;background-color:yellow')*
 dsdfdsdf
 
 
