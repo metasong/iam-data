@@ -1,8 +1,7 @@
   # lisp interpreter
 
 
-  <i-toc></i-toc>
-  
+ *(.toc)*
 ##  ddd
 ## bc
 
