@@ -7,8 +7,8 @@ ssdsdf sdfsas
 `
 aa 
 
-h.(.toc
-).
+h*(.toc
+)*
 
 dsfsdflll
 fskdfd kll
