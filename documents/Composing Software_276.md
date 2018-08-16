@@ -2,6 +2,12 @@
 *(.toc)*
 ## [Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
 > Composition: “The act of combining parts or elements to form a whole.” ~ Dictionary.com
+
+`(f ∘ g)(x) = f(g(x))`
+```js
+
+```
+
 ```js
 const trace = label => value => {
   console.log(`${ label }: ${ value }`);
@@ -17,3 +23,5 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
+
+
