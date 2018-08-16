@@ -13,3 +13,7 @@ trace('your name:')('jason')
 your name: jason
 */
 ```
+```js
+// pipe(...fns: [...Function]) => x => y
+const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+```
