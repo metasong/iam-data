@@ -134,7 +134,7 @@ const Identity = value => ({
   valueOf: () => value,
   // inspect an Identity instance in the console
  toString: () => `Identity(${value})`,
-  
+  constructor: Identity,
   [Symbol.iterator]: function* () {
   yield value;
 }
