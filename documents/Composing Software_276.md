@@ -39,6 +39,8 @@ const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
+## Currying
+
 > **Currying**: A curried function is a function that takes multiple parameters one at a time: It takes a parameter, and returns a function that takes the next parameter, and so on until all parameters have been supplied, at which point, the application is completed and the final value is returned.
 
 ```js
@@ -51,7 +53,14 @@ const curry = (
     curry(f, a)
 )([...arr, ...args]);
 ```
+```js
+const add3 = curry((a, b, c) => a + b + c);
 
+add3(1, 2, 3); // 6
+add3(1, 2)(3); // 6
+add3(1)(2, 3); // 6
+add3(1)(2)(3); // 6
+```
 ## Favor object composition over class inheritance
 * **The tight coupling problem**: Because child classes are dependent on the implementation of the parent class, class inheritance is the tightest coupling available in object oriented design.
 * **The fragile base class problem**: Due to tight coupling, changes to the base class can potentially break a large number of descendant classes — potentially in code managed by third parties. The author could break code they’re not aware of.
