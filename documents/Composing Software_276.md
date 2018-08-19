@@ -125,3 +125,7 @@ reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
 * Redux reducers must be pure functions.
 
 redux reducers reduce on actions by time
+
+## Functors & Categories
+
+
