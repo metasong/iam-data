@@ -169,5 +169,17 @@ trace(hi); // "hi"
 const arr = [6, 7, ...Identity(8)];
 trace(arr); // [6, 7, 8]
 ```
-
+```js
+const fRange = (
+  start,
+  end
+) => Array.from(
+  { length: end - start + 1 },
+  
+  // change `Identity` to `start.constructor`
+  (x, i) => start.constructor(i + start)
+);
+const range = fRange(Identity(2), 4);
+range.map(x => x.map(trace)); // 2, 3, 4
+```
 
