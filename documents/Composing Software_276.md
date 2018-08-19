@@ -114,7 +114,14 @@ const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
 ```
 > Note: pipe is from left to right
 
-### A Word on Re```lang
-reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
-```js
+### A Word on Redux
 
+```js
+reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
+```
+
+* A reducer called with no parameters should return its valid initial state.
+* If the reducer isn’t going to handle the action type, it still needs to return the state.
+* Redux reducers must be pure functions.
+
+redux reducers reduce o
