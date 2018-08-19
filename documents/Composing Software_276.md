@@ -139,6 +139,11 @@ const Identity = value => ({
   yield value;
 }
 });
+
+Object.assign(Identity, {
+  toString: () => 'Identity',
+  is: x => typeof x.map === 'function'
+});
 ```
 ```js
 // trace() is a utility to let you easily inspect
@@ -182,4 +187,22 @@ const fRange = (
 const range = fRange(Identity(2), 4);
 range.map(x => x.map(trace)); // 2, 3, 4
 ```
-
+```js
+// Create the predicate
+const exists = x => (x.valueOf() !== undefined && x.valueOf() !== null);
+const ifExists = x => ({
+  map: fn => exists(x) ? x.map(fn) : x
+});
+const add1 = n => n + 1;
+const double = n => n * 2;
+// Nothing happens...
+ifExists(Identity(undefined)).map(trace);
+// Still nothing...
+ifExists(Identity(null)).map(trace);
+// 42
+ifExists(Identity(20))
+  .map(add1)
+  .map(double)
+  .map(trace)
+;
+```
