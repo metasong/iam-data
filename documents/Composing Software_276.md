@@ -112,5 +112,7 @@ const map = (fn, arr) => arr.reduce((acc, item, index, arr) => {
 ```js
 const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
 ```
+> Note: pipe is from left to right
+
 
 
