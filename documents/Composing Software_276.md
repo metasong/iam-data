@@ -4,7 +4,12 @@
 ## [Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
 > Composition: “The act of combining parts or elements to form a whole.” ~ Dictionary.com
 
+Function composition is the process of passing the return value of one function as an argument to another function. In mathematical notation:
+
 `(f ∘ g)(x) = f(g(x))`
+
+Method chaining is the process of directly calling a method on the return value of a function, without needing to refer to the return value by name:
+
 ```js
 const g = n => n + 1;
 const f = n => n * 2;
@@ -68,3 +73,9 @@ add3(1)(2)(3); // 6
 * **The duplication by necessity problem**: Due to inflexible hierarchies, new use cases are often implemented by duplication, rather than extension, leading to similar classes which are unexpectedly divergent. Once duplication sets in, it’s not obvious which class new classes should descend from, or why.
 * **The gorilla/banana problem**: “…the problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.” ~ Joe Armstrong, “Coders at Work”
 https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30
+
+## Higher Order Functions 
+
+> A higher order function is a function that takes a function as an argument, or returns a function.
+
+
