@@ -129,7 +129,15 @@ redux reducers reduce on actions by time
 ## [Functors & Categories](https://medium.com/javascript-scene/functors-categories-61e031bac53f)
 ```js
 const Identity = value => ({
-  map: fn => Identity(fn(value))
+  map: fn => Identity(fn(value)),
+  // to + str or num
+  valueOf: () => value,
+  // inspect an Identity instance in the console
+ toString: () => `Identity(${value})`,
+  
+  [Symbol.iterator]: function* () {
+  yield value;
+}
 });
 ```
 ```js
@@ -150,6 +158,16 @@ const r1 = u.map(x => f(g(x)));
 const r2 = u.map(g).map(f);
 r1.map(trace); // 5
 r2.map(trace); // 5
+
+// +
+const ints = (Identity(2) + Identity(4));
+trace(ints); // 6
+const hi = (Identity('h') + Identity('i'));
+trace(hi); // "hi"
+
+// [Symbol.iterator] enables standard JS iterations:
+const arr = [6, 7, ...Identity(8)];
+trace(arr); // [6, 7, 8]
 ```
 
 
