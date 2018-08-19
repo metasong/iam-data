@@ -127,5 +127,29 @@ reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
 redux reducers reduce on actions by time
 
 ## [Functors & Categories](https://medium.com/javascript-scene/functors-categories-61e031bac53f)
+```js
+const Identity = value => ({
+  map: fn => Identity(fn(value))
+});
+```
+```js
+// trace() is a utility to let you easily inspect
+// the contents.
+const trace = x => {
+  console.log(x);
+  return x;
+};
+const u = Identity(2);
+// Identity law
+u.map(trace);             // 2
+u.map(x => x).map(trace); // 2
+const f = n => n + 1;
+const g = n => n * 2;
+// Composition law
+const r1 = u.map(x => f(g(x)));
+const r2 = u.map(g).map(f);
+r1.map(trace); // 5
+r2.map(trace); // 5
+```
 
 
