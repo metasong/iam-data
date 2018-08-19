@@ -126,6 +126,6 @@ reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
 
 redux reducers reduce on actions by time
 
-## Functors & Categories
+## [Functors & Categories](https://medium.com/javascript-scene/functors-categories-61e031bac53f)
 
 
