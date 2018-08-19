@@ -188,7 +188,7 @@ const range = fRange(Identity(2), 4);
 range.map(x => x.map(trace)); // 2, 3, 4
 ```
 ```js
-// Create the p, kick off a chain of operations, but only if the value inside the functor is not undefined or null?
+// Create the if Exists functor: kick off a chain of operations, but only if the value inside the functor is not undefined or null?
 const exists = x => (x.valueOf() !== undefined && x.valueOf() !== null);
 const ifExists = x => ({
   map: fn => exists(x) ? x.map(fn) : x
