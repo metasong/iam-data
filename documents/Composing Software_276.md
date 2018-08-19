@@ -124,4 +124,4 @@ reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
 * If the reducer isn’t going to handle the action type, it still needs to return the state.
 * Redux reducers must be pure functions.
 
-redux reducers reduce o
+redux reducers reduce on actions by time
