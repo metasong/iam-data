@@ -78,6 +78,8 @@ https://medium.com/javascript-scene/a-functional-programmers-introduction-to-jav
 
 > A higher order function is a function that takes a function as an argument, or returns a function.
 
+### Reduce
+
 ```js
 const reduce = (reducer, initial, arr) => {
   // shared stuff
@@ -100,3 +102,15 @@ const filter = (
   acc, [], arr
 );
 ```
+
+```js
+const map = (fn, arr) => arr.reduce((acc, item, index, arr) => {
+  return acc.concat(fn(item, index, arr));
+}, []);
+```
+
+```js
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+```
+
+
