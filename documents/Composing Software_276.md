@@ -45,6 +45,7 @@ const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
 ```js
+const toUper
 // not pointfree cause we receive args
 var initials = function(name) {
   return name.split(' ').map(compose(toUpperCase, head)).join('. ');
