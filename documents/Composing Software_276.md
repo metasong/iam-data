@@ -44,6 +44,19 @@ const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
+```js
+// not pointfree cause we receive args
+var initials = function(name) {
+  return name.split(' ').map(compose(toUpperCase, head)).join('. ');
+};
+
+//pointfree
+var initials = compose(join('. '), map(compose(toUpperCase, head)), split(' '));
+
+initials("hunter stockton thompson");
+// 'H. S. T'
+```
+
 ## Currying
 
 > **Currying**: A curried function is a function that takes multiple parameters one at a time: It takes a parameter, and returns a function that takes the next parameter, and so on until all parameters have been supplied, at which point, the application is completed and the final value is returned.
