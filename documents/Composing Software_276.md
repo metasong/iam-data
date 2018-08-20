@@ -42,22 +42,7 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
-> Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
-```js
-const head = x => x[0];
-const toUpperCase = x => x.toUperCase();
-// not pointfree cause we receive args
-var initials = function(name) {
-  return name.split(' ').map(compose(toUpperCase, head)).join('. ');
-};
-
-//pointfree
-var initials = compose(join('. '), map(compose(toUpperCase, head)), split(' '));
-
-initials("hunter stockton thompson");
-// 'H. S. T'
-```
 
 ## Currying
 
@@ -89,6 +74,24 @@ add3(1, 2, 3); // 6
 add3(1, 2)(3); // 6
 add3(1)(2, 3); // 6
 add3(1)(2)(3); // 6
+```
+
+> Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
+
+```js
+const head = x => x[0];
+const toUpperCase = x => x.toUperCase();
+// not pointfree cause we receive args
+var initials = function(name) {
+  return name.split(' ').map(compose(toUpperCase, head)).join('. ');
+};
+
+const split = sep => str => str.
+//pointfree
+var initials = compose(join('. '), map(compose(toUpperCase, head)), split(' '));
+
+initials("I'm writting your professional life");
+// 'I. W. Y. P. L'
 ```
 ## Favor object composition over class inheritance
 * **The tight coupling problem**: Because child classes are dependent on the implementation of the parent class, class inheritance is the tightest coupling available in object oriented design.
