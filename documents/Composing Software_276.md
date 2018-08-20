@@ -66,17 +66,15 @@ initials("hunter stockton thompson");
 
 // version 1:
 const currying = 
-(f, ...a) => 
-  (...args)=> {
+(f, ...a) => (...args)=> {
     args = [...a,...args];
     if(args.length === f.length) return f(...args);
     return currying(f,...args);
 }
 
 // version 2:
-const curry = (
-  f, arr = []
-) => (...args) => (
+const curry =
+ (f, arr = []) => (...args) => (
   a => a.length === f.length ?
     f(...a) :
     curry(f, a)
