@@ -86,7 +86,9 @@ var initials = function(name) {
   return name.split(' ').map(compose(toUpperCase, head)).join('. ');
 };
 
-const split = sep => str => str.
+const split = sep => str => str.split(sep);
+const map = func => arr => arr.map(func);
+const join = conn => arr => arr.join(conn);
 //pointfree
 var initials = compose(join('. '), map(compose(toUpperCase, head)), split(' '));
 
