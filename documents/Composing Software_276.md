@@ -162,6 +162,14 @@ JavaScript’s built in array and promise objects act like functors. For collect
 
 Promises use the name .then() instead of .map(). You can usually think of .then() as an asynchronous .map()method, except when you have a nested promise, in which case it automatically unwraps the outer promise. Again, for values which are not promises, .then() acts like an asynchronous .map(). For values which are promises themselves, .then()acts like the .chain() method from monads (sometimes also called .bind() or .flatMap()). So, promises are not quite functors, and not quite monads, but in practice, you can usually treat them as either. 
 
+Categories have two important properties:
+
+* Identity
+* Composition
+
+Since a functor is a mapping between categories, functors must respect identity and composition. Together, they’re known as the functor laws.
+
+
 ```js
 const Identity = value => ({
   map: fn => Identity(fn(value)),
