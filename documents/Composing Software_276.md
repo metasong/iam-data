@@ -156,6 +156,7 @@ reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
 redux reducers reduce on actions by time
 
 ## [Functors & Categories](https://medium.com/javascript-scene/functors-categories-61e031bac53f)
+A **functor** data type is something you can map over. It’s a container which has an interface which can be used to apply a function to the values inside it. When you see a functor, you should think “mappable”. Functor types are typically represented as an object with a .map() method that maps from inputs to outputs while preserving structure. In practice, “preserving structure” means that the return value is the same type of functor (though values inside the container may be a different type).
 ```js
 const Identity = value => ({
   map: fn => Identity(fn(value)),
