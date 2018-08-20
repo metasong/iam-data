@@ -161,6 +161,7 @@ A **functor** data type is something you can map over. It’s a container which 
 JavaScript’s built in array and promise objects act like functors. For collections (arrays, streams, etc…), .map() typically iterates over the collection and applies the given function to each value in the collection, but not all functors iterate. Functors are really about applying a function in a specific context.
 
 Promises use the name .then() instead of .map(). You can usually think of .then() as an asynchronous .map()method, except when you have a nested promise, in which case it automatically unwraps the outer promise. Again, for values which are not promises, .then() acts like an asynchronous .map(). For values which are promises themselves, .then()acts like the .chain() method from monads (sometimes also called .bind() or .flatMap()). So, promises are not quite functors, and not quite monads, but in practice, you can usually treat them as either. 
+
 ```js
 const Identity = value => ({
   map: fn => Identity(fn(value)),
