@@ -63,6 +63,17 @@ initials("hunter stockton thompson");
 
 ```js
 // Tiny, recursive autocurry
+
+// version 1:
+const currying = 
+(f, ...a) => 
+  (...args)=> {
+    args = [...a,...args];
+    if(args.length === f.length) return f(...args);
+    return currying(f,...args);
+}
+
+// version 2:
 const curry = (
   f, arr = []
 ) => (...args) => (
