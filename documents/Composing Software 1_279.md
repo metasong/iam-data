@@ -50,8 +50,7 @@ const withLogging = logger => o => Object.assign({}, o, {
   }
 });
 
-// in a different module with no explicit mention of
-// withLogging -- we just assume it's there...
+// in a different module
 const withConfig = config => (o = {
   log: (text = '') => console.log(text)
 }) => Object.assign({}, o, {
