@@ -83,12 +83,13 @@ const firstChar = x => x[0];
 const toUpperCase = x => x.toUperCase();
 // not pointfree cause we receive args
 var initials = function(name) {
+  // OO programming: String -> Array -> StringArray
   return name.split(' ').map(compose(toUpperCase, firstChar)).join('. ');
 };
 
 const split = sep => str => str.split(sep);
 const map = func => arr => arr.map(func);
-const join = conn => arr => arr.join(conn);
+const join = conn => strArr => strArr.join(conn);
 //pointfree
 var initials = compose(join('. '), map(compose(toUpperCase, firstChar)), split(' '));
 
