@@ -9,8 +9,6 @@
 * No diamond problem (property collision ambiguity) — last in wins
 * No base-class requirement
 
-
-
 ```js
 const quacking = quack => o => Object.assign({}, o, {
   quack: () => quack
