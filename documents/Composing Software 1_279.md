@@ -9,3 +9,35 @@
 * No diamond problem (property collision ambiguity) — last in wins
 * No base-class requirement
 
+
+
+```js
+const quacking = quack => o => Object.assign({}, o, {
+  quack: () => quack
+});
+const flying = o => {
+  let isFlying = false;
+  return Object.assign({}, o, {
+    fly () {
+      isFlying = true;
+      return this;
+    },
+    isFlying: () => isFlying,
+    land () {
+      isFlying = false;
+      return this;
+    }
+  });
+};
+
+const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+// OR...
+// import pipe from `lodash/fp/flow`;
+const createDuck = quack => pipe(
+  flying,
+  quacking(quack)
+)({});
+const duck = createDuck('Quack!');
+console.log(duck.fly().quack());
+
+```
