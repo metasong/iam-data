@@ -38,4 +38,46 @@ const createDuck = quack => pipe(
 const duck = createDuck('Quack!');
 console.log(duck.fly().quack());
 
+
+
+```
+
+```js
+// in its own module...
+const withLogging = logger => o => Object.assign({}, o, {
+  log (text) {
+    logger(text)
+  }
+});
+
+// in a different module with no explicit mention of
+// withLogging -- we just assume it's there...
+const withConfig = config => (o = {
+  log: (text = '') => console.log(text)
+}) => Object.assign({}, o, {
+  get (key) {
+    return config[key] == undefined ?
+      // vvv implicit dependency here... oops! vvv
+      this.log(`Missing config key: ${ key }`) :
+      // ^^^ implicit dependency here... oops! ^^^
+      config[key]
+    ;
+  }
+});
+// in yet another module that imports withLogging and
+// withConfig...
+const createConfig = ({ initialConfig, logger }) =>
+  pipe(
+    withLogging(logger),
+    withConfig(initialConfig)
+  )({})
+;
+// elsewhere...
+const initialConfig = {
+  host: 'localhost'
+};
+const logger = console.log.bind(console);
+const config = createConfig({initialConfig, logger});
+console.log(config.get('host')); // 'localhost'
+config.get('notThere'); // 'Missing config key: notThere
 ```
