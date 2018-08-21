@@ -79,18 +79,18 @@ add3(1)(2)(3); // 6
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
 ```js
-const head = x => x[0];
+const firstChar = x => x[0];
 const toUpperCase = x => x.toUperCase();
 // not pointfree cause we receive args
 var initials = function(name) {
-  return name.split(' ').map(compose(toUpperCase, head)).join('. ');
+  return name.split(' ').map(compose(toUpperCase, firstChar)).join('. ');
 };
 
 const split = sep => str => str.split(sep);
 const map = func => arr => arr.map(func);
 const join = conn => arr => arr.join(conn);
 //pointfree
-var initials = compose(join('. '), map(compose(toUpperCase, head)), split(' '));
+var initials = compose(join('. '), map(compose(toUpperCase, firstChar)), split(' '));
 
 initials("I'm writting your professional life");
 // 'I. W. Y. P. L'
