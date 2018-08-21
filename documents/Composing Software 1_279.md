@@ -56,9 +56,7 @@ const withConfig = config => (o = {
 }) => Object.assign({}, o, {
   get (key) {
     return config[key] == undefined ?
-      // vvv implicit dependency here... oops! vvv
       this.log(`Missing config key: ${ key }`) :
-      // ^^^ implicit dependency here... oops! ^^^
       config[key]
     ;
   }
