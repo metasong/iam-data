@@ -27,6 +27,7 @@ wait(300)
 ;
 ```
 > If you’re chaining, you’re composing.
+
 ```js
 const trace = label => value => {
   console.log(`${ label }: ${ value }`);
@@ -42,7 +43,6 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
-
 
 ## Currying
 
