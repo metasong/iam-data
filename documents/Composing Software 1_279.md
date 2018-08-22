@@ -130,7 +130,7 @@ console.log(`
   constructor linked: ${ myDrone.constructor === createDrone }
 `);
 ```
-
+withBattery() could be used with other kinds of objects, like robots, electric skateboards, or portable device chargers. withFlying() could be used to model flying cars, rockets, or air balloons.
 
 [Why Composition is Harder with Classes](https://medium.com/javascript-scene/why-composition-is-harder-with-classes-c3e627dcd0aa
 
