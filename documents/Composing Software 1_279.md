@@ -86,7 +86,10 @@ const withConstructor = constructor => o => {
   );
   return Object.assign(Object.create(proto), o);
 };
-
+const withFlying = o => {
+  let isFlying = false;
+  return {
+    ...o,
     fly () {
       isFlying = true;
       return this;
