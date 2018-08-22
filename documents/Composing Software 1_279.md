@@ -38,8 +38,6 @@ const createDuck = quack => pipe(
 const duck = createDuck('Quack!');
 console.log(duck.fly().quack());
 
-
-
 ```
 
 ```js
