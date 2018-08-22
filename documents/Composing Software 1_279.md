@@ -132,6 +132,10 @@ console.log(`
 ```
 withBattery() could be used with other kinds of objects, like robots, electric skateboards, or portable device chargers. withFlying() could be used to model flying cars, rockets, or air balloons.
 
-[Why Composition is Harder with Classes](https://medium.com/javascript-scene/why-composition-is-harder-with-classes-c3e627dcd0aa
-
+## [Why Composition is Harder with Classes](https://medium.com/javascript-scene/why-composition-is-harder-with-classes-c3e627dcd0aa
+### what does new actually do?
+* Creates a new object and binds this to it in the constructor function.
+* Implicitly returns this, unless you explicitly return another object.
+* Sets the instance [[Prototype]] (an internal reference) to Constructor.prototype, so that Object.getPrototypeOf(instance) === Constructor.prototype.
+* Sets the instance.constructor === Constructor.
 
