@@ -263,6 +263,33 @@ That’s where monads come in. Monads can rely on values that depend on previous
 
 ![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.png)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Homepage
 JavaScript Scene
 HOMELEARN JSVIDEO LESSONS
@@ -519,65 +546,15 @@ For synchronous, eager function applications over array data, this is overkill. 
 
 That’s where monads come in. Monads can rely on values that depend on previous asynchronous or branching actions in the composition chain. In those cases, you can’t get a simple value out for simple function compositions. Your monad-returning actions take the form a => Monad(b) instead of a => b.
 
-Whenever you have a function that takes some data, hits an API, and returns a corresponding value, and another function that takes that data, hits another API, and returns the result of a computation on that data, you’ll want to compose functions of type a => Monad(b). Because the API calls are asynchronous, you'll need to wrap the return values in something like a promise or observable. In other words, the signatures for those functions are a -> Monad(b), and b -> Monad(c), respectively.
+Whenever you have a function that takes some data, hits an API, and returns a corresponding value, and another function that takes that data, hits another API, and returns the result of a computation on that data, you’ll want to compose functions of type a => Monad(b). Because the API calls are asynchronous, you'll need to wrap the return values in something like a promise or observable. In other words, the signatures for those functions are a -> c
 
-Composing functions of type g: a -> b, f: b -> c is easy because the types line up: h: a -> c is just a => f(g(a)).
 
-Composing functions of type g: a -> Monad(b), f: b -> Monad(c) is a little harder: h: a -> Monad(c) is not just a => f(g(a)) because f is expecting b, not Monad(b).
 
-Let’s get a little more concrete and compose a pair of asynchronous functions that each return a promise:
 
-{
-  const label = 'Promise composition';
-  const g = n => Promise.resolve(n + 1);
-  const f = n => Promise.resolve(n * 2);
-  const h = composePromises(f, g);
-  h(20)
-    .then(trace(label))
-  ;
-  // Promise composition: 42
-}
-How do we write composePromises() so that the result is logged correctly? Hint: You've already seen it.
 
-Remember our composeMap() function? All you need to do is change the .map() call to .then(). Promise.then() is basically an asynchronous .map().
 
-{
-  const composePromises = (...ms) => (
-    ms.reduce((f, g) => x => g(x).then(f))
-  );
-  const label = 'Promise composition';
-  const g = n => Promise.resolve(n + 1);
-  const f = n => Promise.resolve(n * 2);
-  const h = composePromises(f, g);
-  h(20)
-    .then(trace(label))
-  ;
-  // Promise composition: 42
-}
-The weird part is that when you hit the second function, f (remember, f after g), the input value is a promise. It's not type b, it's type Promise(b), but f takes type b, unwrapped. So what's going on?
 
-Inside .then(), there's an unwrapping process that goes from Promise(b) -> b. That operation is called join or flatten.
 
-You may have noticed that composeMap() and composePromises() are almost identical functions. This is the perfect use-case for a higher-order function that can handle both. Let's just mix the chain method into a curried function, then use square bracket notation:
-
-const composeM = method => (...ms) => (
-  ms.reduce((f, g) => x => g(x)[method](f))
-);
-Now we can write the specialized implementations like this:
-
-const composePromises = composeM('then');
-const composeMap = composeM('map');
-const composeFlatMap = composeM('flatMap');
-The monad laws
-Before you can start building your own monads, you need to know there are three laws that all monads should satisfy:
-
-Left identity: unit(x).chain(f) ==== f(x)
-Right identity: m.chain(unit) ==== m
-Associativity: m.chain(f).chain(g) ==== m.chain(x => f(x).chain(g))
-The Identity Laws
-
-Left and right identity
-A monad is a functor. A functor is a morphism between categories, A -> B. The morphism is represented by an arrow. In addition to the arrow we explicitly see between objects, each object in a category also has an arrow back to itself. In other words, for every object X in a category, there exists an arrow X -> X. That arrow is known as the identity arrow
 
 ![]
 
