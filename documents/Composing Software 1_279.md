@@ -165,6 +165,16 @@ const withIf = ({
   return valueC;
 };
 
-
+const withTernary = ({
+  conditionA, conditionB
+}) => (
+  (!conditionA)
+    ? valueC
+    : (conditionB)
+    ? valueA
+    : valueB
+);
 ```
+If you get to the end of a ternary expression and find you need to write two colon clauses (:), grab the last clause, move it to the top, and reverse the logic of the first conditional to simplify parsing the ternary. No more confusion!
+
 
