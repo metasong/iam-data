@@ -245,10 +245,10 @@ const withIf = ({
 const withTernary = ({
   conditionA, conditionB
 }) => (
-  (conditionA)
-    ? (conditionB)
-        ? valueA
-        : valueB
+  (conditionA)?
+    (conditionB)?
+       valueA
+       :valueB
     : valueC
 );
 
