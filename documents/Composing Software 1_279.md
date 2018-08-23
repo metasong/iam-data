@@ -145,5 +145,11 @@ withBattery() could be used with other kinds of objects, like robots, electric s
 ## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
 
 
+## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
+### Expressions vs Statements
+> pression is a chunk of code that evaluates to a single value.
+> A statement is a chunk of code that may not evaluate to a value at all.
+
+In JavaScript if statements don’t evaluate to values. In order for an if statement in JavaScript to do anything useful, it must cause a side-effect or return a value from the containing function.
 
 
