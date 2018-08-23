@@ -194,9 +194,8 @@ const trace = label => value => {
 
 * **Lift/Unit**: A type lift from some type into the monad context: a => M(a)
 * **Flatten/Join**: Unwrapping the type from the context: M(a) => a
-* And since monads are also functors, they can also map:
-
-Map: Map with context preserved: M(a) -> M(b)
+* And since monads are also functors, they can also map: 
+**Map**: Map with context preserved: M(a) -> M(b)
 Combine flatten with map, and you get chain — function composition for monad-lifting functions, aka Kleisli composition, named after Heinrich Kleisli:
 
 FlatMap/Chain: Flatten + map: M(M(a)) => M(b)
