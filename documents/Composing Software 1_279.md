@@ -162,7 +162,27 @@ sumT(
 ).valueOf(); // 5
 ```
 ## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
-
+```js
+{
+  const composeM = chainMethod => (...ms) => (
+    ms.reduce((f, g) => x => g(x)[chainMethod](f))
+  );
+  const composePromises = composeM('then');
+  const label = 'API call composition';
+  // a => Promise(b)
+  const getUserById = id => id === 3 ?
+    Promise.resolve({ name: 'Kurt', role: 'Author' }) :
+    undefined
+  ;
+  // b => Promise(c)
+  const hasPermission = ({ role }) => (
+    Promise.resolve(role === 'Author')
+  );
+  // Compose the functions (this works!)
+  const authUser = composePromises(hasPermission, getUserById);
+  authUser(3).then(trace(label)); // true
+}
+```
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
