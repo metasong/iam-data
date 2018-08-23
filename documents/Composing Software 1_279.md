@@ -162,6 +162,14 @@ sumT(
 ).valueOf(); // 5
 ```
 ## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
+
+A **monad** is a way of composing functions that require context in addition to the return value, such as computation, branching, or I/O. Monads type lift, flatten and map so that the types line up for lifting functions `a => M(b)`, making 
+them composable. It's a mapping from some type a to some type b along with some computational context, hidden in the implementation details of lift, flatten, and map:
+
+* Functions map: a => b
+* Functors map with context: Functor(a) => Functor(b)
+* Monads flatten and map with context: Monad(Monad(a)) => Monad(b)
+
 ```js
 const trace = label => value => {
   console.log(`${ label }: ${ value }`);
