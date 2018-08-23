@@ -254,7 +254,11 @@ For synchronous, eager function applications over array data, this is overkill. 
 
 That’s where monads come in. Monads can rely on values that depend on previous asynchronous or branching actions in the composition chain. In those cases, you can’t get a simple value out for simple function compositions. Your monad-returning actions take the form a => Monad(b) instead of a => b.
 
+### The monad laws
 
+1. Left identity: unit(x).chain(f) ==== f(x)
+1. Right identity: m.chain(unit) ==== m
+1. Associativity: m.chain(f).chain(g) ==== m.chain(x => f(x).chain(g))
 
 
 
