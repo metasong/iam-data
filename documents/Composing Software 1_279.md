@@ -256,11 +256,11 @@ const withIf = ({
   conditionA, conditionB
 }) => {
   if (!conditionA) 
-    return value C;
+      return value C;
   if (conditionB) {
       return valueA;
-    }
-    return valueB;
+  }
+  return valueB;
 };
 
 const withTernary = ({
