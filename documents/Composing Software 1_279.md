@@ -262,7 +262,8 @@ That’s where monads come in. Monads can rely on values that depend on previous
 
 
 ![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.pn)
-
+A monad is a functor. A functor is a morphism between categories, A -> B. The morphism is represented by an arrow. 
+In addition to the arrow we explicitly see between objects, each object in a category also has an arrow back to itself. In other words, for every object X in a category, there exists an arrow X -> X. That arrow is known as the identity arrow
 ![](https://cdn-images-1.medium.com/max/2000/1*3jcLj7wdwWaUJ22X2iT7OA.png)
 
 ### Proving the Monad Laws
