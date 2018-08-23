@@ -201,6 +201,27 @@ const trace = label => value => {
 
 * **FlatMap/Chain**: Flatten + map: M(M(a)) => M(b)
 
+```js
+{ // Identity monad
+const Id = value => ({
+  // Functor mapping
+  // Preserve the wrapping for .map() by 
+  // passing the mapped value into the type
+  // lift:
+  map: f => Id.of(f(value)),
+  // Monad chaining
+  // Discard one level of wrapping
+  // by omitting the .of() type lift:
+  chain: f => f(value),
+  // Just a convenient way to inspect
+  // the values:
+  toString: () => `Id(${ value })`
+});
+// The type lift for this monad is just
+// a reference to the factory.
+Id.of = Id;
+```
+
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
 > pression is a chunk of code that evaluates to a single value.
