@@ -163,10 +163,16 @@ sumT(
 ```
 ## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
 ```js
+const trace = label => value => {
+  console.log(`${ label }: ${ value }`);
+  return value;
+};
+
 {
   const composeM = chainMethod => (...ms) => (
     ms.reduce((f, g) => x => g(x)[chainMethod](f))
   );
+  
   const composePromises = composeM('then');
   const label = 'API call composition';
   // a => Promise(b)
