@@ -189,6 +189,17 @@ const trace = label => value => {
   authUser(3).then(trace(label)); // true
 }
 ```
+### What Monads are Made of
+> A monad is based on a simple symmetry — A way to wrap a value into a context, and a way to unwrap the value from the context:
+
+* **Lift/Unit**: A type lift from some type into the monad context: a => M(a)
+* **Flatten/Join**: Unwrapping the type from the context: M(a) => a
+* And since monads are also functors, they can also map:
+
+Map: Map with context preserved: M(a) -> M(b)
+Combine flatten with map, and you get chain — function composition for monad-lifting functions, aka Kleisli composition, named after Heinrich Kleisli:
+
+FlatMap/Chain: Flatten + map: M(M(a)) => M(b)
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
