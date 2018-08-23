@@ -260,8 +260,11 @@ That’s where monads come in. Monads can rely on values that depend on previous
 1. Right identity: m.chain(unit) ==== m
 1. Associativity: m.chain(f).chain(g) ==== m.chain(x => f(x).chain(g))
 
+### Proving the Monad Laws
 
+```js
 
+```
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
