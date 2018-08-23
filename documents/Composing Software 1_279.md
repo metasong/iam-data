@@ -263,7 +263,50 @@ That’s where monads come in. Monads can rely on values that depend on previous
 ### Proving the Monad Laws
 
 ```js
+{ // Identity monad
+  const Id = value => ({
+    // Functor mapping
+    // Preserve the wrapping for .map() by 
+    // passing the mapped value into the type
+    // lift:
+    map: f => Id.of(f(value)),
+    // Monad chaining
+    // Discard one level of wrapping
+    // by omitting the .of() type lift:
+    chain: f => f(value),
+    // Just a convenient way to inspect
+    // the values:
+    toString: () => `Id(${ value })`
+  });
+  // The type lift for this monad is just
+  // a reference to the factory.
+  Id.of = Id;
+  const g = n => Id(n + 1);
+  const f = n => Id(n * 2);
+  // Left identity
+  // unit(x).chain(f) ==== f(x)
+  trace('Id monad left identity')([
+    Id(x).chain(f),
+    f(x)
+  ]);
+  // Id monad left identity: Id(40), Id(40)
 
+  // Right identity
+  // m.chain(unit) ==== m
+  trace('Id monad right identity')([
+    Id(x).chain(Id.of),
+    Id(x)
+  ]);
+  // Id monad right identity: Id(20), Id(20)
+  // Associativity
+  // m.chain(f).chain(g) ====
+  // m.chain(x => f(x).chain(g)  
+  trace('Id monad associativity')([
+    Id(x).chain(g).chain(f),
+    Id(x).chain(x => g(x).chain(f))
+  ]);
+  // Id monad associativity: Id(42), Id(42)
+}
 ```
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
