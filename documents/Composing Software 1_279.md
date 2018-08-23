@@ -197,7 +197,7 @@ const trace = label => value => {
 * And since monads are also functors, they can also map:   
 **Map**: Map with context preserved: M(a) -> M(b)
 
-  Combine flatten with map, and you get chain — function composition for monad-lifting functions, aka Kleisli composition, named after *Heinrich Kleisli*:
+  Combine flatten with map, and you get chain — function composition for monad-lifting functions, aka Kleisli composition, named after *Heinrich Kleisli*
 
 * **FlatMap/Chain**: Flatten + map: M(M(a)) => M(b)
 
