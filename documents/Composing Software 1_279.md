@@ -247,89 +247,6 @@ Id.of = Id;
 ```
 > *Performance Warning*: I’m not recommending this for arrays. Composing functions in this way would require multiple iterations over the entire array (which could contain hundreds of thousands of items). For maps over an array, compose simple a -> b functions first, then map over the array once, or optimize iterations with .reduce() or a transducer.
 
-
-
-
-
-
-
-
-
-
-
-
-
-[].composition.
-
-
-f:                     F(b) => F(c)
-h = f(g(Fa)):  F(a)    =>      F(c)
-But 
-
-In 
-const compose = (...fns) => x => fnsAuthor')
-  );
-  // 3 ?
-    Promise.resolve({ name: 'Kurt', role: 'Author' }) :
-    
-In this case, our monads are really 
-Combine flatten with map, and you get chain — function composition for
-The lift is the factory/constructor and/or constructor.of() method. In ) by 
-  // passing the mapped value into the type
-  // lift:
-  map: f => Id.of(f(value)),
-  // Monad chaining
-  // Discard one level of wrapping
-  // by omitting the .of() type lift:
-  chain: f => f(value),
-  // Just a convenient way to inspect
-  // the values:
-  toString: () => `Id(${ value })`
-});
-// The type lift for this monad is just
-// a reference to the factory.
-Id.of = Id;
-But the unwrapping part is also where the weird stuff like side effects, error branching, or waiting for async I/O typically hides. In all software development, composition is where all the real interesting stuff happens.
-
-For example, with promises, .chain() called .then(). Calling promise.then(f) won't invoke f() right away. Instead, it will wait for the promise to resolve, and then call f() (hence the name).
-
-Example:
-
-{
-  const x = 20;                 // The value
-  const p = Promise.resolve(x); // The context
-  const f = n => 
-    Promise.resolve(n * 2);     // The function
-  const result = p.then(f);     // The application
-  result.then(
-    r => console.log(r)         // 40
-  );
-}
-With promises, .then() is used instead of .chain(), but it's almost the same thing.
-
-You may have heard that a promise is not strictly a monad. That’s because it will only unwrap the outer promise if the value is a promise to begin with. Otherwise, .then() behaves like .map().
-
-
-Building monadic (aka Kleisli) composition
-Let’s take a deeper look at the composeM function we used to compose promise-lifting functions:
-
-const composeM = method => (...ms) => (
-  ms.reduce((f, g) => x => g(x)[method](f))
-);
-Hidden in that weird reducer is the algebraic definition of function composition: f(g(x)). Let's make it easier to spot:
-
-{
-  // The algebraic definition of function composition:
-  // (f ∘ g)(x) = f(g(x))
-  const compose = (f, g) => x => f(g(x));
-  const
-
-
-
-
-
-
-
 For synchronous, eager function applications over array data, this is overkill. However, lots of things are asynchronous or lazy, and lots of functions need to handle messy things like branching for exceptions or empty values.
 
 That’s where monads come in. Monads can rely on values that depend on previous asynchronous or branching actions in the composition chain. In those cases, you can’t get a simple value out for simple function compositions. Your monad-returning actions take the form a => Monad(b) instead of a => b.
@@ -340,7 +257,6 @@ That’s where monads come in. Monads can rely on values that depend on previous
 > A statement is a chunk of code that may not evaluate to a value at all.
 
 In JavaScript if statements don’t evaluate to values. In order for an if statement in JavaScript to do anything useful, it must cause a side-effect or return a value from the containing function.
-
 ```js
 const withIf = ({
   conditionA, conditionB
