@@ -178,7 +178,7 @@ const trace = label => value => {
   // a => Promise(b)
   const getUserById = id => id === 3 ?
     Promise.resolve({ name: 'Kurt', role: 'Author' }) :
-    undefined
+    Promise.resolve({})
   ;
   // b => Promise(c)
   const hasPermission = ({ role }) => (
