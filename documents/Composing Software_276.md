@@ -1,4 +1,3 @@
-
 # Composing Software
 *(.toc)*
 
