@@ -244,12 +244,20 @@ Id.of = Id;
   ]);
   // => [42], [42]
 }
+const composePromises = composeM('then');
+const composeMap = composeM('map');
+const composeFlatMap = composeM('flatMap');
 ```
 > *Performance Warning*: I’m not recommending this for arrays. Composing functions in this way would require multiple iterations over the entire array (which could contain hundreds of thousands of items). For maps over an array, compose simple a -> b functions first, then map over the array once, or optimize iterations with .reduce() or a transducer.
 
 For synchronous, eager function applications over array data, this is overkill. However, lots of things are asynchronous or lazy, and lots of functions need to handle messy things like branching for exceptions or empty values.
 
 That’s where monads come in. Monads can rely on values that depend on previous asynchronous or branching actions in the composition chain. In those cases, you can’t get a simple value out for simple function compositions. Your monad-returning actions take the form a => Monad(b) instead of a => b.
+
+
+
+
+
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
