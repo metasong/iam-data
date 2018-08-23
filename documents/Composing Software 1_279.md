@@ -142,7 +142,7 @@ withBattery() could be used with other kinds of objects, like robots, electric s
 * Implicitly returns this, unless you explicitly return another object.
 * Sets the instance [[Prototype]] (an internal reference) to Constructor.prototype, so that Object.getPrototypeOf(instance) === Constructor.prototype.
 * Sets the instance.constructor === Constructor.
-## [JavaScript Monads[(https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
+## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
 
 
 
