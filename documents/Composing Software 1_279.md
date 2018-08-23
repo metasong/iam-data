@@ -263,7 +263,7 @@ That’s where monads come in. Monads can rely on values that depend on previous
 
 ![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.pn)
 
-![](
+![](https://cdn-images-1.medium.com/max/2000/1*3jcLj7wdwWaUJ22X2iT7OA.png)
 
 ### Proving the Monad Laws
 
