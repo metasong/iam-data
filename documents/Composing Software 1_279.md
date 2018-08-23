@@ -152,4 +152,19 @@ withBattery() could be used with other kinds of objects, like robots, electric s
 
 In JavaScript if statements don’t evaluate to values. In order for an if statement in JavaScript to do anything useful, it must cause a side-effect or return a value from the containing function.
 
+```js
+const withIf = ({
+  conditionA, conditionB
+}) => {
+  if (conditionA) {
+    if (conditionB) {
+      return valueA;
+    }
+    return valueB;
+  }
+  return valueC;
+};
+
+
+```
 
