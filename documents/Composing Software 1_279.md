@@ -142,6 +142,25 @@ withBattery() could be used with other kinds of objects, like robots, electric s
 * Implicitly returns this, unless you explicitly return another object.
 * Sets the instance [[Prototype]] (an internal reference) to Constructor.prototype, so that Object.getPrototypeOf(instance) === Constructor.prototype.
 * Sets the instance.constructor === Constructor.
+## [Composable Datatypes with Functions](https://medium.com/javascript-scene/composable-datatypes-with-functions-aec72db3b093)
+```js
+const t = value => {
+  const add = n => t(value + n);
+  return Object.assign(add, {
+    toString: () => `t(${ value })`,
+    valueOf: () => value
+  });
+};
+
+const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+// Sugar to kick off the pipeline with an initial value:
+const sumT = (...fns) => pipe(...fns)(t(0));
+sumT(
+  t(2),
+  t(4),
+  t(-1)
+).valueOf(); // 5
+```
 ## [JavaScript Monads](https://medium.com/javascript-scene/javascript-monads-made-simple-7856be57bfe8)
 
 
