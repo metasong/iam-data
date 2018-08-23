@@ -261,43 +261,9 @@ That’s where monads come in. Monads can rely on values that depend on previous
 1. Associativity: m.chain(f).chain(g) ==== m.chain(x => f(x).chain(g)
 
 
-![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.png)
+![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.pn)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![]
+![](
 
 ### Proving the Monad Laws
 
