@@ -317,7 +317,10 @@ In addition to the arrow we explicitly see between objects, each object in a cat
 
 make Observable to be the Monad
 ```js
-rxjs.Observable.prototype.chain = function (f) {return  rxjs.operators.flatmap(f)(this);}
+rxjs.Observable.prototype.chain =
+  function (f) {
+    return  rxjs.operators.flatmap(f)(this);
+  }
 ```
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
