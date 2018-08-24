@@ -261,10 +261,11 @@ That’s where monads come in. Monads can rely on values that depend on previous
 1. Associativity: m.chain(f).chain(g) ==== m.chain(x => f(x).chain(g)
 
 
-![](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.png)
+![=200*](https://cdn-images-1.medium.com/max/2000/1*X_bUJJYudP8MlhN0FLEGKg.png)
+
 A monad is a functor. A functor is a morphism between categories, A -> B. The morphism is represented by an arrow. 
-In addition to the arrow we explicitly see between objects, each object in a category also has an arrow back to itself. In other words, for every object X in a category, there exists an arrow X -> X. That arrow is known as the identity arrow
-![](https://cdn-images-1.medium.com/max/2000/1*3jcLj7wdwWaUJ22X2iT7OA.png)
+In addition to the arrow we explicitly see between objects, each object in a category also has an arrow back to itself. In other words, for every object X in a category, there exists an arrow X -> X. That arrow is known as the identity arrow  
+![=160x](https://cdn-images-1.medium.com/max/2000/1*3jcLj7wdwWaUJ22X2iT7OA.png)
 
 ### Proving the Monad Laws
 
