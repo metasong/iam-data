@@ -319,7 +319,7 @@ make Observable to be the Monad
 ```js
 rxjs.Observable.prototype.chain =
   function (f) {
-    return  rxjs.operators.flatmap(f)(this);
+    return  rxjs.operators.flatMap(f)(this);
   }
 ```
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
