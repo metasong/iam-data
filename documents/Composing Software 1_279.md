@@ -325,7 +325,9 @@ rxjs.Observable.prototype.chain =
 ```
 ### Combining Observable with Promise
 
-
+```js
+c
+```
 
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
