@@ -323,6 +323,11 @@ rxjs.Observable.prototype.chain =
     return  rxjs.operators.flatMap(f)(this);
   }
 ```
+### Combining Observable with Promise
+
+
+
+
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
 > pression is a chunk of code that evaluates to a single value.
