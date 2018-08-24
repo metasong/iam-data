@@ -315,6 +315,10 @@ In addition to the arrow we explicitly see between objects, each object in a cat
 }
 ```
 
+
+```js
+const 
+```
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
 > pression is a chunk of code that evaluates to a single value.
