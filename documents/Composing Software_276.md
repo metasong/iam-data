@@ -86,7 +86,7 @@ to turn the methord on object to the pure function:
 const str = 'abc def';
 const atrA = str.split(' ');
 
-let split = (seprator, str) =>
+let split = (seprator, str/*last*/) =>
 str.split(seprator)
 // currying
 split = curring(split);
