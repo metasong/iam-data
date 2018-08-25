@@ -126,6 +126,9 @@ var initials = compose(join('. '), map(compose(toUpperCase, firstChar)), split('
 initials("I'm writting your professional life");
 // 'I. W. Y. P. L'
 ```
+https://github.com/tc39/proposal-pipeline-operator/blob/master/README.md
+
+
 ## Favor object composition over class inheritance
 * **The tight coupling problem**: Because child classes are dependent on the implementation of the parent class, class inheritance is the tightest coupling available in object oriented design.
 * **The fragile base class problem**: Due to tight coupling, changes to the base class can potentially break a large number of descendant classes — potentially in code managed by third parties. The author could break code they’re not aware of.
