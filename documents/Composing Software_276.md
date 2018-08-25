@@ -91,8 +91,8 @@ str.split(seprator)
 // currying
 split = curring(split);
 
-pipe(split(' '))(str)
-
+const strB = pipe(split(' '))(str)
+strace('strA === strB')(strA ===strB)
 ```
 
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
