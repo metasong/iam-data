@@ -77,7 +77,7 @@ add3(1, 2)(3); // 6
 add3(1)(2, 3); // 6
 add3(1)(2)(3); // 6
 ```
-
+auto currying could be used to generate t
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
 ```js
