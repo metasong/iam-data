@@ -8,6 +8,8 @@ Function composition is the process of passing the return value of one function 
 
 `(f ∘ g)(x) = f(g(x))`
 
+We can call this kind of function composition as embedded function combosition, it's not friendly to read or write.
+
 Method chaining is the process of directly calling a method on the return value of a function, without needing to refer to the return value by name:
 
 ```js
