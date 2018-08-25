@@ -37,6 +37,7 @@ wait(300)
 ```
 > If you’re chaining, you’re composing.
 
+### Step function 
 ```js
 // 2 step function
 const trace = label => value => {
