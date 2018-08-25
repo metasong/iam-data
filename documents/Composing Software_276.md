@@ -4,6 +4,10 @@
 ## [Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
 > Composition: “The act of combining parts or elements to form a whole.” ~ *Dictionary.com*
 
+## Three kinds of function composition
+
+* 
+
 Function composition is the process of passing the return value of one function as an argument to another function. In mathematical notation:
 
 `(f ∘ g)(x) = f(g(x))`
