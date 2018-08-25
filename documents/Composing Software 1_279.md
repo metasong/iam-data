@@ -255,7 +255,7 @@ For synchronous, eager function applications over array data, this is overkill. 
 That’s where monads come in. Monads can rely on values that depend on previous asynchronous or branching actions in the composition chain. In those cases, you can’t get a simple value out for simple function compositions. Your monad-returning actions take the form a => Monad(b) instead of a => b.
 ###  why do  chaining  not do mapping
 
-Mapping only composes functions 
+Mapping only composes functions that manipulate inner data, every Chaining function may return a new kind of Monad, whitch represents different concepts(i.e. Promise, Observable...)
 
 Chaining may returns new kind of Monad, mapping only returns same kind, that means you can composing Promise with Observable with chaining.
 
