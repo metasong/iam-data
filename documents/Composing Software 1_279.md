@@ -1,4 +1,4 @@
-# Composing Software 1
+p# Composing Software 1
 
 ## [Functional mixins](https://medium.com/javascript-scene/functional-mixins-composing-software-ffb66d5e731c)
 function mixins are composable factory functions which connect together in a pipeline; each function adding some properties or behaviors like workers on an assembly line. Functional mixins don’t depend on or require a base factory or constructor: Simply pass any arbitrary object into a mixin, and an enhanced version of that object will be returned.
@@ -326,7 +326,11 @@ rxjs.Observable.prototype.chain =
 ### Combining Observable with Promise
 
 ```js
-c
+const p = Promise.resolve(3);
+const o = Observable.of(2);
+
+onst c = ccombineM(p, o);
+
 ```
 
 
