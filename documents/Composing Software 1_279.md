@@ -326,11 +326,12 @@ rxjs.Observable.prototype.chain =
 ### Combining Observable with Promise
 
 ```js
-const p = Promise.resolve(3);
-const o = Observable.of(2);
+const proPlus3= x => Promise.resolve(3+x);
+const obMuti2 = x =>
+    Observable.of(2*x);
 
-onst c = ccombineM(p, o);
-
+onst c = ccombineM(proPlus3, obMuti2);
+c(5)
 ```
 
 
