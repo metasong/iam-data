@@ -92,7 +92,8 @@ str.split(seprator)
 split = curring(split);
 
 const strB = pipe(split(' '))(str)
-strace('strA === strB')(strA ===strB)
+
+trace('strA === strB')(strA ===strB)
 ```
 
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
