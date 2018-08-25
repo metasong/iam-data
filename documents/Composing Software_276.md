@@ -104,6 +104,7 @@ const strB = pipe(split(' '))(str)
 
 trace('strA === strB')(strA ===strB)
 ```
+https://github.com/tc39/proposal-partial-application/blob/master/README.md
 
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
