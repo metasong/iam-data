@@ -84,7 +84,15 @@ auto currying could be used to generate the pipable funtion.
 to turn the methord on object to the pure function:
 ```js
 const str = 'abc def';
-const atrA = str.s
+const atrA = str.split(' ');
+
+let split = (seprator, str) =>
+str.split(seprator)
+// currying
+split = curring(split);
+
+pipe(split(' '))(str)
+
 ```
 
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
