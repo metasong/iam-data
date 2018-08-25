@@ -77,7 +77,16 @@ add3(1, 2)(3); // 6
 add3(1)(2, 3); // 6
 add3(1)(2)(3); // 6
 ```
-auto currying could be used to generate t
+auto currying could be used to generate the pipable funtion. 
+
+> when writing function with muti parameters, it would be better to make the main processed object the last parameter. 
+
+to turn the methord on object to the pure function:
+```js
+const str = 'abc def';
+const atrA = str.s
+```
+
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
 ```js
