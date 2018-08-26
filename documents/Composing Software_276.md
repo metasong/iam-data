@@ -56,6 +56,26 @@ const reduce = (reducer, initial, arr) => {
 };
 reduce((acc, curr) => acc + curr, 0, [1,2,3]); // 6
 ```
+```js
+const filter = (
+  fn, arr
+) => reduce((acc, curr) => fn(curr) ?
+  acc.concat([curr]) :
+  acc, [], arr
+);
+```
+
+```js
+const map = (fn, arr) => arr.reduce((acc, item, index, arr) => {
+  return acc.concat(fn(item, index, arr));
+}, []);
+```
+
+```js
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+```
+> Note: pipe is from left to right
+
 ### Step function 
 ```js
 // 2 step function
@@ -73,12 +93,11 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
-
+```js
 ## Currying
 
 > **Currying**: A curried 
 function is a function that takes multiple parameters one at a time: It takes a parameter, and returns a function that takes the next parameter, and so on until all parameters have been supplied, at which point, the application is completed and the final value is returned.
-
 ```js
 // Tiny, recursive autocurry
 
