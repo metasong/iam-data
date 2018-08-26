@@ -37,6 +37,25 @@ wait(300)
 ```
 > If you’re chaining, you’re composing.
 
+## Higher Order Functions 
+
+> A higher order function is a function that takes a function as an argument, or returns a function.
+
+### Reduce
+
+```js
+const reduce = (reducer, initial, arr) => {
+  // shared stuff
+  let acc = initial;
+  for (let i = 0, { length } = arr; i < length; i++) {
+    // unique stuff in reducer() call
+    acc = reducer(acc, arr[i]);
+  // more shared stuff
+  }
+  return acc;
+};
+reduce((acc, curr) => acc + curr, 0, [1,2,3]); // 6
+```
 ### Step function 
 ```js
 // 2 step function
@@ -54,7 +73,7 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
-
+```js
 ## Currying
 
 > **Currying**: A curried function is a function that takes multiple parameters one at a time: It takes a parameter, and returns a function that takes the next parameter, and so on until all parameters have been supplied, at which point, the application is completed and the final value is returned.
@@ -137,45 +156,8 @@ https://github.com/tc39/proposal-pipeline-operator/blob/master/README.md
 * **The gorilla/banana problem**: “…the problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle.” ~ Joe Armstrong, “Coders at Work”
 https://medium.com/javascript-scene/a-functional-programmers-introduction-to-javascript-composing-software-d670d14ede30
 
-## Higher Order Functions 
 
-> A higher order function is a function that takes a function as an argument, or returns a function.
 
-### Reduce
-
-```js
-const reduce = (reducer, initial, arr) => {
-  // shared stuff
-  let acc = initial;
-  for (let i = 0, { length } = arr; i < length; i++) {
-    // unique stuff in reducer() call
-    acc = reducer(acc, arr[i]);
-  // more shared stuff
-  }
-  return acc;
-};
-reduce((acc, curr) => acc + curr, 0, [1,2,3]); // 6
-```
-
-```js
-const filter = (
-  fn, arr
-) => reduce((acc, curr) => fn(curr) ?
-  acc.concat([curr]) :
-  acc, [], arr
-);
-```
-
-```js
-const map = (fn, arr) => arr.reduce((acc, item, index, arr) => {
-  return acc.concat(fn(item, index, arr));
-}, []);
-```
-
-```js
-const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
-```
-> Note: pipe is from left to right
 
 ### A Word on Redux
 
