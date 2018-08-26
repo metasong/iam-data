@@ -322,7 +322,7 @@ In addition to the arrow we explicitly see between objects, each object in a cat
   // Id monad associativity: Id(42), Id(42)
 }
 ```
-
+![100%*](http://reactivex.io/documentation/operators/images/flatMap.c.png)
 make Observable to be the Monad
 ```js
 rxjs.Observable.prototype.chain =
