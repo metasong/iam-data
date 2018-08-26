@@ -93,7 +93,7 @@ your name: jason
 // pipe(...fns: [...Function]) => x => y
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 ```
-```js
+
 ## Currying
 
 > **Currying**: A curried 
