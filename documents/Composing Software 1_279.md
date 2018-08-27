@@ -333,6 +333,12 @@ rxjs.Observable.prototype.chain =
 ### Combining Observable with Promise
 
 ```js
+rxjs.Observable.prototype.chain =
+  function (f) {
+    return  rxjs.operators.flatMap(f)(this);
+  }
+Promise.prototype.chain = Promise.prototype.then;
+
 const proPlus3= x => Promise.resolve(3+x);
 const obMuti2 = x =>
     Observable.of(2*x);
