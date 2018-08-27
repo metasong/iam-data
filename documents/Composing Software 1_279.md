@@ -330,6 +330,19 @@ rxjs.Observable.prototype.chain =
     return  rxjs.operators.flatMap(f)(this);
   }
 ```
+
+```js
+const composeM = chainMethod => (...ms) => (
+    ms.reduce((f, g) => x => g(x)[chainMethod](f))
+  );
+
+rxjs.Observable.prototype.chain =
+  function (f) {
+    return  rxjs.operators.flatMap(f)(this);
+  }
+
+
+```
 ### Combining Observable with Promise
 
 ```js
