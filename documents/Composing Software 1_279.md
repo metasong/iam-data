@@ -333,6 +333,10 @@ rxjs.Observable.prototype.chain =
 ### Combining Observable with Promise
 
 ```js
+  const composeM = chainMethod => (...ms) => (
+    ms.reduce((f, g) => x => g(x)[chainMethod](f))
+  );
+
 rxjs.Observable.prototype.chain =
   function (f) {
     return  rxjs.operators.flatMap(f)(this);
@@ -341,9 +345,9 @@ Promise.prototype.chain = Promise.prototype.then;
 
 const proPlus3= x => Promise.resolve(3+x);
 const obMuti2 = x =>
-    Observable.of(2*x);
+    rxjs.of(2*x);
 
-const c = combineM(proPlus3, obMuti2);
+const c = composeM('chain')(proPlus3, obMuti2);
 c(5)
 ```
 
