@@ -340,7 +340,10 @@ rxjs.Observable.prototype.chain =
   function (f) {
     return  rxjs.operators.flatMap(f)(this);
   }
-
+a = x=>  rxjs.of(2*x);
+b = x => rxjs.of(x+3);
+c = composeM('chain')(a,b);
+c(2).subscribe(x=>console.log(x)); // 12
 
 ```
 ### Combining Observable with Promise
