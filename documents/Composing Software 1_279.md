@@ -366,9 +366,12 @@ const obMuti2 = x =>
 const c = composeM('chain')(proPlus3, obMuti2);
 c(5)
 
-// not work
-```
+// not work becsause of no subscribe on Observable
 
+```
+```js
+
+```
 
 ## [Nested Ternaries are Great](https://medium.com/javascript-scene/nested-ternaries-are-great-361bddd0f340)
 ### Expressions vs Statements
