@@ -169,7 +169,19 @@ them composable. It's a mapping from some type a to some type b along with some 
 * Functions map: a => b
 * Functors map with context: Functor(a) => Functor(b)
 * Monads flatten and map with context: Monad(Monad(a)) => Monad(b)
+```js flatmap
+var arr1 = [1, 2, 3, 4];
 
+arr1.map(x => [x * 2]); 
+// [[2], [4], [6], [8]]
+
+arr1.flatMap(x => [x * 2]);
+// [2, 4, 6, 8]
+
+// only one level is flattened
+arr1.flatMap(x => [[x * 2]]);
+// [[2], [4], [6], [8]]
+```
 ```js
 const trace = label => value => {
   console.log(`${ label }: ${ value }`);
