@@ -182,6 +182,7 @@ arr1.flatMap(x => [x * 2]);
 arr1.flatMap(x => [[x * 2]]);
 // [[2], [4], [6], [8]]
 ```
+
 ```js
 const trace = label => value => {
   console.log(`${ label }: ${ value }`);
