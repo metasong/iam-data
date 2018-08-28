@@ -2,3 +2,5 @@
 *summeryssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssc*
 http://ignitersworld.com/lab/contextMenu.html
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_ondblclick
