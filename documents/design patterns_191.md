@@ -1,10 +1,9 @@
 # design patterns
- aaaa
-<i-toc   s>
+ 
+<i-toc >
 </i-toc>
-the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
-ssaa
+the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
  
 [[TOC]] 
 ## Creational
