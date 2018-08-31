@@ -1,12 +1,12 @@
 # design patterns
  
-<i-toc>
+<i-toc data-i="aa">
 </i-toc>
 a
   a
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
-s
+ssaa
  
 [[TOC]] 
 ## Creational
