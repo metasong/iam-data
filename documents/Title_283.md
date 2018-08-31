@@ -1,5 +1,5 @@
 # Title
 a
-*(.toc)*
+*(.l)*
 
 *(,label .:'aaaaaaadsdfsdfsdfdfadfd')*
