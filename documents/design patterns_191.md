@@ -2,8 +2,8 @@
  
 <i-toc>
 </i-toc>
-
-  
+a
+  a
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
 s
