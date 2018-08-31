@@ -1,6 +1,5 @@
 # design patterns
- aaaaaaaaa   aaaaaaaaaaaaa
- aaaaaaaa
+ aaaa
 <i-toc   s>
 </i-toc>
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
