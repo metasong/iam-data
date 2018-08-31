@@ -1,9 +1,7 @@
 # design patterns
  
-<i-toc data-i="aa">
+<i-toc >
 </i-toc>
-a
-  a
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
 ssaa
