@@ -5,7 +5,7 @@
   aa
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
-
+s
  
 [[TOC]] 
 ## Creational
