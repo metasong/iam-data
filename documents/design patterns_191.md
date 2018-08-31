@@ -1,6 +1,6 @@
 # design patterns
  
-<i-toc >
+<i-toc>
 </i-toc>
 
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
