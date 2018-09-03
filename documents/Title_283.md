@@ -4,3 +4,4 @@ a
 a sdfdsdfd  ammmmmmmmmm
 *(,label .:'aaaaaaadsdfsdfsdfdfadfd')*
 kkkkkhkkkbghhhh
+<word-count></word-count>
