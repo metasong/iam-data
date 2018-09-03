@@ -1,5 +1,5 @@
 # design patterns
- 
+
 <i-toc ></i-toc>
 hkjlgljgloiuhiouhlihg
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
