@@ -3,7 +3,6 @@
 
 <kbd>Alt</kbd> + <kbd>B</kbd>
 <i-toc></i-toc>
-asdjf;akjdsf;ajdf;kja;kdjfa;kjdf;ajfd;aksjdfeifjaldjfp
 
 ---
 __Advertisement :)__
