@@ -8,5 +8,5 @@ kkkkkhkkkbghhhh sdfd sd df
 <editable-list></editable-list>
 hhghgg 
   ssdfsdfdfadfaaadfd 
-  sdfsdfd adsdfa d ad fa ia ds a lll a 
+  sdfsdfd adsdfa d ad fa ia ds a lll a a adfd adfa dfsdf lllkj adf alll
   <p is="word-count"></p>
