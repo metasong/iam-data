@@ -9,7 +9,7 @@
 
 * embedded function call: f(g(h(j(a))))
 * method chaining: a.f().g().h()
-* function piping or combining:  
+* function piping or combining:    
    pipe(z,x,c)(a)
 
 Function composition is the process of passing the return value of one function as an argument to another function. In mathematical notation:
