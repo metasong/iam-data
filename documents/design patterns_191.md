@@ -1,7 +1,7 @@
 # design patterns
-djkfakjdfakd fkjajkgkaj'dfgjafdjkg;klj ;akjg;akjdf
+
 <i-toc ></i-toc>
-hkjlgljgloiuhiouhlihg
+
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
  
 [[TOC]] 
