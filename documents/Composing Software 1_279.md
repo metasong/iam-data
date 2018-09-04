@@ -2,8 +2,8 @@
 ---
 Jason Song <metaseed@gmail.com>   
 v1.8.6, 2018-07-08  
-toc
-keywords: [software composition, functional mixin]
+keywords: [software composition, functional mixin]  
+enable: [toc]
 
 ---
 *(.toc)*
