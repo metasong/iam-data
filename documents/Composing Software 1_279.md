@@ -1,5 +1,6 @@
 # Composing Software 1
-Jason Song
+Jason Song <metaseed@gmail.com>   
+v1.8.6, 2018-07-08
 
 *(.toc)*
 ## [Functional mixins](https://medium.com/javascript-scene/functional-mixins-composing-software-ffb66d5e731c)
