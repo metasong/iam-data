@@ -7,7 +7,6 @@ enable: [toc]
 
 ---
 
-****
 
 *(.toc)*
 ## [Functional mixins](https://medium.com/javascript-scene/functional-mixins-composing-software-ffb66d5e731c)
