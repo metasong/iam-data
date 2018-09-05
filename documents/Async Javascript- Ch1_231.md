@@ -35,7 +35,7 @@ function bar(y) {
 		baz();
 	}
 }
-
+// works  because  foo and bar are called in same thread
 function baz() {
 	console.log( a + b );
 }
