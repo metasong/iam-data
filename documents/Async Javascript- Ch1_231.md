@@ -71,7 +71,7 @@ function baz() {
 ajax( "http://some.url.1", foo );
 ajax( "http://some.url.2", bar );
 ```
-Another expression of concurrency coordination is called "cooperative concurrency." The goal is to take a long-running "process" and break it up into steps or batches so that other concurrent "processes" have a chance to interleave their operations into the event loop queue.
+Another expression of *concurrency coordination*  is called "*cooperative concurrency.*" The goal is to take a long-running "process" and break it up into steps or batches so that other concurrent "processes" have a chance to interleave their operations into the event loop queue.
 
 ```js
 var res = [];
