@@ -16,10 +16,11 @@ Ctrl+P|go to source file
 
 
 ## Elements Panel
-|key|action|
-|--|---|
-|H | toggle element hiden|
-|F2|toggle element edit|
+key|action
+- | -
+arrows | navigate in elements
+H | toggle element hiden
+F2|toggle element edit
 
 ## Styles Pane
 key | action
