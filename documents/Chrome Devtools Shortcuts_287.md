@@ -3,6 +3,7 @@
 |key|action|
 |--|---|
 |F1| settings|
+|
 
 ## Elements Panel
 |key|action|
