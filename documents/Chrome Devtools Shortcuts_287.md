@@ -21,3 +21,14 @@ Ctrl+P|go to source file
 ## Styles Pane
 |key|action|
 |--|---|
+
+## Console
+|key|action|
+-|-
+Ctrl+L|clear console
+
+
+
+aa
+
+a
