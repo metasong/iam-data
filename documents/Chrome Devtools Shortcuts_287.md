@@ -1,9 +1,11 @@
 # Chrome Devtools Shortcuts
-
+## Pannels 
 |key|action|
 |--|---|
 |F1| settings|
-|
+|Ctrl+Shift+P|Command Panel|
+|Esc|Toggle drawer|
+|Ctrl+``
 
 ## Elements Panel
 |key|action|
