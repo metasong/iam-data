@@ -24,6 +24,9 @@ Ctrl+P|go to source file
 ## Styles Pane
 key | action
 - | -
+Tab/Shift+Tab | next/previous propertyValue
+Alt+up/down | increase/decrease 0.1
+up/down | increase/decrease 1
 
 
 ## Console
