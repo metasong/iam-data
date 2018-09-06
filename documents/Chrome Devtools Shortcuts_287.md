@@ -31,6 +31,7 @@ Ctrl+P|go to source file
 Ctrl+L|clear console
 Tab or ->|accept suggestion
 Ctrl+U | clear current input
+up, down arrow | previous/next history input
 
 
 
