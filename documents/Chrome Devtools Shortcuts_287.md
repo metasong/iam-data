@@ -22,8 +22,9 @@ Ctrl+P|go to source file
 |F2|toggle element edit|
 
 ## Styles Pane
-|key|action|
-|--|---|
+key|action
+-|-
+
 
 ## Console
 |key|action|
