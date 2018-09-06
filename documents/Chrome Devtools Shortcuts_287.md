@@ -1,11 +1,13 @@
 # Chrome Devtools Shortcuts
-## Pannels 
+## All Pannels 
 |key|action|
 |--|---|
 |F1| settings|
 |Ctrl+Shift+P|Command Panel|
-|Esc|Toggle drawer|
-|Ctrl+``
+Esc|Toggle drawer
+Ctrl+Tilde|show console in drawer
+Ctrl+Shift+M|toggle device mode
+Ctrl+Shift+F|search across all sources
 
 ## Elements Panel
 |key|action|
