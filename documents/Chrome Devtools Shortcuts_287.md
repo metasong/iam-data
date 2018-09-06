@@ -1,9 +1,12 @@
 # Chrome Devtools Shortcuts
+
+> shortcuts defined in Settings Panel
+
 ## All Pannels 
 |key|action|
 |--|---|
 |F1| settings|
-|Ctrl+Shift+P|Command Panel|
+|Ctrl+Shift+P|Command Panel
 Esc|Toggle drawer
 Ctrl+Tilde|show console in drawer
 Ctrl+Shift+M|toggle device mode
