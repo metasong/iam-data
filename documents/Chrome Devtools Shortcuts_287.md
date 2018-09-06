@@ -29,6 +29,8 @@ Ctrl+P|go to source file
 |key|action|
 -|-
 Ctrl+L|clear console
+Tab or ->|accept suggestion
+Ctrl+U | clear current input
 
 
 
