@@ -1,6 +1,7 @@
 # Chrome Devtools Shortcuts
 
-> shortcuts defined in Settings Panel
+> shortcuts defined in Settings Panel.   
+> web link: [Chrome Devtool Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
 ## All Pannels 
 |key|action|
