@@ -38,8 +38,8 @@ Tab or ->|accept suggestion
 Ctrl+U | clear current input
 up, down arrow | previous/next history input
 
+## Debugger Panel
+todo
 
-
-aa
-
-a
+## Test Editor
+to
