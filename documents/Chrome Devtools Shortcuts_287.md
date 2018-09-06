@@ -27,7 +27,7 @@ key | action
 Tab/Shift+Tab | next/previous propertyValue
 Alt+up/down | increase/decrease 0.1
 up/down | increase/decrease 1
-
+shift+up/down | increase/decrease 10
 
 ## Console
 |key|action|
