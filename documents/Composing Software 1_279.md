@@ -2,7 +2,7 @@
 ---
 Jason Song <metaseed@gmail.com>   
 v1.8.6, 2018-07-08  
-keywords: [software composition, functional mixin]  
+tags: [software composition, functional mixin]  
 enable: [toc]
 
 ---
