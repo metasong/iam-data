@@ -1,7 +1,7 @@
 # Composing Software 1
 ---
-Jason Song <metaseed@gmail.com>   
-v1.8.6, 2018-07-08  
+auther: Jason Song <metaseed@gmail.com>   
+version: 1.8.6
 tags: [software composition, functional mixin]  
 enable: [toc]
 
