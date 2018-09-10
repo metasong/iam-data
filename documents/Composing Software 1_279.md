@@ -2,7 +2,7 @@
 ---
 auther: Jason Song <metaseed@gmail.com>   
 version: 1.8.6
-tags: [software composition, functional mixin]  
+tag: [software composition, functional mixin]  
 enable: [toc]
 
 ---
