@@ -23,8 +23,6 @@ enable: [toc]
 	width: 100px;
 	height: 100px;
 	background: red;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
 	border-radius: 50px;
 }
 
