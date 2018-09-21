@@ -27,3 +27,5 @@ enable: [toc]
 }
 
 ```
+
+https://css-tricks.com/examples/ShapesOfCSS/
