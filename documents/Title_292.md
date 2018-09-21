@@ -9,7 +9,7 @@ enable: [toc]
 ## Circle
 
 <style>
-#circle {
+.circle {
 	width: 100px;
 	height: 100px;
 	background: red;
@@ -17,12 +17,11 @@ enable: [toc]
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 }
-
 </style>
-<div id="circle"></div>
+<div class="circle"></div>
 
 ```css
-#circle {
+.circle {
 	width: 100px;
 	height: 100px;
 	background: red;
