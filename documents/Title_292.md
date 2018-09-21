@@ -13,6 +13,7 @@ enable: [toc]
 }
 </style>
 <div id="square"></div>
+
 ```css
 #square {
 	width: 100px;
