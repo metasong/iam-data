@@ -15,7 +15,7 @@ enable: [toc]
 	background: red;
 	border-radius: 50px;
 }
-  
+
 #yin-yang {
 	width: 96px;
 	height: 48px;
@@ -27,7 +27,7 @@ enable: [toc]
 	position: relative;
 }
 
-#yin-yang:before {
+#yin-yang1:before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -39,7 +39,7 @@ enable: [toc]
 	height: 12px;
 }
 
-#yin-yang:after {
+#yin-yang1:after {
 	content: "";
 	position: absolute;
 	top: 50%;
