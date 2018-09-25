@@ -8,12 +8,12 @@
 |--|---|
 |F1| settings|
 |Ctrl+Shift+P|Command Panel
+Ctrl+P|go to source file
 Esc|Toggle drawer
-Ctrl+Tilde|show console in drawer panel
-Ctrl+Shift+M|toggle device(Mobile) mode
+Ctrl+\`(Tilde)|show console in drawer panel
+Ctrl+Shift+M|toggle **M**obile mode
 Ctrl+Shift+F|search across all sources
 Ctrl+Shift+C| inspect element
-Ctrl+P|go to source file
 
 
 ## Elements Panel
