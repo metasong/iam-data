@@ -40,9 +40,9 @@ Esc | reject autocomplete suggestion
 Ctrl+U | clear current input
 up, down arrow | previous/next history input
 Shift+Enter | muti-line entry
+Alt + -> | expand all sub-properties of an exist object
 
 ## Debugger Panel
-todo
+Key | Action
 
-## Test Editor
-to
+
