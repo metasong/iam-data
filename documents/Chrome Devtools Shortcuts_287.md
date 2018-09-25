@@ -36,6 +36,7 @@ shift+up/down | increase/decrease 10
 -|-
 Ctrl+L|clear console
 Tab or ->|accept suggestion
+Esc | reject autocomplete suggestion
 Ctrl+U | clear current input
 up, down arrow | previous/next history input
 
