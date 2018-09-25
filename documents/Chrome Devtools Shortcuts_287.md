@@ -42,7 +42,8 @@ up, down arrow | previous/next history input
 Shift+Enter | muti-line entry
 Alt + -> | expand all sub-properties of an exist object
 
-## Debugger Panel
+## Sources Panel
 Key | Action
+-|-
 
 
