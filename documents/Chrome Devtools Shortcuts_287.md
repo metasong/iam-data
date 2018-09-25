@@ -10,7 +10,7 @@
 |Ctrl+Shift+P|Command Panel
 Esc|Toggle drawer
 Ctrl+Tilde|show console in drawer panel
-Ctrl+Shift+M|toggle device() mode
+Ctrl+Shift+M|toggle device(Mobile) mode
 Ctrl+Shift+F|search across all sources
 Ctrl+Shift+C| inspect element
 Ctrl+P|go to source file
