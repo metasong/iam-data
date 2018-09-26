@@ -5,5 +5,5 @@ version: 1.0.0
 tag: []
 enable: [toc]
 ---
-<p data-height="300" data-theme-id="34682" data-slug-hash="MqdqKx" data-default-tab="css,result" data-user="ctrlaltdev" data-pen-title="CPC 408" class="codepen">See the Pen <a href="https://codepen.io/ctrlaltdev/pen/MqdqKx/">CPC 408</a> by \void (<a href="https://codepen.io/ctrlaltdev">@ctrlaltdev</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='300' scrolling='no' title='CPC 408' src='//codepen.io/ctrlaltdev/embed/MqdqKx/?height=300&theme-id=34682&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/ctrlaltdev/pen/MqdqKx/'>CPC 408</a> by \void (<a href='https://codepen.io/ctrlaltdev'>@ctrlaltdev</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
