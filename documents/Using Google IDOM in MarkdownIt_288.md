@@ -14,6 +14,7 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 
 #### learning note
 * TextNode has a data attribute to store it's text content.
+* TextNode.nodeName ==== '#text', HTMLHeadingElement.nodeName === 'H1'... (up case)
 * use HTMLElement.childNodes[0] to get it's text content. (i.e. `<h1>aaa</h1>`)
 
 
