@@ -18,7 +18,7 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 * nodeName is defined on Node, 
 * CharacterData has a data attribute to store it's text content.
 * Text.nodeName ==== '#text', HTMLHeadingElement.nodeName === 'H1'... (up case)
-* use Node.childNodes[0] to get it's text content. (i.e. `<h1>aaa</h1>`)
+* use `Node.childNodes[0]` to get it's text content. (i.e. `<h1>aaa</h1>`)
 
 ```js
 const NODE_DATA_KEY = '__ID_Data__';
