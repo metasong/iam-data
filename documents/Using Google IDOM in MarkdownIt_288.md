@@ -23,6 +23,8 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 * document.createTextNode(data`/*character data*/`), document.createElement(name`/*element name*/`)
 * muti-child-one-parent structure is a `Star`, muti-level-start is a `Tree`.
 
+#### tree traversal
+
 
 > rendering is only triggered by relevant data changes.
 
