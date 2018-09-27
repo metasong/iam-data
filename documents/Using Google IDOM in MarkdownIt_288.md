@@ -180,3 +180,6 @@ patch(document.body, render, data);
 
 
 ```
+
+## Web Component
+
