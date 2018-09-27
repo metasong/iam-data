@@ -13,6 +13,6 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 [source code](https://jsfiddle.net/yurzui/hqhq4khc)
 
 #### learning note
-
+* 
 
 
