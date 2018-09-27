@@ -13,6 +13,8 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 [source code](https://jsfiddle.net/yurzui/hqhq4khc)
 
 #### learning note
-* 
+* TextNode has a data attribute to store it's text content.
+* use HTMLElement.childNodes[0] to get it's text content. (i.e. `<h1>aaa</h1>`)
+
 
 
