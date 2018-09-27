@@ -5,4 +5,8 @@ version: 1.0.0
 tag: []
 enable: [toc]
 ---
-## ss
+## IDOM intruction
+
+### Angular Ivy change d
+https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-prepared-ab68d4231f2c
+
