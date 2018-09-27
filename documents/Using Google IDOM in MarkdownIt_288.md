@@ -30,7 +30,7 @@ currentNode
 currentParent
 enterNode() // currentParent=currentNode;currentNode=null
 exitNode() // currentNode=currentParent;currentParent=currentParent.parentNode;
-nextNode() // currentNode=firstChild or nextSibling
+nextNode() // currentNode=firstChild(currentNode==null) or nextSibling
 }
 
 ```
