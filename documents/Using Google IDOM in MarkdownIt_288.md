@@ -13,9 +13,11 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 [source code](https://jsfiddle.net/yurzui/hqhq4khc)
 
 #### learning note
+* Text->CharacterData->Node->EventTarget->Object
+* HTMLHeadingElement->HTMLElement->Element->Node->EventTarget->Object.
+* nodeName is defined on Node, 
 * TextNode has a data attribute to store it's text content.
 * TextNode.nodeName ==== '#text', HTMLHeadingElement.nodeName === 'H1'... (up case)
-* nodeName is defined on Node, HTMLHeadingElement->HTMLElement->Element->Node->EventTarget->Object.
 * use Node.childNodes[0] to get it's text content. (i.e. `<h1>aaa</h1>`)
 
 
