@@ -24,7 +24,16 @@ https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-p
 * muti-child-one-parent structure is a `Star`, muti-level-start is a `Tree`.
 
 #### tree traversal
+```js
+{
+currentNode
+currentParent
+enterNode() // currentParent=currentNode;currentNode=null
+exitNode() // currentNode=currentParent;currentParent=currentParent.parentNode;
+nextNode() // cur
+}
 
+```
 
 > rendering is only triggered by relevant data changes.
 
