@@ -6,9 +6,10 @@ tag: []
 enable: [toc]
 ---
 ## IDOM intruction
-## sfh
-<p is="word-count"></p>
+## sfhjhh
 
+ <p is="word-count"></p>
+ 
 ### Angular Ivy change dection execution
 https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-prepared-ab68d4231f2c#7ff5
 
