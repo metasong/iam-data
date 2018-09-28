@@ -8,6 +8,7 @@ enable: [toc]
 ## IDOM intruction
 
  <p>
+  <i-toc></i-toc>
   <i>ssssss ___sssdf</i>
 </p>
 ### Angular Ivy change dection execution
