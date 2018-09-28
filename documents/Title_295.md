@@ -1,5 +1,6 @@
 # Title
 ## aaa
 
-<div><i-toc></i-toc></div>
+<div is="i-toc"></div>
 
+f
