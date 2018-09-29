@@ -6,7 +6,7 @@ tag: []
 enable: [toc]
 ---
 ## IDOM intruction
-j
+sfddf sdfd lll sfdfllll sdfd sldkf ysdf
 ### Angular Ivy change dection execution
 https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-prepared-ab68d4231f2c#7ff5
 
