@@ -1,7 +1,11 @@
 # Title
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+enable: [toc]
+---
 *summery*
-
-<i-toc>
   sss
   
   otttsdfs
