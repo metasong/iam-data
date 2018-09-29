@@ -1,4 +1,10 @@
 # Chrome Devtools Shortcuts
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+enable: [toc]
+---
 
 > shortcuts defined in Settings Panel.   
 > web link: [Chrome Devtool Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
