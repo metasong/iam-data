@@ -182,5 +182,3 @@ patch(document.body, render, data);
 ```
 
 ## [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-
-
