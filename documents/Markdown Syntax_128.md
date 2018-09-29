@@ -1,8 +1,14 @@
 # Markdown Syntax
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+enable: [toc]
+---
 <!-- comment -->
 
 <kbd>Alt</kbd> + <kbd>B</kbd>
-<i-toc></i-toc>
+
 
 ---
 __Advertisement :)__
