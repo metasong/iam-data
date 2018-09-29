@@ -1,8 +1,6 @@
 # Title
----
+<i-toc></i-toc>
 
-enable: [toc]
----
 *summery*
   sss
   sss ll  sd ll ss
