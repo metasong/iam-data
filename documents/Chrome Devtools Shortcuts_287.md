@@ -56,6 +56,8 @@ F8 or ctrl+\ | pause/continue
 F9 or ctrl+;/shift+F9 or ctrl+shift+;| step into/out
 F10  or ctrl+' | step over
 Ctrl+,/. | frame above/below current frame
-Ctrl+G | goto line
+Ctrl+G | goto line (line:column)
 Ctrl+Shift+O | goto symble
+Alt+W | close active tab
+Ctrl+Alt+S | save all
 
