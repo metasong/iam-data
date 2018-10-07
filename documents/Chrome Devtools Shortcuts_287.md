@@ -36,6 +36,7 @@ Tab/Shift+Tab | next/previous propertyValue
 Alt+up/down | increase/decrease 0.1
 up/down | increase/decrease 1
 shift+up/down | increase/decrease 10
+Ctrl+up/down | increase/decrease 100
 
 ## Console
 |key|action|
