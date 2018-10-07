@@ -59,5 +59,6 @@ Ctrl+,/. | frame above/below current frame
 Ctrl+G | goto line (line:column)
 Ctrl+Shift+O | goto symble
 Alt+W | close active tab
+Ctrl+B| line break point
 Ctrl+Alt+S | save all
 
