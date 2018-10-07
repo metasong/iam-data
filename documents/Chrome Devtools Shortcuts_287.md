@@ -55,5 +55,7 @@ Key | Action
 F8 or ctrl+\ | pause/continue
 F9 or ctrl+;/shift+F9 or ctrl+shift+;| step into/out
 F10  or ctrl+' | step over
-Ctrl+,/. | frame 
+Ctrl+,/. | frame above/below current frame
+Ctrl+G | goto line
+Ctrl+Shift+O | goto symble
 
