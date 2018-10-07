@@ -60,5 +60,7 @@ Ctrl+G | goto line (line:column)
 Ctrl+Shift+O | goto symble
 Alt+W | close active tab
 Ctrl+B| line break point
+Ctrl+M|goto matching bracket
+Ctrol+D/U|select/unselect next occurrence
 Ctrl+Alt+S | save all
 
