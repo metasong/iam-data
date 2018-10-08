@@ -150,9 +150,17 @@ console.log(foo(5));
 
 `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
 
+
+      ```math
+      \oint_C x^3\, dx + 4y^2\, dy
+      ```
 ```math
 \oint_C x^3\, dx + 4y^2\, dy
 ```
+
+      ```AsciiMath
+      oint_Cx^3 dx+4y^2 dy
+      ```
 
 ```AsciiMath
 oint_Cx^3 dx+4y^2 dy
