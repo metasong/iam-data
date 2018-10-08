@@ -55,9 +55,9 @@ Enable typographer option to see result.
 
 test.. test... test..... test?..... test!....
 
-could use to `` escape it: `(c)-----`
+could use to `` escape it: `(c)--- --`
 
-!!!!!! ???? ,,  -- ---
+!!!!!! ???? ,,  -- --- , -----
 
 "Smartypants, double quotes" and 'single quotes'
 
