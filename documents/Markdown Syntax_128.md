@@ -145,7 +145,7 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
-## supports [KaTex](https://katex.org/) and [AsciiMath](http://asciimath.org/).
+## supports [KaTex](https://katex.org/docs/supported.html) and [AsciiMath](http://asciimath.org/).
 `$E = mc^2$`
 
 `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
