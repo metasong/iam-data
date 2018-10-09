@@ -150,6 +150,7 @@ var foo = function (bar) {
 };
 
 console.log(foo(5));
+
 ```
 ## supports [KaTex](https://katex.org/docs/supported.html) and [AsciiMath](http://asciimath.org/).
      `$E = mc^2$`
