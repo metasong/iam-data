@@ -11,7 +11,6 @@ https://github.com/egoist/markdown-it-highlight-lines/blob/master/src/index.js
 
 sbbbbbjjj
 ```js
-sdfs
 sdfdf sdfd
 
 console.log()
