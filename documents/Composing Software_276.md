@@ -20,7 +20,7 @@ We can call this kind of function composition as embedded function composition, 
 
 Method chaining is the process of directly calling a method on the return value of a function, without needing to refer to the return value by name:
 
-```js
+```js {3,5-9}
 const g = n => n + 1;
 const f = n => n * 2;
 const wait = time => new Promise(
