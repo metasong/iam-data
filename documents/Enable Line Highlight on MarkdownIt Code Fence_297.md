@@ -9,10 +9,23 @@ enable: [toc]
 https://prismjs.com/plugins/line-highlight/
 https://github.com/egoist/markdown-it-highlight-lines/blob/master/src/index.js
 
-s
-```js 
+sbbbbbjjj
+```js
+sdfs
+sdfdf sdfd
+
+console.log()
+console.log();
+sdfs sdfd
 console.log()
 console.log()
+console.log()
+```
+```js {3-8}
+sdfs
+console.log()
+console.log();
+sdfs sdfd
 console.log()
 console.log()
 console.log()
