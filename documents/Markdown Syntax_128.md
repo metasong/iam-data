@@ -142,6 +142,11 @@ Syntax highlighting
 var foo = function (bar) {
   return bar++;
 };
+```
+``` js {2, 4-5}
+var foo = function (bar) {
+  return bar++;
+};
 
 console.log(foo(5));
 ```
