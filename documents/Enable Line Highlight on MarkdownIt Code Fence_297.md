@@ -9,7 +9,7 @@ enable: [toc]
 https://prismjs.com/plugins/line-highlight/
 https://github.com/egoist/markdown-it-highlight-lines/blob/master/src/index.js
 
-```js {1,3}
+```js {1,2}
 console.log()
 console.log()
 console.log()
