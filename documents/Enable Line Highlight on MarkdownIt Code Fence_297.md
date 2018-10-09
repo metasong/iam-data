@@ -9,6 +9,20 @@ enable: [toc]
 https://prismjs.com/plugins/line-highlight/
 https://github.com/egoist/markdown-it-highlight-lines/blob/master/src/index.js
 
+```js 
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+```
 ```js {1,3-5,15-20}
 console.log()
 console.log()
