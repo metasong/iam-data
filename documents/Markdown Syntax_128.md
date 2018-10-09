@@ -221,7 +221,7 @@ With a reference later in the document defining the URL location:
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
 ## Videos
-### YoutTube
+### YoutTube 
 <div style="width:80%;margin:auto;" >
 
 @[youtube](JoyUUokcX5g)
