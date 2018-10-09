@@ -143,6 +143,7 @@ var foo = function (bar) {
   return bar++;
 };
 ```
+with line highlight
 ``` js {2, 4-5}
 var foo = function (bar) {
   return bar++;
