@@ -153,6 +153,8 @@ console.log(foo(5));
 
 ```
 ## supports [KaTex](https://katex.org/docs/supported.html) and [AsciiMath](http://asciimath.org/).
+**inline:** 
+
      `$E = mc^2$`
 
 `$E = mc^2$`
@@ -161,6 +163,7 @@ console.log(foo(5));
 
 `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
 
+**block:**
 
       ```math
       \oint_C x^3\, dx + 4y^2\, dy
