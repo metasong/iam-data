@@ -12,4 +12,4 @@ Duplicated footnote reference[^second].
 
     and multiple paragraphs.
 
-[^second]: Footnote text.
+[^second]: Footnote text.   
