@@ -9,7 +9,6 @@ enable: [toc]
 
 <kbd>Alt</kbd> + <kbd>B</kbd>
 
-
 ---
 __Advertisement :)__
 
