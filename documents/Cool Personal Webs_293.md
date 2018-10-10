@@ -7,3 +7,5 @@ enable: [toc]
 ---
 
 https://www.oxxostudio.tw/
+
+https://robots.thoughtbot.com/
