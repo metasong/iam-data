@@ -47,7 +47,6 @@ Tab or ->|accept suggestion
 Esc | reject autocomplete suggestion
 up, down arrow | previous/next history input
 Shift+Enter | muti-line entry
-Alt + -> | expand all sub-properties of an exist object
 
 ## Sources Panel
 Key | Action
