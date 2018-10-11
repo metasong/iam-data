@@ -42,9 +42,9 @@ Ctrl+up/down | increase/decrease 100
 |key|action|
 -|-
 Ctrl+L|clear console
+Ctrl+U | clear current input
 Tab or ->|accept suggestion
 Esc | reject autocomplete suggestion
-Ctrl+U | clear current input
 up, down arrow | previous/next history input
 Shift+Enter | muti-line entry
 Alt + -> | expand all sub-properties of an exist object
