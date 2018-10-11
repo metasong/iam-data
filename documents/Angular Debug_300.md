@@ -28,3 +28,9 @@ if (!environment.production) {
 
 to view the result, you could use `javascript Profiler` in Chrome Devtool:
 ![](https://cdn-images-1.medium.com/max/1000/1*iHoxgBHiGM85lZskVHjGtg.png)
+
+## Angury
+![](https://cdn-images-1.medium.com/max/1000/1*HyfbXNfZhGL-7kM7z9yBxQ.jpeg)
+
+## Call Stack
+![](https://cdn-images-1.medium.com/max/800/1*wOO5wM-0tsXxpNiouveIfw.gif)
