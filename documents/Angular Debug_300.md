@@ -32,5 +32,10 @@ to view the result, you could use `javascript Profiler` in Chrome Devtool:
 ## Angury
 ![](https://cdn-images-1.medium.com/max/1000/1*HyfbXNfZhGL-7kM7z9yBxQ.jpeg)
 
-## Call Stack
+## Chrome Debugger
+call stack and **restart frame**
 ![](https://cdn-images-1.medium.com/max/800/1*wOO5wM-0tsXxpNiouveIfw.gif)
+
+conditional breakpoint: 
+![](https://cdn-images-1.medium.com/max/800/1*IHNdZ56AOpUu46L9E-TIfg.gif)
+
