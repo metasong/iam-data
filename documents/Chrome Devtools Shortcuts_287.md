@@ -10,10 +10,10 @@ enable: [toc]
 > web link: [Chrome Devtool Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
 ## All Pannels 
-|key|action|
-|--|---|
-|F1| settings|
-|Ctrl+Shift+P|Command Panel
+key|action
+-|-
+F1| settings
+Ctrl+Shift+P|Command Panel
 Ctrl+P|go to source file
 Esc|Toggle drawer
 Ctrl+\`(Tilde)|show console in drawer panel
