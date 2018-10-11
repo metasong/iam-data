@@ -25,3 +25,6 @@ if (!environment.production) {
   });
 }
 ```
+
+to view the result, you could use `javascript Profiler` in Chrome Devtool:
+![](https://cdn-images-1.medium.com/max/1000/1*iHoxgBHiGM85lZskVHjGtg.png)
