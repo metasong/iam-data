@@ -58,7 +58,7 @@ F10  or ctrl+' | step over
 Ctrl+,/. | frame above/below current frame
 Ctrl+G | goto line (line:column)
 Ctrl+Shift+O | goto symble
-Alt+W | close active tab
+Alt+W | close active tab(Ctrl+W will close the window)
 Ctrl+B| line break point
 Ctrl+M|goto matching bracket
 Ctrol+D/U|select/unselect next occurrence
