@@ -13,7 +13,7 @@ https://medium.com/front-end-hacking/a-guide-to-debugging-angular-applications-5
 You can use this for *$1, $2, $3, $4* to inspect the previous four DOM elements.
 
 ## ng.profiler.timeChangeDetection()
-to enable it:  
+to enable it in main.ts:  
 ```js {5-7}
 const bootstrap = platformBrowserDynamic().bootstrapModule(AppModule);
 
