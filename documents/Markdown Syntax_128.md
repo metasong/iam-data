@@ -204,6 +204,12 @@ Right aligned columns
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
+Link reference:
+
+[foo][bar]
+
+[bar]: /url "title"
+
 ## Images
 
 inline test ![Minion =400x](https://octodex.github.com/images/minion.png)
