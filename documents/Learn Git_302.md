@@ -13,3 +13,5 @@ enable: [toc]
 The index is a mechanism for preventing what you commit from matching what you tested in your working directory
 
 ![](https://images.osteele.com/2008/git-workflow.png)
+
+This way I can checkpoint every few minutes. It’s a very cheap operation, and I don’t have to spend time cleaning up the checkpoints later. `git diff` tells me what I’ve changed since the last checkpoint; `git diff head` shows what’s changed since the last commit. `git checkout .` reverts to the last checkpoint; `git checkout head .` reverts to the last commit. And `git stash` and “git checkout -m -b” operate on the changes since the last commit, which is what I want.
