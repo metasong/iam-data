@@ -7,6 +7,9 @@ enable: [toc]
 ---
 https://blog.osteele.com/2008/05/my-git-workflow/
 
+## help
+`git help add` open online help
+
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
 * `git add -u` is update tracked files
