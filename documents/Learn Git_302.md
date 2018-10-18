@@ -5,6 +5,7 @@ version: 1.0.0
 tag: []
 enable: [toc]
 ---
+https://blog.osteele.com/2008/05/my-git-workflow/
 
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
