@@ -11,6 +11,9 @@ https://blog.osteele.com/2008/05/my-git-workflow/
 * `git help add` open online help
 * `git add -h` show help in console
 
+## file status
+![](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
 ## workflow
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
