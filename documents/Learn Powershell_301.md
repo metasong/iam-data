@@ -11,7 +11,8 @@ https://learnxinyminutes.com/docs/powershell/
 https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6
 
 ```powershell
-case insensitive
+# powershell cmdlet is case insensitive
+# Cmdlets use verb-noun names to reduce command memorization
 Get-ExecutionPolicy -List
 Set-ExecutionPolicy AllSigned
 # Execution policies include:
