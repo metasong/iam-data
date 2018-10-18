@@ -7,6 +7,10 @@ enable: [toc]
 ---
 https://blog.osteele.com/2008/05/my-git-workflow/
 
+http://onlywei.github.io/explain-git-with-d3/#commit
+
+https://marklodato.github.io/visual-git-guide/index-en.html
+
 ## help
 * `git help add` open online help
 * `git add -h` show help in console
