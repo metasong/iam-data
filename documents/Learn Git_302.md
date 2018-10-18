@@ -19,6 +19,7 @@ https://blog.osteele.com/2008/05/my-git-workflow/
 
 * `git add -u` is update tracked files
 * The git add command can be used to add ignored files with the -f (force) option
+
 The index is a mechanism for preventing what you commit from matching what you tested in your working directory
 
 ![](https://images.osteele.com/2008/git-workflow.png)
