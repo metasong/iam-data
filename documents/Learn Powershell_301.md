@@ -11,7 +11,6 @@ https://learnxinyminutes.com/docs/powershell/
 https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6
 
 ```powershell
-
 Get-ExecutionPolicy -List
 Set-ExecutionPolicy AllSigned
 # Execution policies include:
