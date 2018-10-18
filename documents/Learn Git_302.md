@@ -11,6 +11,7 @@ https://blog.osteele.com/2008/05/my-git-workflow/
 * `git help add` open online help
 * `git add -h` show help in console
 
+## workflow
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
 * `git add -u` is update tracked files
