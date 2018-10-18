@@ -8,8 +8,8 @@ enable: [toc]
 https://blog.osteele.com/2008/05/my-git-workflow/
 
 ## help
-`git help add` open online help
-`git add -h` show help in console
+* `git help add` open online help
+* `git add -h` show help in console
 
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
