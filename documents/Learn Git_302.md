@@ -9,7 +9,7 @@ https://blog.osteele.com/2008/05/my-git-workflow/
 
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
-* -u is untracked
+* `git add -u` is update tracked files
 
 The index is a mechanism for preventing what you commit from matching what you tested in your working directory
 
