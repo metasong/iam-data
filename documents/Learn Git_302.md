@@ -20,6 +20,8 @@ https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 ![](https://marklodato.github.io/visual-git-guide/basic-usage.svg)
 * git reset -- files copies files from the latest commit to the stage. Use this command to "undo" a git add files. 
 * git checkout -- files copies files from the stage to the working directory. Use this to throw away local changes.
+* You can use git reset -p, git checkout -p, or git add -p instead of (or in addition to) specifying particular files to interactively choose which hunks copy.
+
 ![](https://marklodato.github.io/visual-git-guide/basic-usage-2.svg)
 
 ## help
