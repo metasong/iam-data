@@ -15,6 +15,12 @@ http://ndpsoftware.com/git-cheatsheet.html
 http://justinhileman.info/article/git-pretty/git-pretty.png
 https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
+## Diagrams
+
+![](https://marklodato.github.io/visual-git-guide/basic-usage.svg)
+
+
+
 ## help
 * `git help add` open online help
 * `git add -h` show help in console
