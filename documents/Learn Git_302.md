@@ -11,6 +11,8 @@ http://onlywei.github.io/explain-git-with-d3/#commit
 
 https://marklodato.github.io/visual-git-guide/index-en.html
 
+http://ndpsoftware.com/git-cheatsheet.html
+
 ## help
 * `git help add` open online help
 * `git add -h` show help in console
