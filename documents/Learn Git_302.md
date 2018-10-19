@@ -23,7 +23,7 @@ http://ndpsoftware.com/git-cheatsheet.html
 ## workflow
 ![=80%x](https://i.stack.imgur.com/MgaV9.png)
 
-* `git add -u` is update tracked files
+* `git add -u` is update tracked files, untracked file(newly added file) is not included.
 * The `git add` command can be used to add ignored files with the -f (force) option
 
 The index is a mechanism for preventing what you commit from matching what you tested in your working directory
