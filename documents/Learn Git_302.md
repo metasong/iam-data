@@ -13,6 +13,7 @@ https://marklodato.github.io/visual-git-guide/index-en.html
 
 http://ndpsoftware.com/git-cheatsheet.html
 http://justinhileman.info/article/git-pretty/git-pretty.png
+https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 
 ## help
 * `git help add` open online help
