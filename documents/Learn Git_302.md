@@ -18,7 +18,8 @@ https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 ## Diagrams
 
 ![](https://marklodato.github.io/visual-git-guide/basic-usage.svg)
-
+* git reset -- files copies files from the latest commit to the stage. Use this command to "undo" a git add files. 
+* git checkout -- files copies files from the stage to the working directory. Use this to throw away local changes.
 
 
 ## help
