@@ -268,6 +268,20 @@ const fRange = (
 const range = fRange(Identity(2), 4);
 range.map(x => x.map(trace)); // 2, 3, 4
 ```
+
+```js
+// Using an arrow function as the map function to
+// manipulate the elements
+Array.from([1, 2, 3], x => x + x);      
+// [2, 4, 6]
+
+
+// Generate a sequence of numbers
+// Since the array is initialized with `undefined` on each position,
+// the value of `v` below will be `undefined`
+Array.from({length: 5}, (v, i) => i);
+// [0, 1, 2, 3, 4]
+```
 ```js
 // Create the if Exists functor: kick off a chain of operations, but only if the value inside the functor is not undefined or null?
 const exists = x => (x.valueOf() !== undefined && x.valueOf() !== null);
