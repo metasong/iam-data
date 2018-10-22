@@ -18,7 +18,7 @@ ToPrimitive(input, PreferredType?)
 If PreferredType is Number:
 1. If input is primitive, return it as is.
 1. Otherwise, input is an object. Call obj.valueOf(). If the result is primitive, return it.
-Otherwise, call obj.toString(). If the result is a primitive, return it.
-Otherwise, throw a TypeError.
+1. Otherwise, call obj.toString(). If the result is a primitive, return it.
+1. Otherwise, throw a TypeError.
 
 
