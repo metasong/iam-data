@@ -21,4 +21,7 @@ If PreferredType is Number:
 1. Otherwise, call obj.toString(). If the result is a primitive, return it.
 1. Otherwise, throw a TypeError.
 
+If PreferredType is String, steps 2 and 3 are swapped. If PreferredType is missing then it is set to String for instances of Date and to Number for all other values.
+
+
 
