@@ -14,9 +14,11 @@ The general rule for addition in JavaScript is simple: You can only add numbers 
 ```js
 value1 + value2
 ```
-1. Convert both operands to primitives (mathematical notation, not JavaScript):
+1. Convert both operands to primitives (mathematical notation, not JavaScript):    
+       ```
        prim1 := ToPrimitive(value1)
        prim2 := ToPrimitive(value2)
+       ```
 1. PreferredType is omitted and thus Number for non-dates, String for dates.
 If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
 Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
