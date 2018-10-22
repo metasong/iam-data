@@ -8,9 +8,22 @@ enable: [toc]
 
 http://2ality.com/2012/01/object-plus-object.html
 
-The general rule for addition in JavaScript is simple: You can only add numbers and strings, all other values will be converted to either one of those types. 
+The general rule for addition in JavaScript is simple: You can only add numbers and strings, all other values will be converted to either one of those types.
 
-## Converting values to primitives via ToPrimitive
+## Addition
+```js
+value1 + value2
+```
+1. Convert both operands to primitives (mathematical notation, not JavaScript):
+       prim1 := ToPrimitive(value1)
+       prim2 := ToPrimitive(value2)
+1. PreferredType is omitted and thus Number for non-dates, String for dates.
+If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
+Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
+
+## Converting
+
+### Converting values to primitives via ToPrimitive
 ```js
 ToPrimitive(input, PreferredType?)
 ```
