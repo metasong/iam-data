@@ -36,7 +36,6 @@ wait(300)
   .then(value => console.log(value)) // 42
 ;
 ```
-line10: promise  is created when call then
 
 > If you’re chaining, you’re composing.
 
