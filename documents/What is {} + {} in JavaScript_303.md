@@ -50,6 +50,6 @@ undefined|	NaN
 null|	+0
 boolean value|	true is converted to 1, false is converted to +0
 number value|	no conversion necessary
-string value|	parse the number in the string. For example, "324" is converted to 324
+string value|	parse the number in the string. For example, "324" is converted to 324, '' is converted to 0.
 
 
