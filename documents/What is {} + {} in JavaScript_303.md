@@ -23,6 +23,8 @@ value1 + value2
 1. If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
 1. Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
 
+> [toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive):
+> for Date: If hint is "string" or "default", [@@toPrimitive]() tries to call the toString method. If the toString property does not exist, it tries to call the valueOf method and if the valueOf does not exist either, [@@toPrimitive]() throws a TypeError. If hint is "number", [@@toPrimitive]() first tries to call valueOf, and if that fails, it calls toString.
 ## Converting
 
 ### Converting values to primitives via ToPrimitive
