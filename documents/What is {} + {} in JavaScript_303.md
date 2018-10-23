@@ -83,7 +83,7 @@ string value	|no conversion necessary
 // () create an expression
 {}+[]
 // 0
-// +[] => +([].toString()) => +'' => 0;
+// +[] => Number([].toString()) => Number('') => 0;
 ```
 
 
