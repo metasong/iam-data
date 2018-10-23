@@ -87,12 +87,7 @@ string value	|no conversion necessary
 
 
 ### toBoolean
-`Undefined
-Null
-False
-+0 or -0
-NaN
-'' (empty string).
+`Undefined` `Null` `False` `+0`  `-0` `NaN` `''(empty string)`.
 these converts to 'falsey' value.
 
 ## test
