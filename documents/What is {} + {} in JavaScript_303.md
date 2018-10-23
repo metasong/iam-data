@@ -62,5 +62,11 @@ boolean value|	either "true" or "false"
 number value|	the number as a string, e.g. "1.765"
 string value	|no conversion necessary
 
+## test
+```js
+[]+[]
+// ""
+// 
+```
 
 
