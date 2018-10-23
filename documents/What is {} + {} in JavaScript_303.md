@@ -28,16 +28,18 @@ value1 + value2
 
 ### Converting values to primitives via [toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)  
 ```js
-ToPrimitive(input, PreferredType?)
+ToPrimitive(input, hint?)
 ```
 
-If PreferredType is Number:
+If hint is Number:
 1. If input is primitive, return it as is.
-1. Otherwise, input is an object. Call obj.valueOf(). If the result is primitive, return it.
+1. Otherwise, input is an object. Call obj.[valueOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf). If the result is primitive, return it.
 1. Otherwise, call obj.toString(). If the result is a primitive, return it.
 1. Otherwise, throw a TypeError.
 >  
 > for Date: If hint is "string" or "default", [@@toPrimitive]() tries to call the toString method. If the toString property does not exist, it tries to call the valueOf method and if the valueOf does not exist either, [@@toPrimitive]() throws a TypeError. If hint is "number", [@@toPrimitive]() first tries to call valueOf, and if that fails, it calls toString.
+
+> the valueOf() method returns the primitive value of the specified object.
 
 If PreferredType is String, steps 2 and 3 are swapped. If PreferredType is missing then it is set to String for instances of Date and to Number for all other values.
 
