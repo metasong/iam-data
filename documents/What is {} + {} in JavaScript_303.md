@@ -69,6 +69,18 @@ string value	|no conversion necessary
 // object.__proto__.valueOf return this.
 // Array.__proto__.toString return ''
 
+[]+{}
+// '[object Object]'
+6 + { valueOf: function () { return 2 } }
+// 8
+"abc" + { toString: function () { return "def" } }
+// 'abcdef'
+{}+{}
+// NaN
+// the first {} is parsed as statement. + conbert the next {} to number
+({}+{})
+// [object Object][object Object]
+// () create an expression
 
 ```
 
