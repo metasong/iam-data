@@ -8,6 +8,8 @@ enable: [toc]
 
 http://2ality.com/2012/01/object-plus-object.html
 
+http://2ality.com/2011/12/fake-operator-overloading.html
+
 The general rule for addition in JavaScript is simple: You can only add numbers and strings, all other values will be converted to either one of those types.
 
 ## Addition
