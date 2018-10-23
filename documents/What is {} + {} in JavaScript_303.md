@@ -28,7 +28,8 @@ value1 + value2
 
 ### Converting values to primitives via [toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)  
 ```js
-ToPrimitive(input, hint?)
+[Symbol.toPrimitive](hint)
+// The hint argument can be one of "number", "string", and "default".
 ```
 
 If hint is Number:
