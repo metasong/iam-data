@@ -85,6 +85,16 @@ boolean value|	either "true" or "false"
 number value|	the number as a string, e.g. "1.765"
 string value	|no conversion necessary
 
+
+### toBoolean
+`Undefined
+Null
+False
++0 or -0
+NaN
+'' (empty string).
+these converts to 'falsey' value.
+
 ## test
 ```js
 []+[]
