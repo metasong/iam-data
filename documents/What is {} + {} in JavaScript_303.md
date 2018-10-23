@@ -66,7 +66,10 @@ string value	|no conversion necessary
 ```js
 []+[]
 // ""
-// 
+// object.__proto__.valueOf return this.
+// Array.__proto__.toString return ''
+
+
 ```
 
 
