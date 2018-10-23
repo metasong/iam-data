@@ -42,7 +42,29 @@ If hint is Number:
 > the valueOf() method returns the primitive value of the specified object.
 
 If PreferredType is String, steps 2 and 3 are swapped. If PreferredType is missing then it is set to String for instances of Date and to Number for all other values.
+```js
+// An object without Symbol.toPrimitive property.
+var obj1 = {};
+console.log(+obj1);     // NaN
+console.log(`${obj1}`); // "[object Object]"
+console.log(obj1 + ''); // "[object Object]"
 
+// An object with Symbol.toPrimitive property.
+var obj2 = {
+  [Symbol.toPrimitive](hint) {
+    if (hint == 'number') {
+      return 10;
+    }
+    if (hint == 'string') {
+      return 'hello';
+    }
+    return true;
+  }
+};
+console.log(+obj2);     // 10        -- hint is "number"
+console.log(`${obj2}`); // "hello"   -- hint is "string"
+console.log(obj2 + ''); // "true"    -- hint is "default"
+```
 ### toNumber()
 Argument|	Result
 -|-
