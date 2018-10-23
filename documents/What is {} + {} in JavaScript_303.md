@@ -81,7 +81,9 @@ string value	|no conversion necessary
 ({}+{})
 // [object Object][object Object]
 // () create an expression
-
+{}+[]
+// 0
+// +[] is 0
 ```
 
 
