@@ -10,6 +10,8 @@ https://learnxinyminutes.com/docs/powershell/
 
 https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6
 
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_functions?view=powershell-6
+
 ```powershell
 # powershell cmdlet is case insensitive
 # Cmdlets use verb-noun names to reduce command memorization
