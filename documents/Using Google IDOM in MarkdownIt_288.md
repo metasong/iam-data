@@ -48,8 +48,8 @@ class NodeData {
   // key
   // attrs
   
-  constructor(name) {
-    this.name = name;
+  constructor(name) {
+    this.name = name;
     this.text = null;
   }
 }
