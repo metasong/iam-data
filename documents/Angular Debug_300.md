@@ -12,6 +12,11 @@ https://medium.com/front-end-hacking/a-guide-to-debugging-angular-applications-5
 
 ## ng.probe($0).componentInstance
 You can use this for *$1, $2, $3, $4* to inspect the previous four DOM elements.
+```js
+ng.probe(getAllAngularRootElements()[0]).injector.view.root.ngModule._providers
+```
+
+
 
 ## ng.profiler.timeChangeDetection()
 to enable it in main.ts:  
