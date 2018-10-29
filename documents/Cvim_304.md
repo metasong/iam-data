@@ -25,3 +25,5 @@ mr|reverse image search multiple links
 ## Miscellaneous
 Key|Description
 -|-
+I|search through browser history
+p|open the clipboard selection
