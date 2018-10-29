@@ -8,13 +8,16 @@ enable: [toc]
 
 https://github.com/1995eaton/chromium-vim
 
-## Tabs
-
-
+## Movement
 Key|Description
 -|-
 #|reset the scroll focus to the main page
-gr|reverse image search (google images)
-mr|reverse image search multiple links
+## Link Hints
+
+Key|Description
+-|-
 F|open link in new tab
 W|open link in new window
+gy|copy URL from link to clipboard
+gr|reverse image search (google images)
+mr|reverse image search multiple links
