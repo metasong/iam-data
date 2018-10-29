@@ -14,3 +14,5 @@ https://github.com/1995eaton/chromium-vim
 Key|Description
 -|-
 #|reset the scroll focus to the main page
+gr|reverse image search (google images)
+mr|reverse image search multiple links
