@@ -28,6 +28,8 @@ Key|Description
 I|search through browser history
 p( P)|open the clipboard selection(in new tab)
 gs|view-source://
+gd|chrome://downloads
+ge|chrome://extensions
 gu| go up one path in the URL
 gU|go to the base URL
 gj|hide download shelf
