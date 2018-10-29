@@ -8,3 +8,8 @@ enable: [toc]
 
 https://github.com/1995eaton/chromium-vim
 
+## Tabs
+
+
+Key|Description
+-|-
