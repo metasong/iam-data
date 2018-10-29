@@ -16,3 +16,5 @@ Key|Description
 #|reset the scroll focus to the main page
 gr|reverse image search (google images)
 mr|reverse image search multiple links
+F|open link in new tab
+W|open link in new window
