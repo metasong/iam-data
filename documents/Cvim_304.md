@@ -30,4 +30,4 @@ p( P)|open the clipboard selection(in new tab)
 gs|view-source://
 gu| go up one path in the URL
 gU|go to the base URL
-
+gj|hide download shelf
