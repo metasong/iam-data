@@ -21,3 +21,7 @@ W|open link in new window
 gy|copy URL from link to clipboard
 gr|reverse image search (google images)
 mr|reverse image search multiple links
+
+## Miscellaneous
+Key|Description
+-|
