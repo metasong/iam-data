@@ -26,4 +26,4 @@ mr|reverse image search multiple links
 Key|Description
 -|-
 I|search through browser history
-p|open the clipboard selection
+p( P)|open the clipboard selection(in new tab)
