@@ -24,4 +24,4 @@ mr|reverse image search multiple links
 
 ## Miscellaneous
 Key|Description
--|
+-|-
