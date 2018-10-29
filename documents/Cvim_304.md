@@ -35,4 +35,5 @@ gU|go to the base URL
 gj|hide download shelf
 yy|copy current page URL
 yY|copy current frame URL
+ya| copy all URLs in the window
 
