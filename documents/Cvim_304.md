@@ -13,3 +13,4 @@ https://github.com/1995eaton/chromium-vim
 
 Key|Description
 -|-
+#|reset the scroll focus to the main page
