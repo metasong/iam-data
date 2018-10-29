@@ -33,3 +33,6 @@ ge|chrome://extensions
 gu| go up one path in the URL
 gU|go to the base URL
 gj|hide download shelf
+yy|copy current page URL
+yY|copy current frame URL
+
