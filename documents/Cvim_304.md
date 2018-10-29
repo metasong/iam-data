@@ -27,3 +27,5 @@ Key|Description
 -|-
 I|search through browser history
 p( P)|open the clipboard selection(in new tab)
+gs|view-source://
+
