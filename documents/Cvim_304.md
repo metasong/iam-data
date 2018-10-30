@@ -26,7 +26,7 @@ mr|reverse image search multiple links
 Key|Description
 -|-
 I|search through browser history
-p( P)|open the clipboard selection(in new tab)
+p( P)|search the clipboard selection with google(in new tab)
 gs|view-source://
 gd|chrome://downloads
 ge|chrome://extensions
