@@ -5,6 +5,8 @@ version: 1.0.0
 tag: []
 enable: [toc]
 ---
+http://gitready.com
+
 https://blog.osteele.com/2008/05/my-git-workflow/
 
 http://onlywei.github.io/explain-git-with-d3/#commit
