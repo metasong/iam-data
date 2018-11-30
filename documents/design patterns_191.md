@@ -3,8 +3,7 @@
 <i-toc ></i-toc>
 
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
- 
-[[TOC]] 
+
 ## Creational
 ### abstract(interface) factory(to create objects: used by interface)
   
