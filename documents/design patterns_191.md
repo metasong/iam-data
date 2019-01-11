@@ -1,4 +1,10 @@
 # design patterns
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+enable: [toc]
+---
 
 
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
