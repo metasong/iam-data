@@ -1,6 +1,5 @@
 # Mermaid Diagram
-ssdd
-yes test
+
 *summery*
 ```mermaid
 graph TD;
