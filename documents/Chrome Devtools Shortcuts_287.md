@@ -6,7 +6,7 @@ tag: []
 enable: [toc]
 ---fjjjjkkkf
 
-> shortcuts defined in Settings Panel.   
+> shortcuts deffined in Settings Panel.   
 > web link: [Chrome Devtool Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
 
 ## All Pannels 
