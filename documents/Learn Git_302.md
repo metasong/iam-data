@@ -10,7 +10,7 @@ http://gitready.com
 https://blog.osteele.com/2008/05/my-git-workflow/
 
 http://onlywei.github.io/explain-git-with-d3/#commit
-:-:
+
 https://marklodato.github.io/visual-git-guide/index-en.html
 
 http://ndpsoftware.com/git-cheatsheet.html
