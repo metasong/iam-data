@@ -14,7 +14,7 @@ key|action
 -|-
 F1| settings
 Ctrl+Shift+P|Command Panel
-Ctrl+P|go to source file
+Ctrl+U|go to source file
 Esc|Toggle drawer
 Ctrl+\`(Tilde)|show console in drawer panel
 Ctrl+Shift+M|toggle **M**obile mode
