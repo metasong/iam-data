@@ -22,7 +22,7 @@ Ctrl+Shift+F|**F**ind across all sources
 Ctrl+Shift+C| **C**hose  element to inspect
 
 
-## Elements Panelf
+## Elements Panel
 key|action
 - | -
 arrows | navigate in elements
