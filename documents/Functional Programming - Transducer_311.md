@@ -29,3 +29,19 @@ console.log(result);
 1. Early termination: A process that uses transducers must check for and stop when it receives a reduced accumulator value. Additionally, a transducer step function that uses a nested reduce must check for and convey reduced values when they are encountered.
 1. Completion (optional): Some transducing processes never complete, but those that do should call the completion function to produce a final value and/or flush state, and stateful transducers should supply a completion operation that cleans up any accumulated resources and potentially produces one final value.
 
+```js
+// import a standard curry, or use this magic spell:
+const curry = (
+  f, arr = []
+) => (...args) => (
+  a => a.length === f.length ?
+    f(...a) :
+    curry(f, a)
+)([...arr, ...args]);
+const transduce = curry((step, initial, xform, foldable) =>
+  foldable.reduce(xform(step), initial)
+);
+
+```
+
+
