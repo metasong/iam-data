@@ -7,7 +7,10 @@ enable: [toc]
 ---
 > Transduce: Derived from the 17th century scientific latin, “transductionem” means “to change over, convert”. It is further derived from “transducere/traducere”, which means “to lead along or across, transfer”.
 
-
+* Composable using simple function composition
+* Efficient for large collections or infinite streams: Only enumerates over the elements once, regardless of the number of operations in the pipeline
+* Able to transduce over any enumerable source (e.g., arrays, trees, streams, graphs, etc…)
+* Usable for either lazy or eager evaluation with no changes to the transducer pipeline
 
 
 
