@@ -67,3 +67,6 @@ const result = into([], doubleEvens, arr);
 console.log(result); // [4, 8, 12]
 ```
 
+https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d
+
+
