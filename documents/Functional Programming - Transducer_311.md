@@ -5,6 +5,13 @@ version: 1.0.0
 tag: []
 enable: [toc]
 ---
+> Transduce: Derived from the 17th century scientific latin, “transductionem” means “to change over, convert”. It is further derived from “transducere/traducere”, which means “to lead along or across, transfer”.
+
+
+
+
+
+
 ```js
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x);
 const map = f => step =>
