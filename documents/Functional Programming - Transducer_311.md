@@ -10,7 +10,7 @@ enable: [toc]
 * Composable using simple function composition
 * Efficient for large collections or infinite streams: Only enumerates over the elements once, regardless of the number of operations in the pipeline
 * Able to transduce over any enumerable source (e.g., arrays, trees, streams, graphs, etc…)
-* Usable for either lazy or eager evaluation with no changes to the transducer pipeline
+* Usable for either lazy or eager evaluation with no changes to the transducer pipeline; Transducers don’t care whether you pull or push. Transducers have no awareness of the data structure they’re acting on. They simply call the reducer you pass into them to accumulate new values.
 
 
 
