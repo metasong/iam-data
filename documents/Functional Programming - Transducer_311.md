@@ -43,5 +43,9 @@ const transduce = curry((step, initial, xform, foldable) =>
 );
 
 ```
+## Example from Ramda
 
+```js
+example from Ramda
+```
 
