@@ -46,6 +46,24 @@ const transduce = curry((step, initial, xform, foldable) =>
 ## Example from Ramda
 
 ```js
-example from Ramda
+import {
+  compose,
+  filter,
+  map,
+  into
+} from 'ramda';
+const isEven = n => n % 2 === 0;
+const double = n => n * 2;
+const doubleEvens = compose(
+  filter(isEven),
+  map(double)
+);
+const arr = [1, 2, 3, 4, 5, 6];
+// into = (structure, transducer, data) => result
+// into transduces the data using the supplied
+// transducer into the structure passed as the
+// first argument.
+const result = into([], doubleEvens, arr);
+console.log(result); // [4, 8, 12]
 ```
 
