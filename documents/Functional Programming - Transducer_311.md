@@ -12,7 +12,11 @@ enable: [toc]
 * Able to transduce over any enumerable source (e.g., arrays, trees, streams, graphs, etc…)
 * Usable for either lazy or eager evaluation with no changes to the transducer pipeline; Transducers don’t care whether you pull or push. Transducers have no awareness of the data structure they’re acting on. They simply call the reducer you pass into them to accumulate new values.
 
+```js
+reducer = (accumulator, current) => accumulator
 
+transducer = reducer => reducer
+```
 
 
 ```js
