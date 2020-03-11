@@ -1,3 +1,4 @@
+
 # Auto Sync vscode and visual studio
 ---
 author: Jason Song <metaseed@gmail.com>
@@ -7,6 +8,7 @@ enable: [toc]
 ---
 ## Goal
 use vscode to edit, and visual studio to debug, resharper, build...
+use <kbd>Alt</kbd>+<kbd>E</kbd> to auto swith between vscode and visualstudio, the document and the line:column is kept
 ## Extensions used
 ### vscode
 in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?itemName=generalov.open-in-editor-vscode) and config the 
