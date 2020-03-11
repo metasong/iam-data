@@ -13,3 +13,6 @@ in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?i
 "alt-editor.name": "visualstudio" 
 ```
 shortcut <kbd>Alt</kbd>+<kbd>E</kbd>
+
+### visual studio
+install 
