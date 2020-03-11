@@ -7,8 +7,9 @@ enable: [toc]
 ---
 
 ## Extensions used
-* in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?itemName=generalov.open-in-editor-vscode) and config the 
+### vscode
+in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?itemName=generalov.open-in-editor-vscode) and config the 
 ```
 "alt-editor.name": "visualstudio" 
 ```
-shortcut 
+shortcut `alt + e`
