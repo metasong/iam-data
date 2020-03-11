@@ -12,4 +12,4 @@ in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?i
 ```
 "alt-editor.name": "visualstudio" 
 ```
-shortcut `alt + e`
+shortcut <kbd>Alt</kbd>+<kbd>E</kbd>
