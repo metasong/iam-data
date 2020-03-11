@@ -6,7 +6,7 @@ tag: []
 enable: [toc]
 ---
 ## Goal
-
+use vscode to edit, and visual studio to debug, resharper, build...
 ## Extensions used
 ### vscode
 in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?itemName=generalov.open-in-editor-vscode) and config the 
