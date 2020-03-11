@@ -17,3 +17,5 @@ shortcut <kbd>Alt</kbd>+<kbd>E</kbd>
 ### visual studio
 install [Open in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.OpeninVisualStudioCode)
 and set the shortcut: <kbd>Alt</kbd>+<kbd>E</kbd>
+
+Turn on `Tools - Options - Projects and Solutions - General - Track Active Item In Solution Explorer`
