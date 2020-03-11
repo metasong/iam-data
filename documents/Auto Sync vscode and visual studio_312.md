@@ -15,4 +15,4 @@ in vscode install: [Open in Editor](https://marketplace.visualstudio.com/items?i
 shortcut <kbd>Alt</kbd>+<kbd>E</kbd>
 
 ### visual studio
-install [Open in Visual Studio Code]
+install [Open in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.OpeninVisualStudioCode)
