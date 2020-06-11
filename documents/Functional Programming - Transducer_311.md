@@ -18,7 +18,6 @@ reducer = (accumulator, current) => accumulator
 transducer = reducer => reducer
 ```
 
-
 ```js
 const compose = (...fns) => x => fns.reduceRight((y, f) => f(y), x);
 const map = f => step =>
