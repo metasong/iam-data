@@ -329,23 +329,23 @@ A term may have multiple definitions, and each definition may consist of one or 
 
 Term 1
 
-:   Definition 1
+: Definition 1
 with lazy continuation.
 
 Term 2 with *inline markup*
 
 :   Definition 2
 
-        { some code, part of Definition 2 }
+    { some code, part of Definition 2 }, start with >=4 spaces
 
-    Third paragraph of definition 2.
+  Third paragraph of definition 2, need to start with 2 spaces 
 
 If you leave space before the definition (as in the example above), the text of the definition will be treated as a paragraph. In some output formats, this will mean greater spacing between term/definition pairs. For a more compact definition list, omit the space before the definition:
 
 _Compact style:_
 
 Term 1
-  ~ Definition 1
+~ Definition 1
 
 Term 2
   ~ Definition 2a
