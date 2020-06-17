@@ -326,7 +326,6 @@ Each term must fit on one line, which may optionally be followed by a blank line
 
 A term may have multiple definitions, and each definition may consist of one or more block elements (paragraph, code block, list, etc.), each indented four spaces or one tab stop. The body of the definition (including the first line, aside from the colon or tilde) should be indented four spaces. However, as with other Markdown lists, you can “lazily” omit indentation except at the beginning of a paragraph or other block element:
 
-
 Term 1
 
 : Definition 1
