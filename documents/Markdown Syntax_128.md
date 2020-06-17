@@ -322,6 +322,10 @@ Duplicated footnote reference[^second].
 
 
 ### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+Each term must fit on one line, which may optionally be followed by a blank line, and must be followed by one or more definitions. A definition begins with a colon or tilde, which may be indented one or two spaces.
+
+A term may have multiple definitions, and each definition may consist of one or more block elements (paragraph, code block, list, etc.), each indented four spaces or one tab stop. The body of the definition (including the first line, aside from the colon or tilde) should be indented four spaces. However, as with other Markdown lists, you can “lazily” omit indentation except at the beginning of a paragraph or other block element:
+
 
 Term 1
 
@@ -335,6 +339,8 @@ Term 2 with *inline markup*
         { some code, part of Definition 2 }
 
     Third paragraph of definition 2.
+
+If you leave space before the definition (as in the example above), the text of the definition will be treated as a paragraph. In some output formats, this will mean greater spacing between term/definition pairs. For a more compact definition list, omit the space before the definition:
 
 _Compact style:_
 
