@@ -19,8 +19,7 @@ __Advertisement :)__
 
 You will like those projects!
 
-add extra spaces(2 spaces)  
-at the end of the line will break  
+add extra spaces(2 spaces) at the end of the line will break  
 the line.
 
 you could use html tags and  use '\' to make it render as pure text  
