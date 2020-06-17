@@ -345,8 +345,12 @@ If you leave space before the definition (as in the example above), the text of 
 _Compact style:_
 
 Term 1
-~ Definition 1 
+~ Definition 1
 ~ Definition 2
+
+Term 1
+: Definition 1
+: Definition 2
 
 Term 2
   ~ Definition 2a
