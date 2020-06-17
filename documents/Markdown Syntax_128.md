@@ -346,7 +346,7 @@ _Compact style:_
 
 Term 1
 ~ Definition 1 
-~ Defination 2
+~ Definition 2
 
 Term 2
   ~ Definition 2a
