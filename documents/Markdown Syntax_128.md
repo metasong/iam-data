@@ -210,8 +210,9 @@ Link reference:
 
 ## Images
 
-inline test ![Minion =400x](https://octodex.github.com/images/minion.png)
-![=*300 Minion](https://octodex.github.com/images/minion.png )
+inline test ![Minion =400x](https://octodex.github.com/images/minion.png "400xauto")
+![=*300 Minion](https://octodex.github.com/images/minion.png "auto*300")
+![=300 Minion](https://octodex.github.com/images/minion.png "300*300")
 ![Minion  =10%*300](https://octodex.github.com/images/minion.png )
 ![Stormtroopocat  =400x300](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
