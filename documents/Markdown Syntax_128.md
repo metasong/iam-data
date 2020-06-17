@@ -118,8 +118,9 @@ Task list
 
 Inline `code`
 
-Indented code
+Indented code 
 
+    should have one break-line above, and indent with 4 spaces
     // Some comments
     line 1 of code
     line 2 of code
