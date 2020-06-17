@@ -351,6 +351,7 @@ Term 2
   ~ Definition 2a
   ~ Definition 2b
 
+Note that space between items in a definition list is required.
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
 
 This is HTML abbreviation example.
