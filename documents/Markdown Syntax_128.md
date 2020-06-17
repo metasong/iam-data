@@ -336,7 +336,7 @@ Term 2 with *inline markup*
 
 :   Definition 2
 
-    { some code, part of Definition 2 }, start with >=4 spaces
+      { some code, part of Definition 2 }, start with 2+4 spaces
 
   Third paragraph of definition 2, need to start with 2 spaces 
 
