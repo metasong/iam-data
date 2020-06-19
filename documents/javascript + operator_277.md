@@ -84,6 +84,7 @@ a + b
 //> '[object Object]'
 //note:
 ({}).toString()
+// same as String({})
 //> '[object Object]'
 ```
 
