@@ -94,6 +94,7 @@ a + b
 //note:
 // {}: empty code block
 // +[] => +'' => Number('') => 0
+// '+': here is a unary operator
 +{}
 //> NaN
 // +{} => +'object Object' => Number('object Object') => NaN
