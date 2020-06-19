@@ -1,4 +1,11 @@
 # javascript + operator
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: [javascript, +, add]
+enable: [toc]
+---
+
 There are two kinds of values in JavaScript: primitives and objects. The primitive values are: undefined, null, booleans, numbers, and strings. All other values are objects, including arrays and functions.
 
 The plus operator performs three kinds of conversion: It converts values to primitives, numbers and strings:
@@ -12,7 +19,7 @@ The optional parameter PreferredType is either `Number` or `String`. It only exp
 
 If PreferredType is `String`, steps 2 and 3 are swapped. If PreferredType is missing then it is set to `String` for instances of `Date` and to `Number` for all other values.
 
-## ToNumber()
+## Primitives 'ToNumber()'
 |Argument	|Result|
 |---|---|
 undefined|	NaN
@@ -20,10 +27,11 @@ null	|+0
 boolean value|	true is converted to 1, false is converted to +0
 number value|	no conversion necessary
 string value |parse the number in the string. For example, "324" is converted to 324
+
+> An object obj is converted to a number by calling ToPrimitive(obj, Number) and then applying ToNumber() to the (primitive) result.
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
 
 adfadd ad adf dad fa
-<i-toc>
 
