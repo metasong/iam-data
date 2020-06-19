@@ -96,6 +96,17 @@ a + b
 // +[] => +'' => Number('') => 0
 ```
 
+```js
+5+new Number(7)
+//> 12
+
+6+{valueOf: function(){return 2}}
+//> 8
+
+'abc'+{toString: function(){return 'def'}}
+//> 'abcdef'
+```
+
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
