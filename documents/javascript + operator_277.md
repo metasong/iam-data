@@ -12,6 +12,7 @@ The optional parameter PreferredType is either `Number` or `String`. It only exp
 
 If PreferredType is `String`, steps 2 and 3 are swapped. If PreferredType is missing then it is set to `String` for instances of `Date` and to `Number` for all other values.
 
+## ToNumber()
 |Argument	|Result|
 |---|---|
 undefined|	NaN
