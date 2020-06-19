@@ -94,6 +94,10 @@ a + b
 //note:
 // {}: empty code block
 // +[] => +'' => Number('') => 0
++{}
+//> NaN
+// +{} => +'object Object' => Number('object Object') => NaN
+// note: +'' => Number('') => 0
 ```
 
 ```js
