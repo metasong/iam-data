@@ -61,7 +61,8 @@ string value	|no conversion necessary
     TypeError: Cannot convert object to primitive value
 ```
 
-## Addition
+## Addition '+'
+You can only add numbers or strings. Objects are converted to either string (if the other operand is a string) or number (otherwise)
 ```js
 a + b
 ```
@@ -97,8 +98,11 @@ a + b
 // '+': here is a unary operator
 +{}
 //> NaN
-// +{} => +'object Object' => Number('object Object') => NaN
+// +{} => +'[object Object]' => Number('[object Object]') => NaN
 // note: +'' => Number('') => 0
+{}+{}
+//> '[object Object][object Object]'
+// ''
 ```
 
 ```js
