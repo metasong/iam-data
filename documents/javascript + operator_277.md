@@ -60,6 +60,15 @@ string value	|no conversion necessary
     toString
     TypeError: Cannot convert object to primitive value
 ```
+
+## Addition
+```js
+a + b
+```
+1. prim1=ToPrimitive(a), prim2=ToPrimitive(b), PrefferredType is ommited and thus Number for none-date, String for date.
+1. If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
+1. Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
+
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
