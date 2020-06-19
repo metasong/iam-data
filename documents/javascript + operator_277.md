@@ -79,6 +79,13 @@ a + b
 [].toString()
 //> ''
 ```
+```js
+[]+{}
+//> '[object Object]'
+//note:
+({}).toString()
+//> '[object Object]'
+```
 
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
