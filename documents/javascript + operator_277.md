@@ -41,6 +41,20 @@ number value|	the number as a string, e.g. "1.765"
 string value	|no conversion necessary
 
 > An object obj is converted to a number by calling ToPrimitive(obj, String) and then applying ToString() to the (primitive) result.
+## Try it out
+```js
+    var obj = {
+        valueOf: function () {
+            console.log("valueOf");
+            return {}; // not a primitive
+        },
+        toString: function () {
+            console.log("toString");
+            return {}; // not a primitive
+        }
+    }
+```
+
 ## References
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 http://2ality.com/2012/01/object-plus-object.html
