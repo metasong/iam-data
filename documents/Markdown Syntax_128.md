@@ -374,9 +374,11 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 <details>
   <summary>Click to expand!</summary>
   
-  ## Heading
+  ### Heading
   1. A numbered
   2. list
      * With some
      * Sub bullets
 </details>
+
+[GFM](https://github.github.com/gfm/)
