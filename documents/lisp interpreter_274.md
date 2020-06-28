@@ -1,11 +1,7 @@
   # lisp interpreter
 
-
  *(.toc)*
-##  ddd
-## bc
-
-
+ 
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 https://github.com/maryrosecook/littlelisp
 
