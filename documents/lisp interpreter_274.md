@@ -2,6 +2,11 @@
 
  *(.toc)*
  
+ *(+ 
+ 4
+ 2)*
+ 
+ *(< 3 5)*
 https://maryrosecook.com/blog/post/little-lisp-interpreter
 https://github.com/maryrosecook/littlelisp
 
