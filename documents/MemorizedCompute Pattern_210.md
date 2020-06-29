@@ -1,4 +1,10 @@
 # MemorizedCompute Pattern
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.1.0
+tag: [pattern,memorize]
+enable: [toc]
+---
 
 ```ts
 export function createMemoizedComputer(
