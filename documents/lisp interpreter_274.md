@@ -1,6 +1,6 @@
   # lisp interpreter
 
- *(.toc)*
+<i-toc></i-toc>
  
  *(+ 
  4
