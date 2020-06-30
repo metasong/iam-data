@@ -2,6 +2,7 @@
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
+page: [2,8]
 tag: [javascript, +, add]
 enable: [toc]
 ---
