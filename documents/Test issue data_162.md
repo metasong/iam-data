@@ -1,2 +1,0 @@
-# Test issue data
-*summery*
