@@ -12,7 +12,11 @@ enable: [toc]
 using System;
 using System.Reactive.Linq;
 
-new int[] {1,4,3}.ToObservable().Zip(Observable.Interval(TimeSpan.FromMilliseconds(1000)),(a,b)=>a).Concat(Observable.Never<int>()).Subscribe(a=>Console.WriteLine(a));
+new int[] {1,4,3}
+.ToObservable()
+.Zip(Observable.Interval(TimeSpan.FromMilliseconds(1000)),(a,b)=>a)
+.Concat(Observable.Never<int>())
+.Subscribe(a=>Console.WriteLine(a));
 
 while (true) {Thread.Sleep(100);}
 ```
