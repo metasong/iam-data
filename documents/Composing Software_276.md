@@ -184,7 +184,7 @@ https://medium.com/javascript-scene/a-functional-programmers-introduction-to-jav
 ### A Word on Redux
 
 ```js
-reducer(state: Any, action: { type: String, payload: Any}) => newState: Any
+reducer: (state: Any, action: { type: String, payload: Any}) => newState: Any
 ```
 
 * A reducer called with no parameters should return its valid initial state.
