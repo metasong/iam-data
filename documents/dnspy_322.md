@@ -6,3 +6,5 @@ tag: []
 enable: [toc]
 ---
 
+## Install
+https://github.com/0xd4d/dnSpy
