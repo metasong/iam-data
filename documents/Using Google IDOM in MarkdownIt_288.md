@@ -9,7 +9,8 @@ enable: [toc]
 sfddf sdfd lll sfdfllll sdfd sldkf ysdf
 ### Angular Ivy change dection execution
 https://blog.angularindepth.com/angular-ivy-change-detection-execution-are-you-prepared-ab68d4231f2c#7ff5
-
+https://alexzuza.github.io/ivy-jit-preview/
+https://indepth.dev/posts/1271/angular-ivy-change-detection-execution-are-you-prepared
 [source code](https://jsfiddle.net/yurzui/hqhq4khc)
 
 #### learning note
