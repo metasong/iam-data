@@ -2,7 +2,7 @@
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
-subPages: [140]
+subPage: [140]
 tag: [markdown, syntax]
 enable: [toc]
 ---
