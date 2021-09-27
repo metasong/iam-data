@@ -1,7 +1,7 @@
 # javascript + operator
 ---
 author: Jason Song <metaseed@gmail.com>
-version: 1.0.0
+version: 1.0.1
 subPage: [293, 311]
 tag: [javascript, +, add]
 enable: [toc]
