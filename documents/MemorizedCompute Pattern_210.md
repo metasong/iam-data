@@ -11,8 +11,8 @@ export function createMemoizedComputer(
   compute: AnyFn,
   isEqual = isEqualCheck
 ): MemoizedComputer {
-  let lastArguments: null | IArguments = null;
-  let lastResult: any = null;
+  let lastArguments: null | IArguments;
+  let lastResult: any;
 
   function reset() {
     lastArguments = undefined;
