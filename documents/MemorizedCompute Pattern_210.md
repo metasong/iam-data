@@ -15,8 +15,8 @@ export function createMemoizedComputer(
   let lastResult: any = null;
 
   function reset() {
-    lastArguments = null;
-    lastResult = null;
+    lastArguments = undefined;
+    lastResult = undefined;
   }
 
   function memoizedCompute(): any {
