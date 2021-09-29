@@ -45,7 +45,7 @@ export function createMemoizedComputer(
 
 ```mermaid
 sequenceDiagram
-	participant C as Client
+    participant C as Client
     participant F as ComputerFactory
     participant P as Computer
     C->>F:create(computeFn,isEqualFn)
