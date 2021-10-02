@@ -8,7 +8,7 @@ enable: [toc]
 ---
 There are two kinds of values in JavaScript: primitives and objects. The primitive values are: `undefined, null, booleans, numbers, and strings`. All other values are objects, including arrays and functions.
 
-The plus operator performs three kinds of conversion: It converts values to primitives, numbers and strings:
+The plus operator performs three kinds of conversion: It converts values to primitives, numbers and strings: 
 ## Converting Values ((p)9.1)
 ### Object 'ToPrimitive(input, PreferredType?)'
 The optional parameter PreferredType is either `Number` or `String`. It only expresses a preference, the result can always be any primitive value. If PreferredType is `Number`, the following steps are performed to convert a value input (§9.1):
