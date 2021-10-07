@@ -3,7 +3,7 @@
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.1
 subPage: [293, 311, 320]
-tag: [javascript, +, add, operator]
+tags: [javascript, +, add, operator]
 enable: [toc]
 ---
 There are two kinds of values in JavaScript: primitives and objects. The primitive values are: `undefined, null, booleans, numbers, and strings`. All other values are objects, including arrays and functions.
