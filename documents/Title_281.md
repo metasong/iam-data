@@ -2,7 +2,7 @@
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
-subpage: [12,128,160]
+subPage: [12,8,5,128]
 tag: [tt,bb,kk,bb]
 enable: [toc]
 ---
