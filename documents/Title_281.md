@@ -2,8 +2,8 @@
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
-subPage: [12,8,5,128]
-tag: [tt,bb,kk,bb]
+subPage: [12,8,5]
+tag: [tt,kk,bb]
 enable: [toc]
 ---
 *summery*
