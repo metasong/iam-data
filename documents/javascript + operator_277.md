@@ -8,7 +8,7 @@ enable: [toc]
 ---
 There are two kinds of values in JavaScript: primitives and objects. The primitive values are: `undefined, null, booleans, numbers, and strings`. All other values are objects, including arrays and functions.
 
-The `plus` operator performs three kinds of conversion: It converts values to primitives, numbers and strings: 
+The `plus` operator either add two numbers or concatenate the string(if one is string), performs three kinds of conversion: It converts values to primitives, numbers and strings: 
 ## Converting Values ((p)9.1)
 ### Object 'ToPrimitive(input, PreferredType?)'
 The optional parameter PreferredType is either `Number` or `String`. It only expresses a preference, the result can always be any primitive value. If PreferredType is `Number`, the following steps are performed to convert a value input (§9.1):
@@ -67,7 +67,7 @@ You can only add numbers or strings. Objects are converted to either string (if 
 ```js
 a + b
 ```
-1. prim1=ToPrimitive(a), prim2=ToPrimitive(b), `PrefferredType` is ommited and thus `number` for none-date, `string` for `date`.
+1. `prim1=ToPrimitive(a), prim2=ToPrimitive(b)`, `PrefferredType` is ommited and thus `number` for none-`date`, `string` for `date`.
 1. If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
 1. Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
 
