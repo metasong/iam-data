@@ -64,6 +64,7 @@ string value	|no conversion necessary
 
 ## Addition '+'
 You can only add numbers or strings. Objects are converted to either string (if the other operand is a string) or number (otherwise)
+
 ```js
 a + b
 ```
