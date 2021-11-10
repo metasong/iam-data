@@ -67,7 +67,7 @@ You can only add numbers or strings. Objects are converted to either string (if 
 ```js
 a + b
 ```
-1. prim1=ToPrimitive(a), prim2=ToPrimitive(b), PrefferredType is ommited and thus Number for none-date, String for date.
+1. prim1=ToPrimitive(a), prim2=ToPrimitive(b), `PrefferredType` is ommited and thus `number` for none-date, `string` for `date`.
 1. If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
 1. Otherwise, convert both prim1 and prim2 to numbers and return the sum of the results.
 
