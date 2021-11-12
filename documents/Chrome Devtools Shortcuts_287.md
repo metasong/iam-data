@@ -2,9 +2,9 @@
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
-tag: []
+tag: [chrome]
 enable: [toc]
----fjjjjkkkf
+---
 
 > shortcuts deffined in Settings Panel.   
 > web link: [Chrome Devtool Shortcuts](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
