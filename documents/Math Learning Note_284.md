@@ -5,4 +5,3 @@
 vertical parts (sine, tangent), horizontal parts (cosine, cotangent), and “hypotenuses” (secant, cosecant).
 
 Link: https://betterexplained.com/articles/intuitive-trigonometry/
-
