@@ -1,10 +1,17 @@
 # cs2310- python numpy
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+subPage: []
+enable: [toc]
+
+---
 https://cs231n.github.io/python-numpy-tutorial/
 
 Python does not have unary increment (x++) or decrement (x--) operators.
 
 Booleans: Python implements all of the usual operators for Boolean logic, but uses English words rather than symbols (&&, ||, etc.)
-
 
 xor is: !=
 ```python
