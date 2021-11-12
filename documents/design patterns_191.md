@@ -6,7 +6,6 @@ tag: []
 enable: [toc]
 ---
 
-
 the book: [Design Patterns(GoF)](https://en.wikipedia.org/wiki/Design_Patterns)
 
 [[TOC]]
