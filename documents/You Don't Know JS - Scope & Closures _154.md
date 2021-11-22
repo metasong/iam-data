@@ -27,13 +27,13 @@ foo( 2 );
 
 > Engine: Hey Scope, I have an RHS reference for foo. Ever heard of it?
 
-> Scope: Why yes, I have. Compiler declared it just a second ago. He's a function. Here you go.
+> Scope: yes, I have. Compiler declared it just a second ago. He's a function. Here you go.
 
 > Engine: Great, thanks! OK, I'm executing foo.
 
 > Engine: Hey, Scope, I've got an LHS reference for a, ever heard of it?
 
-> Scope: Why yes, I have. Compiler declared it as a formal parameter to foo just recently. Here you go.
+> Scope: yes, I have. Compiler declared it as a formal parameter to foo just recently. Here you go.
 
 >Engine: Helpful as always, Scope. Thanks again. Now, time to assign 2 to a.
 
