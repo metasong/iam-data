@@ -1,4 +1,12 @@
 # You Don't Know JS - Scope & Closures 
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+subPage: []
+enable: [toc]
+
+---
 *summery*
 * Engine: responsible for start-to-finish compilation and execution of our JavaScript program.
 
