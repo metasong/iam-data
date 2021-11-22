@@ -15,6 +15,7 @@ Encountering `var a`, Compiler asks Scope to see if a variable a already exists 
 Compiler then produces code for Engine to later execute, to handle the a = 2 assignment. The code Engine runs will first ask Scope if there is a variable called a accessible in the current scope collection. If so, Engine uses that variable. If not, Engine looks elsewhere.If Engine eventually finds a variable, it assigns the value 2 to it. If not, Engine will raise its hand and yell out an error!
 
 > **Note:** LHS and RHS meaning "left/right-hand side of an assignment" doesn't necessarily literally mean "left/right side of the = assignment operator". There are several other ways that assignments happen, and so it's better to conceptually think about it as: "who's the target of the assignment (LHS)" and "who's the source of the assignment (RHS)".
+> i.e. `a++'
 
 ```js
 function foo(a) {
