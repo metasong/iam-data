@@ -236,12 +236,14 @@ const trace = x => {
   return x;
 };
 const u = Identity(2);
+
 // Identity law
 u.map(trace);             // 2
 u.map(x => x).map(trace); // 2
+
+// Composition law
 const f = n => n + 1;
 const g = n => n * 2;
-// Composition law
 const r1 = u.map(x => f(g(x)));
 const r2 = u.map(g).map(f);
 r1.map(trace); // 5
