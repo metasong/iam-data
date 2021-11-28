@@ -297,7 +297,11 @@ const double = n => n * 2;
 // Nothing happens...
 ifExists(Identity(undefined)).map(trace);
 // Still nothing...
-ifExists(Identity(null)).map(trace);
+ifExists(Identity(null))
+.map(trace)
+// still nothing
+.map(add1)
+
 // 42
 ifExists(Identity(20))
   .map(add1)
