@@ -149,6 +149,8 @@ https://github.com/tc39/proposal-partial-application/blob/master/README.md
 
 > Writing functions without mention of the arguments is called **point-free style**. To do it, you'll call a function that returns the new function, rather than declaring the function explicitly. That means you won't need the `function` keyword or the arrow syntax (`=>`).
 
+> [**Tacit programming**](https://en.m.wikipedia.org/wiki/Tacit_programming), also called point-free style, is a programming paradigm in which function definitions do not identify the arguments (or "points") on which they operate. Instead the definitions merely compose other functions, among which are combinators that manipulate the arguments. Tacit programming is of theoretical interest, because the strict use of composition results in programs that are well adapted for equational reasoning
+
 ```js
 const firstChar = x => x[0];
 const toUpperCase = x => x.toUperCase();
