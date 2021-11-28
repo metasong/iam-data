@@ -1,6 +1,12 @@
 # Composing Software
+---
+author: Jason Song <metaseed@gmail.com>
+version: 1.0.0
+tag: []
+subPage: []
+enable: [toc]
 
-*(.toc)*
+---
 
 ## [Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
 > Composition: “The act of combining parts or elements to form a whole.” ~ *Dictionary.com*
