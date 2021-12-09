@@ -1,4 +1,4 @@
-# Markdown Syntax Test
+# Markdown Syntax
 ---
 author: Jason Song <metaseed@gmail.com>
 version: 1.0.0
@@ -129,7 +129,7 @@ Indented code
 
 
 Block code "fences"
-bbnmhjhbjbkbnkjnbnjn
+
 ```
 Sample text here...
 ```
