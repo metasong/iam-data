@@ -19,7 +19,7 @@ The general rule for addition in JavaScript is simple: You can only add numbers 
 value1 + value2
 ```
 1. Convert both operands to primitives:
-    > prim1 := ToPrimitive(value1)   
+    > prim1 := ToPrimitive(value1,PreferredType?)
     > prim2 := ToPrimitive(value2)
 1. PreferredType is omitted and thus Number for non-dates, String for dates.
 1. If either prim1 or prim2 is a string then convert both to strings and return the concatenation of the results.
