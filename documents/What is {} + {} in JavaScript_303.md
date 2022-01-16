@@ -69,6 +69,8 @@ console.log(`${obj2}`); // "hello"   -- hint is "string"
 console.log(obj2 + ''); // "true"    -- hint is "default"
 ```
 ### toNumber()
+An object obj is converted to a number by calling ToPrimitive(obj, Number) and then applying ToNumber() to the (primitive) result.
+
 Argument|	Result
 -|-
 undefined|	NaN
@@ -78,6 +80,7 @@ number value|	no conversion necessary
 string value|	parse the number in the string. For example, "324" is converted to 324, '' is converted to 0.
 
 ### toString()
+An object obj is converted to a number by calling ToPrimitive(obj, String) and then applying ToString() to the (primitive) result.
 
 Argument|	Result
 -|-
