@@ -22,7 +22,7 @@ https://indepth.dev/posts/1271/angular-ivy-change-detection-execution-are-you-pr
 * use `Node.childNodes[0]` to get it's text content. (i.e. `<h1>aaa</h1>`)
 * Node.parentNode, Node.nextSibling and Node.firstChild
 * document.createTextNode(data`/*character data*/`), document.createElement(name`/*element name*/`)
-* muti-child-one-parent structure is a `Star`, muti-level-start is a `Tree`.
+* muti-child-one-parent structure is a `Star`, muti-level-star is a `Tree`.
 
 #### tree traversal
 ```js
