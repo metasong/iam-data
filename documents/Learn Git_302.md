@@ -21,6 +21,8 @@ http://justinhileman.info/article/git-pretty/git-pretty.png
 https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
 https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt
 
+[45 个 Git 经典操作场景，专治不会合代码](https://mp.weixin.qq.com/s?__biz=MzA4MjEyNTA5Mw==&mid=2652592303&idx=1&sn=aa690c9c0e9d6bafa5d8c932c88af887&chksm=846570e5b312f9f3938272ba15ce3844c6f6e5044e6bb8963a0c217ba2fe80260e491e3cc336&mpshare=1&srcid=0406bti2kOXt2fw0Qb4I7rSR&sharer_sharetime=1649248962263&sharer_shareid=1eddcb5dbe4634b935d8a5db78a7f438&from=singlemessage&scene=1&subscene=10000&clicktime=1649342458&enterid=1649342458&forceh5=1&ascene=1&devicetype=android-31&version=28001240&nettype=WIFI&abtest_cookie=AAACAA%3D%3D&lang=en&exportkey=AXcGPJVx806MP4bSNao96Do%3D&pass_ticket=IcZWZs1sMT7YSPG%2Ba9WxMw2lh8t5VdvSf0DA0Dxk54mhPYnaiUwrKFefcczyDbKh&wx_header=3)
+
 ## Diagrams
 
 ![](https://marklodato.github.io/visual-git-guide/basic-usage.svg)
