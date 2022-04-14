@@ -5,7 +5,7 @@
 ### new Promise(..) Constructor
 ```js
 var p = new Promise( function(resolve,reject){
-	// `resolve(..)` to resolve/fulfill the promise 
+	// `resolve(..)` to resolve or reject the promise 
 	// `reject(..)` to reject the promise
 } );   
 
