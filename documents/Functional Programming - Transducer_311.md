@@ -72,6 +72,7 @@ const doubledEvens = compose(
 // is the last executed-step of the reducers
 // defines the output of the last executed-step
 // in tranducer only the last-executed step uses the 'a' to procuce result, others just pass 'a' into next execute-step, so xform definites the output of transducers
+// supplies the knowledge of how to accumulate the result
 const arrayConcat = (a, c) => a.concat([c]); // reducer
 
 // xform: transform.
